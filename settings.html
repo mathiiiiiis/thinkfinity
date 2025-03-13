@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Thinkfinity - User Settings">
+    <meta name="keywords" content="learning, education, thinfinity, settings">
+    <meta name="author" content="Thinkfinity">
+    
+    <title>Thinkfinity - Settings</title>
+    
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/auth.css">
+    <link rel="stylesheet" href="assets/css/settings.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+    <script src="assets/js/plugins.js" defer></script>
+    <script src="assets/js/main.js" defer></script>
+    <script src="assets/js/nav_dropdown.js"></script>
+    <script src="backend/auth.js" defer></script>
+    <script src="assets/js/settings.js" defer></script>
+</head>
+<body>
+    <section class="navbar">
+        <div class="navbar-logo">
+          <img src="assets/pictures/logos/logo_text_225x74.png" alt="Thinfinity Logo">
+        </div>
+        <div class="navbar-links">
+          <li class="navbar-link"><a href="index.html">Explore</a></li>
+          <li class="navbar-link"><a href="#">Forum</a></li>
+          <li class="navbar-link"><a href="#">Classes</a></li>
+        </div>
+        
+        <!-- User profile section - shows when logged in -->
+        <div class="navbar-user" id="userProfileSection">
+          <div class="navbar-dropdown">
+            <div class="profile-info">
+              <h2 class="navbar-dropdown-name" id="userDisplayName">Loading...</h2>
+              <img class="navbar-dropdown-profile" id="userProfilePic" src="assets/pictures/default-profile.png" alt="User Profile">
+            </div>
+            <div class="dropdown-content">
+              <a href="profile.html">My Profile</a>
+              <a href="settings.html">Settings</a>
+              <a href="#" id="logoutBtn">Logout</a>
+            </div>
+          </div>
+        </div>
+      
+      <!-- Login/Register buttons - shows when logged out -->
+      <div class="auth-buttons" id="authButtonsSection" style="display: none;">
+        <button class="login-btn" id="loginBtn">Login</button>
+        <button class="register-btn" id="registerBtn">Register</button>
+      </div>
+    </section>
+
+    <main class="settings-container">
+        <div class="settings-sidebar">
+            <div class="user-brief">
+                <img id="settingsUserPic" class="user-brief-pic" src="assets/pictures/default-profile.png" alt="User Profile">
+                <h3 id="settingsUsername">Loading...</h3>
+                <a href="profile.html" class="view-profile-link">View Profile</a>
+            </div>
+            <ul class="settings-nav">
+                <li class="settings-nav-item active" data-tab="account">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                        <path d="M12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2ZM12.1597 16C10.1243 16 8.29182 16.8687 7.01276 18.2556C8.38039 19.3474 10.114 20 12 20C13.9695 20 15.7727 19.2883 17.1666 18.1081C15.8956 16.8074 14.1219 16 12.1597 16ZM12 4C7.58172 4 4 7.58172 4 12C4 13.8106 4.6015 15.4807 5.61557 16.8214C7.25639 15.0841 9.58144 14 12.1597 14C14.6441 14 16.8933 15.0066 18.5218 16.6342C19.4526 15.3267 20 13.7273 20 12C20 7.58172 16.4183 4 12 4ZM12 5C14.2091 5 16 6.79086 16 9C16 11.2091 14.2091 13 12 13C9.79086 13 8 11.2091 8 9C8 6.79086 9.79086 5 12 5ZM12 7C10.8954 7 10 7.89543 10 9C10 10.1046 10.8954 11 12 11C13.1046 11 14 10.1046 14 9C14 7.89543 13.1046 7 12 7Z" />
+                    </svg>
+                    Account
+                </li>
+                <li class="settings-nav-item" data-tab="security">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                        <path d="M18 8H20C20.5523 8 21 8.44772 21 9V21C21 21.5523 20.5523 22 20 22H4C3.44772 22 3 21.5523 3 21V9C3 8.44772 3.44772 8 4 8H6V7C6 3.68629 8.68629 1 12 1C15.3137 1 18 3.68629 18 7V8ZM16 8V7C16 4.79086 14.2091 3 12 3C9.79086 3 8 4.79086 8 7V8H16ZM11 14V16H13V14H11ZM7 14V16H9V14H7ZM15 14V16H17V14H15Z" />
+                    </svg>
+                    Security
+                </li>
+                <li class="settings-nav-item" data-tab="appearance">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                        <path d="M12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2ZM12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4ZM12 5V19C15.866 19 19 15.866 19 12C19 8.13401 15.866 5 12 5Z" />
+                    </svg>
+                    Appearance
+                </li>
+            </ul>
+        </div>
+
+        <div class="settings-content">
+            <!-- Account Settings -->
+            <div class="settings-panel active" id="account-panel">
+                <h2>Account Settings</h2>
+                <form id="accountSettingsForm">
+                    <div class="form-section">
+                        <h3>Personal Information</h3>
+                        <div class="form-group">
+                            <label for="fullName">Full Name</label>
+                            <input type="text" id="fullName" placeholder="Enter your full name">
+                        </div>
+                        <div class="form-group">
+                            <label for="username">Username</label>
+                            <input type="text" id="username" placeholder="Enter your username">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" placeholder="Enter your email">
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h3>Contact Information</h3>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" placeholder="Enter your phone number">
+                        </div>
+                        <div class="form-group">
+                            <label for="country">Country</label>
+                            <select id="country">
+                                <option value="us">United States</option>
+                                <option value="ca">Canada</option>
+                                <option value="uk">United Kingdom</option>
+                                <option value="au">Australia</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h3>Educational Background</h3>
+                        <div class="form-group">
+                            <label for="education">Highest Education</label>
+                            <select id="education">
+                                <option value="high-school">High School</option>
+                                <option value="associate">Associate Degree</option>
+                                <option value="bachelor">Bachelor's Degree</option>
+                                <option value="master">Master's Degree</option>
+                                <option value="phd">PhD or Doctorate</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="field">Field of Study</label>
+                            <input type="text" id="field" placeholder="Enter your field of study">
+                        </div>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Save Changes</button>
+                </form>
+            </div>
+
+            <!-- Security Settings -->
+            <div class="settings-panel" id="security-panel">
+                <h2>Security Settings</h2>
+                <form id="securitySettingsForm">
+                    <div class="form-section">
+                        <h3>Change Password</h3>
+                        <div class="form-group">
+                            <label for="currentPassword">Current Password</label>
+                            <input type="password" id="currentPassword">
+                        </div>
+                        <div class="form-group">
+                            <label for="newPassword">New Password</label>
+                            <input type="password" id="newPassword">
+                            <div class="password-strength">
+                                <div class="strength-meter">
+                                    <div class="strength-segment"></div>
+                                    <div class="strength-segment"></div>
+                                    <div class="strength-segment"></div>
+                                    <div class="strength-segment"></div>
+                                </div>
+                                <span class="strength-text">Password strength</span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="confirmNewPassword">Confirm New Password</label>
+                            <input type="password" id="confirmNewPassword">
+                        </div>
+                        <button type="button" class="action-btn">Update Password</button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Appearance Settings -->
+            <div class="settings-panel" id="appearance-panel">
+                <h2>Appearance Settings</h2>
+                <div class="form-section">
+                    <h3>Theme</h3>
+                    <div class="theme-selector">
+                        <div class="theme-option active" data-theme="light">
+                            <div class="theme-preview light-theme"></div>
+                            <span class="theme-name">Light</span>
+                        </div>
+                        <div class="theme-option" data-theme="dark">
+                            <div class="theme-preview dark-theme"></div>
+                            <span class="theme-name">Dark</span>
+                        </div>
+                        <div class="theme-option" data-theme="system">
+                            <div class="theme-preview system-theme"></div>
+                            <span class="theme-name">System</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h3>Font Size</h3>
+                    <div class="range-slider-container">
+                        <input type="range" min="80" max="120" value="100" class="range-slider" id="fontSizeSlider">
+                        <div class="range-values">
+                            <span>Small</span>
+                            <span>Medium</span>
+                            <span>Large</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h3>Accent Color</h3>
+                    <div class="color-options">
+                        <div class="color-option active" style="--color: #4a6cf7;" data-color="#4a6cf7"></div>
+                        <div class="color-option" style="--color: #8B5CF6;" data-color="#8B5CF6"></div>
+                        <div class="color-option" style="--color: #F97316;" data-color="#F97316"></div>
+                        <div class="color-option" style="--color: #10B981;" data-color="#10B981"></div>
+                        <div class="color-option" style="--color: #F43F5E;" data-color="#F43F5E"></div>
+                    </div>
+                </div>
+
+                <button type="button" class="submit-btn">Apply Changes</button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

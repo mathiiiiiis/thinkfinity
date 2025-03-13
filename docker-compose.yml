@@ -1,0 +1,113 @@
+version: '3.8'
+
+services:
+  # Web
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile.php
+    container_name: thinkfinity-web
+    volumes:
+      - ./:/var/www/html
+    depends_on:
+      - mysql
+    networks:
+      - thinkfinity-network
+    restart: unless-stopped
+
+  # Nginx
+  nginx:
+    image: nginx:alpine
+    container_name: thinkfinity-nginx
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./:/var/www/html
+      - ./docker/nginx:/etc/nginx/conf.d
+      - ./docker/ssl:/etc/nginx/ssl
+    depends_on:
+      - web
+    networks:
+      - thinkfinity-network
+    restart: unless-stopped
+
+  # MySQL
+  mysql:
+    image: mysql:8.0
+    container_name: thinkfinity-mysql
+    command: --default-authentication-plugin=mysql_native_password
+    volumes:
+      - mysql_data:/var/lib/mysql
+      - ./docker/mysql/init:/docker-entrypoint-initdb.d
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+    ports:
+      - "3306:3306"
+    networks:
+      - thinkfinity-network
+    restart: unless-stopped
+
+  # phpMyAdmin
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: thinkfinity-phpmyadmin
+    environment:
+      PMA_HOST: mysql
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      PMA_USER: ${MYSQL_USER}
+      PMA_PASSWORD: ${MYSQL_PASSWORD}
+    ports:
+      - "8080:80"
+    depends_on:
+      - mysql
+    networks:
+      - thinkfinity-network
+    restart: unless-stopped
+
+  # MinIO
+  minio:
+    image: minio/minio
+    container_name: thinkfinity-minio
+    command: server /data --console-address ":9001"
+    environment:
+      MINIO_ROOT_USER: ${MINIO_ACCESS_KEY}
+      MINIO_ROOT_PASSWORD: ${MINIO_SECRET_KEY}
+    volumes:
+      - minio_data:/data
+    ports:
+      - "9000:9000"
+      - "9001:9001"
+    networks:
+      - thinkfinity-network
+    restart: unless-stopped
+
+  # Portainer
+  portainer:
+    image: portainer/portainer-ce
+    container_name: thinkfinity-portainer
+    command: -H unix:///var/run/docker.sock
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - portainer_data:/data
+    ports:
+      - "9443:9443"
+      - "8000:8000"
+    networks:
+      - thinkfinity-network
+    restart: unless-stopped
+
+networks:
+  thinkfinity-network:
+    driver: bridge
+
+volumes:
+  mysql_data:
+    driver: local
+  minio_data:
+    driver: local
+  portainer_data:
+    driver: local

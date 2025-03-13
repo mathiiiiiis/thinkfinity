@@ -1,8 +1,76 @@
+@font-face {
+    font-family: 'goodog';
+   src: url('/assets/css/fonts/gooddog.ttf') format('truetype');
+   font-weight: normal;
+   font-style: normal;
+}
+
 :root {
-    --text-color: #000000
+    /* Base colors */
+    --text-color: #000000;
     --bg-color: #ffffff;
     --card-bg: #ffffff;
-    --card-border: 2px solid #e9e9e9;
+    --card-border: 2.5px solid #e9e9e9;
     --shadow: 0 2px 8px #8F9CAF;
     --border-radius: 12px;
+
+    --primary-color: #4A6FFF;
+    --primary-hover: #3A5FEF;
+    --secondary-color: #6C757D;
+    --success-color: #28A745;
+    --danger-color: #DC3545;
+    --warning-color: #FFC107;
+    --info-color: #17A2B8;
+    --light-color: #F8F9FA;
+    --dark-color: #343A40;
+    
+    /* Form elements */
+    --input-border: 1px solid #ced4da;
+    --input-focus-border: 1px solid #4A6FFF;
+    --input-focus-shadow: 0 0 0 0.2rem rgba(74, 111, 255, 0.25);
+    
+    /* Navbar */
+    --navbar-bg: #ffffff;
+    --navbar-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="dark"] {
+    --text-color: #ffffff;
+    --bg-color: #121212;
+    --card-bg: #1e1e1e;
+    --card-border: 2px solid #333333;
+    --shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    
+    --primary-color: #5A7FFF;
+    --primary-hover: #4A6FFF;
+    
+    --navbar-bg: #1e1e1e;
+    --navbar-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--primary-hover);
+    text-decoration: underline;
+}
+
+.card {
+    background-color: var(--card-bg);
+    border: var(--card-border);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    padding: 20px;
+    margin-bottom: 20px;
 }

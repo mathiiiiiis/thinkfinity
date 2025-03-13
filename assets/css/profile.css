@@ -1,0 +1,403 @@
+.profile-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+}
+
+.profile-header {
+    background-color: var(--card-bg);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    margin-bottom: 2rem;
+    overflow: hidden;
+    border: var(--card-border);
+}
+
+.profile-cover-image {
+    height: 200px;
+    background: linear-gradient(135deg, #4a6cf7 0%, #8B5CF6 100%);
+    position: relative;
+}
+
+.edit-cover-btn {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.edit-cover-btn:hover {
+    transform: scale(1.05);
+    background-color: white;
+}
+
+.edit-cover-btn svg {
+    width: 20px;
+    height: 20px;
+    fill: var(--primary-color);
+}
+
+.profile-user-info {
+    display: flex;
+    padding: 0 2rem 2rem;
+    position: relative;
+}
+
+.profile-picture-container {
+    margin-top: -50px;
+    position: relative;
+}
+
+.user-brief-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 5px solid var(--card-bg);
+    object-fit: cover;
+    box-shadow: var(--shadow);
+}
+
+.edit-profile-picture-btn {
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.edit-profile-picture-btn:hover {
+    background-color: var(--primary-hover);
+    transform: scale(1.05);
+}
+
+.edit-profile-picture-btn svg {
+    width: 16px;
+    height: 16px;
+    fill: white;
+}
+
+.profile-details {
+    margin-left: 2rem;
+    flex: 1;
+}
+
+.profile-details h1 {
+    font-size: 2rem;
+    margin: 0.5rem 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.profile-tagline {
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+}
+
+.profile-stats {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stat-value {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.stat-label {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+.edit-profile-btn {
+    padding: 0.8rem 1.5rem;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    align-self: flex-start;
+    margin-top: 2rem;
+}
+
+.edit-profile-btn:hover {
+    background-color: var(--primary-hover);
+}
+
+/* Profile Tabs */
+.profile-tabs {
+    display: flex;
+    background-color: var(--card-bg);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    margin-bottom: 2rem;
+    overflow: hidden;
+    border: var(--card-border);
+}
+
+.tab-btn {
+    padding: 1rem 2rem;
+    background: none;
+    border: none;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: var(--text-color);
+    border-bottom: 3px solid transparent;
+}
+
+.tab-btn:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.tab-btn.active {
+    color: var(--primary-color);
+    border-bottom: 3px solid var(--primary-color);
+}
+
+/* Profile Content */
+.profile-content {
+    background-color: var(--card-bg);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    padding: 2rem;
+    border: var(--card-border);
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* Activity Feed */
+.activity-feed {
+    margin-top: 1.5rem;
+}
+
+.activity-item {
+    display: flex;
+    padding: 1.2rem;
+    border-radius: var(--border-radius);
+    margin-bottom: 1rem;
+    background-color: var(--bg-color);
+    border: var(--card-border);
+}
+
+.activity-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+}
+
+.activity-icon svg {
+    width: 24px;
+    height: 24px;
+    fill: white;
+}
+
+.course-icon {
+    background-color: #4a6cf7;
+}
+
+.forum-icon {
+    background-color: #10B981;
+}
+
+.achievement-icon {
+    background-color: #F97316;
+}
+
+.activity-details {
+    flex: 1;
+}
+
+.activity-details p {
+    margin: 0 0 0.5rem 0;
+}
+
+.activity-details a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.activity-details a:hover {
+    text-decoration: underline;
+}
+
+.activity-time {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
+
+/* Courses Grid */
+.courses-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.course-card {
+    background-color: var(--bg-color);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease;
+    border: var(--card-border);
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+}
+
+.course-image {
+    height: 160px;
+    position: relative;
+    overflow: hidden;
+}
+
+.course-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.course-progress {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 6px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: var(--primary-color);
+}
+
+.course-info {
+    padding: 1.2rem;
+}
+
+.course-info h3 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.1rem;
+}
+
+.course-instructor {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.8rem;
+}
+
+.course-status {
+    font-size: 0.85rem;
+    font-weight: 500;
+    display: inline-block;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+}
+
+.completed {
+    background-color: rgba(16, 185, 129, 0.1);
+    color: #10B981;
+}
+
+.in-progress {
+    background-color: rgba(249, 115, 22, 0.1);
+    color: #F97316;
+}
+
+/* Modals */
+#editProfileModal .modal-content {
+    width: 500px;
+}
+
+#editProfileForm textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: var(--input-border);
+    border-radius: var(--border-radius);
+    font-family: 'Poppins', sans-serif;
+    resize: vertical;
+}
+
+#editProfileForm textarea:focus {
+    outline: none;
+    border: var(--input-focus-border);
+    box-shadow: var(--input-focus-shadow);
+}
+
+/* Alert Styling */
+.alert {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 15px 20px;
+    border-radius: 5px;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.3s, transform 0.3s;
+    z-index: 9999;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.alert-error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.alert-warning {
+    background-color: #fff3cd;
+    color: #856404;
+    border: 1px solid #ffeeba;
+}
+
+.alert-info {
+    background-color: #d1ecf1;
+    color: #0c5460;
+    border: 1px solid #bee5eb;
+}
