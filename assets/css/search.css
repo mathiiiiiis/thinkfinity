@@ -1,0 +1,217 @@
+.search-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+}
+
+.search-header {
+    background-color: var(--card-bg);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    border: var(--card-border);
+}
+
+.search-header h1 {
+    font-size: 2.2rem;
+    margin: 0 0 0.5rem 0;
+    color: var(--primary-color);
+}
+
+.search-header p {
+    margin: 0 0 2rem 0;
+    color: var(--text-secondary);
+}
+
+.search-box {
+    display: flex;
+    max-width: 600px;
+    margin: 0 auto 1.5rem;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 1rem;
+    border: 2px solid #e0e0e0;
+    border-radius: var(--border-radius) 0 0 var(--border-radius);
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease;
+}
+
+.search-box input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+.search-box button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0 1.5rem;
+    border-radius: 0 var(--border-radius) var(--border-radius) 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.search-box button:hover {
+    background-color: var(--primary-hover);
+}
+
+.search-filters {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.search-filters select {
+    padding: 0.5rem 1rem;
+    border: 1px solid #e0e0e0;
+    border-radius: var(--border-radius);
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+}
+
+.search-filters select:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+/* Results Section */
+.search-results {
+    background-color: var(--card-bg);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    padding: 2rem;
+    border: var(--card-border);
+}
+
+.results-count {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+}
+
+.results-count span {
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.no-results {
+    text-align: center;
+    padding: 3rem 0;
+    color: var(--text-secondary);
+}
+
+.results-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.user-card {
+    display: flex;
+    background-color: var(--bg-color);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    padding: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: var(--card-border);
+}
+
+.user-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.user-card-avatar {
+    margin-right: 1.5rem;
+}
+
+.user-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.user-card-info {
+    flex: 1;
+}
+
+.user-name {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.2rem;
+}
+
+.user-tagline {
+    margin: 0 0 1rem 0;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+.view-profile-btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+
+.view-profile-btn:hover {
+    background-color: var(--primary-hover);
+    text-decoration: none;
+    color: white;
+}
+
+.results-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    gap: 1rem;
+}
+
+.results-pagination button {
+    padding: 0.5rem 1rem;
+    background-color: var(--light-color);
+    border: 1px solid #e0e0e0;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.results-pagination button:hover:not([disabled]) {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.results-pagination button[disabled] {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+#paginationInfo {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+@media (max-width: 768px) {
+    .results-list {
+        grid-template-columns: 1fr;
+    }
+    
+    .search-header h1 {
+        font-size: 1.8rem;
+    }
+    
+    .search-container {
+        padding: 0 1rem;
+    }
+}

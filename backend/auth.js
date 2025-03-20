@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const profilePreview = document.getElementById('profilePreview');
     const logoutBtn = document.getElementById('logoutBtn');
 
-    const API_BASE_URL = '/auth.php';
+    const API_BASE_URL = '/backend/auth.php';
     const UPLOAD_HANDLER_PATH = '/backend/handlers/upload_handler.php';
 
     // Check if user is logged in

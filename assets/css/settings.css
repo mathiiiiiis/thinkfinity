@@ -364,16 +364,28 @@ input:checked + .toggle-slider:before {
     text-align: center;
 }
 
+/* Fixed theme preview styles - border removed for all states */
 .theme-preview {
     height: 70px;
     border-radius: var(--border-radius);
     margin-bottom: 0.5rem;
-    border: 2px solid transparent;
     transition: all 0.3s ease;
+    border: none;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    position: relative;
 }
 
-.theme-option.active .theme-preview {
-    border-color: var(--primary-color);
+/* Add indicator for active theme without using a border */
+.theme-option.active .theme-preview::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: var(--border-radius);
+    box-shadow: 0 0 0 2px var(--primary-color);
+    pointer-events: none;
 }
 
 .light-theme {
@@ -449,6 +461,7 @@ input:checked + .toggle-slider:before {
     cursor: pointer;
     position: relative;
     transition: transform 0.2s ease;
+    border: none;
 }
 
 .color-option:hover {
@@ -466,19 +479,57 @@ input:checked + .toggle-slider:before {
     border-radius: 50%;
 }
 
-/* Login Sessions */
+/* Section description */
+.section-description {
+    font-size: 0.9rem;
+    color: var(--text-secondary, var(--secondary-color));
+    margin-bottom: 1.5rem;
+}
+
+/* Sessions List */
+.loading-sessions {
+    text-align: center;
+    padding: 1.5rem;
+    color: var(--text-secondary, var(--secondary-color));
+    font-style: italic;
+}
+
 .session-list {
     margin-bottom: 1.5rem;
+}
+
+.no-sessions, .error-message {
+    text-align: center;
+    padding: 1.5rem;
+    color: var(--text-secondary, var(--secondary-color));
+    background-color: rgba(0, 0, 0, 0.03);
+    border-radius: var(--border-radius);
+}
+
+.error-message {
+    color: var(--danger-color);
+    background-color: rgba(220, 38, 38, 0.05);
+}
+
+.retry-btn {
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
 }
 
 .session-item {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 1.25rem;
+    border: var(--input-border);
     border-radius: var(--border-radius);
     margin-bottom: 1rem;
+    background-color: var(--card-bg);
 }
 
 .session-item.current {
@@ -487,216 +538,233 @@ input:checked + .toggle-slider:before {
 }
 
 .session-info {
-    display: flex;
-    align-items: center;
+    flex: 1;
 }
 
 .session-device {
     display: flex;
     align-items: center;
-    margin-right: 1.5rem;
+    margin-bottom: 0.5rem;
     font-weight: 500;
 }
 
 .session-device svg {
     width: 24px;
     height: 24px;
+    margin-right: 0.8rem;
+    fill: currentColor;
+    flex-shrink: 0;
+}
+
+.session-device span {
     margin-right: 0.5rem;
 }
 
 .session-details {
-    font-size: 0.9rem;
-    color: var(--text-secondary);
+    font-size: 0.85rem;
+    color: var(--text-secondary, var(--secondary-color));
 }
 
 .current-badge {
+    display: inline-block;
     background-color: var(--primary-color);
     color: white;
     font-size: 0.75rem;
-    padding: 0.3em 0.6em;
+    padding: 0.3em 0.8em;
     border-radius: 20px;
+    margin-left: 0.5rem;
+    font-weight: normal;
+}
+
+.session-actions {
+    flex-shrink: 0;
+    margin-left: 1rem;
 }
 
 .terminate-btn {
     background-color: transparent;
-    color: #EF4444;
-    border: none;
-    font-size: 0.9rem;
+    color: var(--danger-color);
+    border: 1px solid var(--danger-color);
+    border-radius: var(--border-radius);
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: all 0.2s ease;
+    white-space: nowrap;
 }
 
 .terminate-btn:hover {
-    color: #DC2626;
-    text-decoration: underline;
+    background-color: var(--danger-color);
+    color: white;
 }
 
-/* Billing */
-.subscription-info {
-    background-color: var(--bg-color);
-    border-radius: var(--border-radius);
-    padding: 1.5rem;
-    margin-bottom: 2rem;
-    border: var(--card-border);
-}
-
-.plan-details {
-    margin-bottom: 1.5rem;
-}
-
-.plan-name {
-    font-size: 1.2rem;
-    font-weight: 600;
-    margin-bottom: 0.3rem;
-}
-
-.plan-price {
-    font-size: 1.5rem;
-    color: var(--primary-color);
-    margin-bottom: 0.3rem;
-}
-
-.plan-status {
-    font-size: 0.9rem;
-    color: var(--text-secondary);
-}
-
-.plan-actions {
+/* Account Management */
+.account-actions {
     display: flex;
-    gap: 1rem;
+    flex-direction: column;
+    gap: 1.5rem;
 }
 
-/* Payment Methods */
-.payment-methods {
-    margin-top: 1rem;
-}
-
-.payment-method {
+.account-action {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    padding: 1rem;
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    border: var(--input-border);
     border-radius: var(--border-radius);
-    margin-bottom: 1rem;
+    background-color: var(--card-bg);
 }
 
-.payment-method.active {
-    border-color: var(--primary-color);
-    background-color: rgba(74, 108, 247, 0.05);
-}
-
-.payment-icon {
-    width: 40px;
-    height: 30px;
-    margin-right: 1rem;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.credit-card {
-    background-image: url("data:image/svg+xml;utf8,<svg fill='%234a6cf7' height='30' viewBox='0 0 24 24' width='40' xmlns='http://www.w3.org/2000/svg'><path d='M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z'/></svg>");
-}
-
-.payment-details {
+.action-info {
     flex: 1;
 }
 
-.payment-name {
-    font-weight: 500;
+.account-action h4 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.1rem;
 }
 
-.payment-expiry {
-    font-size: 0.85rem;
-    color: var(--text-secondary);
+.account-action p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: var(--text-secondary, var(--secondary-color));
+    max-width: 90%;
 }
 
-.payment-actions {
-    display: flex;
-    align-items: center;
+.account-action button {
+    margin-left: 1.5rem;
+    white-space: nowrap;
 }
 
-.default-badge {
-    background-color: rgba(74, 108, 247, 0.1);
-    color: var(--primary-color);
-    font-size: 0.75rem;
-    padding: 0.3em 0.6em;
-    border-radius: 20px;
-    margin-right: 1rem;
-}
-
-.edit-btn {
-    background-color: transparent;
-    color: var(--primary-color);
-    border: none;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.edit-btn:hover {
-    text-decoration: underline;
-}
-
-.add-payment-btn {
+/* Confirmation Modal */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 1rem;
-    border: 1px dashed rgba(0, 0, 0, 0.2);
-    border-radius: var(--border-radius);
-    background-color: transparent;
-    color: var(--text-color);
-    width: 100%;
-    cursor: pointer;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
     transition: all 0.3s ease;
 }
 
-.add-payment-btn:hover {
-    background-color: rgba(0, 0, 0, 0.02);
-    border-color: rgba(0, 0, 0, 0.3);
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
 }
 
-.add-payment-btn svg {
-    width: 20px;
-    height: 20px;
-    margin-right: 0.5rem;
+.modal {
+    background-color: var(--card-bg);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    padding: 1.5rem;
+    width: 95%;
+    max-width: 500px;
+    transform: translateY(-20px);
+    transition: transform 0.3s ease;
 }
 
-/* Billing History */
-.billing-history {
+.modal-overlay.active .modal {
+    transform: translateY(0);
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.modal-header h3 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.modal-close {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--text-secondary, var(--secondary-color));
+}
+
+.modal-body {
+    margin-bottom: 1.5rem;
+}
+
+.modal-body p {
+    margin: 0 0 1rem 0;
+    font-size: 0.95rem;
+}
+
+.confirmation-input {
     margin-top: 1rem;
 }
 
-.invoice-item {
-    display: flex;
-    align-items: center;
-    padding: 1rem 0;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-}
-
-.invoice-item:last-child {
-    border-bottom: none;
-}
-
-.invoice-date {
-    width: 120px;
+.confirmation-input label {
+    display: block;
+    margin-bottom: 0.5rem;
     font-size: 0.9rem;
-}
-
-.invoice-description {
-    flex: 1;
-}
-
-.invoice-amount {
     font-weight: 500;
-    margin: 0 1.5rem;
 }
 
-.invoice-action {
+.confirmation-input input {
+    width: 100%;
+    padding: 0.8rem;
+    border: var(--input-border);
+    border-radius: var(--border-radius);
+    font-family: 'Poppins', sans-serif;
+}
+
+.modal-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+.modal-actions button {
+    padding: 0.6rem 1rem;
+}
+
+/* Button styles to match existing theme */
+.danger-btn {
+    background-color: var(--danger-color);
+    color: white;
+    border: none;
+    border-radius: var(--border-radius);
+    padding: 0.8rem 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.outlined-btn {
+    background-color: transparent;
+    border: 1px solid var(--primary-color);
     color: var(--primary-color);
-    text-decoration: none;
+    border-radius: var(--border-radius);
+    padding: 0.8rem 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
 }
 
-.invoice-action:hover {
-    text-decoration: underline;
+.outlined-btn:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* Dark mode support using theme variables */
+[data-theme="dark"] .no-sessions, 
+[data-theme="dark"] .error-message {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+[data-theme="dark"] .error-message {
+    color: #f87171;
 }

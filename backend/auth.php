@@ -2,8 +2,8 @@
 // Backend authentication handling
 ob_start();
 
-require_once __DIR__ . '/vendor/autoload.php';
-$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+require_once __DIR__ . '/../vendor/autoload.php';
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__ . '/..');
 $dotenv->load();
 
 // Database connection
@@ -33,6 +33,81 @@ function generateUuid($length = 13) {
         $uuid .= $chars[rand(0, strlen($chars) - 1)];
     }
     return $uuid;
+}
+
+// Device detection functions
+function detectDeviceType() {
+    $userAgent = $_SERVER['HTTP_USER_AGENT'] ?? '';
+    
+    if (preg_match('/(tablet|ipad|playbook)|(android(?!.*(mobi|opera mini)))/i', $userAgent)) {
+        return 'tablet';
+    }
+    
+    if (preg_match('/(mobile|iphone|ipod|android|blackberry|opera mini|opera mobi)/i', $userAgent)) {
+        return 'mobile';
+    }
+    
+    return 'desktop';
+}
+
+function detectDeviceName() {
+    $userAgent = $_SERVER['HTTP_USER_AGENT'] ?? '';
+    
+    // Check for common browsers
+    if (preg_match('/MSIE|Trident/i', $userAgent)) {
+        $browser = 'Internet Explorer';
+    } elseif (preg_match('/Firefox/i', $userAgent)) {
+        $browser = 'Firefox';
+    } elseif (preg_match('/Chrome/i', $userAgent)) {
+        $browser = 'Chrome';
+    } elseif (preg_match('/Safari/i', $userAgent)) {
+        $browser = 'Safari';
+    } elseif (preg_match('/Opera|OPR/i', $userAgent)) {
+        $browser = 'Opera';
+    } elseif (preg_match('/Edge/i', $userAgent)) {
+        $browser = 'Edge';
+    } else {
+        $browser = 'Unknown Browser';
+    }
+    
+    // Check for OS
+    if (preg_match('/windows|win32|win64/i', $userAgent)) {
+        $os = 'Windows';
+    } elseif (preg_match('/macintosh|mac os x/i', $userAgent)) {
+        $os = 'MacOS';
+    } elseif (preg_match('/linux/i', $userAgent)) {
+        $os = 'Linux';
+    } elseif (preg_match('/android/i', $userAgent)) {
+        $os = 'Android';
+    } elseif (preg_match('/iphone|ipad|ipod/i', $userAgent)) {
+        $os = 'iOS';
+    } else {
+        $os = 'Unknown OS';
+    }
+    
+    return "$browser on $os";
+}
+
+function getClientIP() {
+    if (!empty($_SERVER['HTTP_CLIENT_IP'])) {
+        $ip = $_SERVER['HTTP_CLIENT_IP'];
+    } elseif (!empty($_SERVER['HTTP_X_FORWARDED_FOR'])) {
+        $ip = $_SERVER['HTTP_X_FORWARDED_FOR'];
+    } else {
+        $ip = $_SERVER['REMOTE_ADDR'] ?? '0.0.0.0';
+    }
+    
+    return $ip;
+}
+
+function getLocationFromIP($ip) {
+    // Simple example - in real implementation, you might use a geolocation API
+    if ($ip == '127.0.0.1' || $ip == '::1') {
+        return 'Local Network';
+    }
+    
+    // For now, return a generic string. In production, use a geolocation service
+    return 'Unknown Location';
 }
 
 // Handle registration
@@ -67,7 +142,7 @@ function registerUser($username, $email, $password, $profileImage = null, $skipI
     // Store profile image
     $profileImagePath = null;
     if ($profileImage && !empty($profileImage) && !$skipImageUpload) {
-        $uploadHandlerPath = __DIR__ . '/backend/handlers/upload_handler.php';
+        $uploadHandlerPath = __DIR__ . '/handlers/upload_handler.php';
         
         error_log("Looking for upload handler at: $uploadHandlerPath");
         
@@ -101,7 +176,8 @@ function registerUser($username, $email, $password, $profileImage = null, $skipI
         $stmt = $pdo->prepare("INSERT INTO users (uuid, username, email, password, profile_image) VALUES (?, ?, ?, ?, ?)");
         $stmt->execute([$uuid, $username, $email, $hashedPassword, $profileImagePath]);
         
-        $token = createJwtToken($pdo->lastInsertId(), $uuid, $username);
+        $userId = $pdo->lastInsertId();
+        $token = createJwtToken($userId, $uuid, $username);
         
         return [
             'success' => true,
@@ -169,13 +245,71 @@ function createJwtToken($userId, $uuid, $username) {
         'username' => $username
     ];
     
-    // Store session in database
-    $pdo = getDbConnection();
-    $stmt = $pdo->prepare("INSERT INTO sessions (user_id, token, expires_at) VALUES (?, ?, FROM_UNIXTIME(?))");
-    $token = bin2hex(random_bytes(32));
-    $stmt->execute([$userId, $token, $expirationTime]);
+    // Get device information for session tracking
+    $deviceType = detectDeviceType();
+    $deviceName = detectDeviceName();
+    $ipAddress = getClientIP();
+    $location = getLocationFromIP($ipAddress);
     
-    return $token;
+    error_log("Creating session for user $userId from $deviceName ($deviceType) at $location");
+    
+    // Check if sessions table has the new columns
+    $pdo = getDbConnection();
+    try {
+        // Check if the sessions table has device columns
+        $columnsExist = false;
+        try {
+            $tableInfo = $pdo->query("SHOW COLUMNS FROM sessions LIKE 'device_type'");
+            $columnsExist = ($tableInfo->rowCount() > 0);
+        } catch (PDOException $e) {
+            error_log("Error checking sessions table: " . $e->getMessage());
+        }
+        
+        // Add new columns if they don't exist
+        if (!$columnsExist) {
+            try {
+                $pdo->exec("
+                    ALTER TABLE sessions 
+                    ADD COLUMN device_type VARCHAR(50) DEFAULT NULL,
+                    ADD COLUMN device_name VARCHAR(100) DEFAULT NULL,
+                    ADD COLUMN ip_address VARCHAR(50) DEFAULT NULL,
+                    ADD COLUMN location VARCHAR(100) DEFAULT NULL
+                ");
+                error_log("Added device tracking columns to sessions table");
+            } catch (PDOException $e) {
+                error_log("Error adding columns to sessions table: " . $e->getMessage());
+                // Continue anyway - we'll just insert null values
+            }
+        }
+        
+        // Store session in database with device information
+        if ($columnsExist) {
+            $stmt = $pdo->prepare("
+                INSERT INTO sessions (
+                    user_id, token, expires_at, device_type, device_name, ip_address, location
+                ) VALUES (?, ?, FROM_UNIXTIME(?), ?, ?, ?, ?)
+            ");
+            $token = bin2hex(random_bytes(32));
+            $stmt->execute([
+                $userId, $token, $expirationTime, $deviceType, $deviceName, $ipAddress, $location
+            ]);
+        } else {
+            // Fallback to the original query if columns don't exist
+            $stmt = $pdo->prepare("INSERT INTO sessions (user_id, token, expires_at) VALUES (?, ?, FROM_UNIXTIME(?))");
+            $token = bin2hex(random_bytes(32));
+            $stmt->execute([$userId, $token, $expirationTime]);
+        }
+        
+        return $token;
+    } catch (PDOException $e) {
+        error_log("Error creating session: " . $e->getMessage());
+        // Fallback to simple token creation
+        $stmt = $pdo->prepare("INSERT INTO sessions (user_id, token, expires_at) VALUES (?, ?, FROM_UNIXTIME(?))");
+        $token = bin2hex(random_bytes(32));
+        $stmt->execute([$userId, $token, $expirationTime]);
+        
+        return $token;
+    }
 }
 
 // Verify JWT token

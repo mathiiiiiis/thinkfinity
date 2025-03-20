@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Thinkfinity - Page Not Found">
+    <meta name="keywords" content="learning, education, thinfinity, 404">
+    <meta name="author" content="Thinkfinity">
+    
+    <title>Thinkfinity - Page Not Found</title>
+    
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    
+    <link rel="stylesheet" href="/assets/css/index.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <script src="/js/vendor/modernizr-3.11.2.min.js"></script>
+    <script src="/assets/js/nav_dropdown.js"></script>
+    <script src="/backend/auth.js" defer></script>
+</head>
+<body>
+    <section class="navbar">
+      <div class="navbar-logo">
+        <img src="/assets/pictures/logos/logo_text_225x74.png" alt="Thinfinity Logo">
+      </div>
+      <div class="navbar-links">
+        <li class="navbar-link"><a href="/index.html">Explore</a></li>
+        <li class="navbar-link"><a href="#">Forum</a></li>
+        <li class="navbar-link"><a href="#">Classes</a></li>
+        <li class="navbar-link"><a href="/search.html">Members</a></li>
+      </div>
+      
+      <!-- User profile section - shows when logged in -->
+      <div class="navbar-user" id="userProfileSection">
+        <div class="navbar-dropdown">
+          <div class="profile-info">
+            <h2 class="navbar-dropdown-name" id="userDisplayName">Loading...</h2>
+            <img class="navbar-dropdown-profile" id="userProfilePic" src="/assets/pictures/default-profile.png" alt="User Profile">
+          </div>
+          <div class="dropdown-content">
+            <a href="/profile.html">My Profile</a>
+            <a href="/settings.html">Settings</a>
+            <a href="#" id="logoutBtn">Logout</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Login/Register buttons - shows when logged out -->
+      <div class="auth-buttons" id="authButtonsSection" style="display: none;">
+        <button class="login-btn" id="loginBtn">Login</button>
+        <button class="register-btn" id="registerBtn">Register</button>
+      </div>
+    </section>
+
+    <main class="error-container">
+        <div class="error-content">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="120" height="120">
+                <path d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20ZM11 15H13V17H11V15ZM11 7H13V13H11V7Z" fill="#DC3545"/>
+            </svg>
+            <h1>Page Not Found</h1>
+            <p>The page you're looking for doesn't exist or has been moved.</p>
+            <div class="error-actions">
+                <a href="/" class="primary-btn">Go to Homepage</a>
+                <a href="/search.html" class="secondary-btn">Find Members</a>
+            </div>
+        </div>
+    </main>
+
+    <style>
+        .error-container {
+            max-width: 800px;
+            margin: 5rem auto;
+            padding: 0 2rem;
+            text-align: center;
+        }
+        
+        .error-content {
+            background-color: var(--card-bg);
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            padding: 3rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: var(--card-border);
+        }
+        
+        .error-content h1 {
+            font-size: 2.5rem;
+            margin: 1rem 0;
+            color: var(--primary-color);
+        }
+        
+        .error-content p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            color: var(--text-secondary);
+        }
+        
+        .error-actions {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .primary-btn, .secondary-btn {
+            padding: 0.8rem 1.5rem;
+            border-radius: var(--border-radius);
+            font-weight: 500;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .primary-btn {
+            background-color: var(--primary-color);
+            color: white;
+        }
+        
+        .primary-btn:hover {
+            background-color: var(--primary-hover);
+            text-decoration: none;
+            color: white;
+        }
+        
+        .secondary-btn {
+            background-color: var(--light-color);
+            color: var(--text-color);
+            border: 1px solid #e0e0e0;
+        }
+        
+        .secondary-btn:hover {
+            background-color: #e0e0e0;
+            text-decoration: none;
+        }
+        
+        @media (max-width: 600px) {
+            .error-actions {
+                flex-direction: column;
+            }
+        }
+    </style>
+</body>
+</html>

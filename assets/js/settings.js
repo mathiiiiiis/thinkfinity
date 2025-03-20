@@ -29,6 +29,47 @@ document.addEventListener('DOMContentLoaded', () => {
     // Debug flag
     const DEBUG = true;
     
+    // Define education options by country
+    const educationOptions = {
+        // German education options
+        'de': [
+            { value: 'hauptschule', label: 'Hauptschulabschluss' },
+            { value: 'realschule', label: 'Realschulabschluss (Mittlere Reife)' },
+            { value: 'abitur', label: 'Abitur/Fachabitur' },
+            { value: 'ausbildung', label: 'Abgeschlossene Berufsausbildung' },
+            { value: 'bachelor', label: 'Bachelor' },
+            { value: 'master', label: 'Master/Diplom/Magister' },
+            { value: 'promotion', label: 'Promotion (Doktortitel)' },
+            { value: 'other', label: 'Sonstiges' }
+        ],
+        // Default education options for other countries
+        'default': [
+            { value: 'high-school', label: 'High School' },
+            { value: 'associate', label: 'Associate Degree' },
+            { value: 'bachelor', label: 'Bachelor\'s Degree' },
+            { value: 'master', label: 'Master\'s Degree' },
+            { value: 'phd', label: 'PhD or Doctorate' },
+            { value: 'other', label: 'Other' }
+        ]
+    };
+    
+    // Function to update education options based on selected country
+    function updateEducationOptions(country) {
+        // Clear existing options
+        educationSelect.innerHTML = '';
+        
+        // Get appropriate options list based on country
+        const options = educationOptions[country] || educationOptions['default'];
+        
+        // Add options to select element
+        options.forEach(option => {
+            const optionElement = document.createElement('option');
+            optionElement.value = option.value;
+            optionElement.textContent = option.label;
+            educationSelect.appendChild(optionElement);
+        });
+    }
+    
     // Initialize settings
     loadUserSettings();
     
@@ -46,6 +87,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 const panel = document.getElementById(`${tabId}-panel`);
                 if (panel) panel.classList.add('active');
             });
+        });
+    }
+    
+    // Event listener for country change
+    if (countrySelect) {
+        countrySelect.addEventListener('change', () => {
+            updateEducationOptions(countrySelect.value);
         });
     }
     
@@ -125,8 +173,29 @@ document.addEventListener('DOMContentLoaded', () => {
             option.addEventListener('click', () => {
                 colorOptions.forEach(o => o.classList.remove('active'));
                 option.classList.add('active');
+                
+                // Immediately apply the color for preview
+                const color = option.getAttribute('data-color');
+                document.body.style.setProperty('--primary-color', color);
+                document.body.style.setProperty('--primary-hover', adjustColorBrightness(color, -10));
             });
         });
+    }
+    
+    // Helper function to adjust color brightness for hover states
+    function adjustColorBrightness(hex, percent) {
+        // Convert hex to RGB
+        let r = parseInt(hex.substring(1, 3), 16);
+        let g = parseInt(hex.substring(3, 5), 16);
+        let b = parseInt(hex.substring(5, 7), 16);
+        
+        // Adjust brightness
+        r = Math.max(0, Math.min(255, r + percent));
+        g = Math.max(0, Math.min(255, g + percent));
+        b = Math.max(0, Math.min(255, b + percent));
+        
+        // Convert back to hex
+        return `#${r.toString(16).padStart(2, '0')}${g.toString(16).padStart(2, '0')}${b.toString(16).padStart(2, '0')}`;
     }
     
     // Apply Appearance Settings
@@ -257,6 +326,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (countrySelect) {
                     countrySelect.value = data.settings.country || 'us';
                     if (DEBUG) console.log('Updated country to:', countrySelect.value);
+                    
+                    // Update education options based on country
+                    updateEducationOptions(countrySelect.value);
                 }
                 if (educationSelect) {
                     educationSelect.value = data.settings.education || 'high-school';
@@ -298,7 +370,11 @@ document.addEventListener('DOMContentLoaded', () => {
         // Set other fields to empty or default values
         if (fullNameInput) fullNameInput.value = '';
         if (phoneInput) phoneInput.value = '';
-        if (countrySelect) countrySelect.value = 'us';
+        if (countrySelect) {
+            countrySelect.value = 'us';
+            // Update education options based on country
+            updateEducationOptions(countrySelect.value);
+        }
         if (educationSelect) educationSelect.value = 'high-school';
         if (fieldInput) fieldInput.value = '';
     }
@@ -526,9 +602,10 @@ document.addEventListener('DOMContentLoaded', () => {
             htmlElement.style.fontSize = `${settings.fontSize}%`;
         }
         
-        // Apply accent color
+        // Apply accent color - FIX: Update both CSS variables
         if (settings.accentColor) {
-            document.body.style.setProperty('--accent-color', settings.accentColor);
+            document.body.style.setProperty('--primary-color', settings.accentColor);
+            document.body.style.setProperty('--primary-hover', adjustColorBrightness(settings.accentColor, -10));
             
             // Update color options UI to match
             if (colorOptions && colorOptions.length) {

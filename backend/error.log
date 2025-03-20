@@ -1,0 +1,100 @@
+[18-Mar-2025 20:31:57 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[18-Mar-2025 20:31:57 UTC] Successfully loaded autoload.php
+[18-Mar-2025 20:31:57 UTC] Loaded .env file from /var/www/html
+[18-Mar-2025 20:31:57 UTC] Received JSON: {"query":"mathis","filter":"all","page":1,"limit":10,"token":"1b34bf846d655667c48a9e7ad890a15df0cfa8dc8a61e37c1c101fc8c896a5ab"}
+[18-Mar-2025 20:31:57 UTC] Processing search action: search_users
+[18-Mar-2025 20:31:57 UTC] User search error: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[18-Mar-2025 20:36:20 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[18-Mar-2025 20:36:20 UTC] Successfully loaded autoload.php
+[18-Mar-2025 20:36:20 UTC] Loaded .env file from /var/www/html
+[18-Mar-2025 20:36:20 UTC] Received JSON: {"uuid":"profile.html","token":"1b34bf846d655667c48a9e7ad890a15df0cfa8dc8a61e37c1c101fc8c896a5ab"}
+[18-Mar-2025 20:36:20 UTC] Processing profile action: public_profile
+[18-Mar-2025 20:36:24 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[18-Mar-2025 20:36:25 UTC] Successfully loaded autoload.php
+[18-Mar-2025 20:36:25 UTC] Loaded .env file from /var/www/html
+[18-Mar-2025 20:36:25 UTC] Received JSON: {"uuid":"profile.html","token":"1b34bf846d655667c48a9e7ad890a15df0cfa8dc8a61e37c1c101fc8c896a5ab"}
+[18-Mar-2025 20:36:25 UTC] Processing profile action: public_profile
+[18-Mar-2025 20:36:33 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[18-Mar-2025 20:36:33 UTC] Successfully loaded autoload.php
+[18-Mar-2025 20:36:33 UTC] Loaded .env file from /var/www/html
+[18-Mar-2025 20:36:33 UTC] Received JSON: {"query":"mathis","filter":"all","page":1,"limit":10,"token":"1b34bf846d655667c48a9e7ad890a15df0cfa8dc8a61e37c1c101fc8c896a5ab"}
+[18-Mar-2025 20:36:33 UTC] Processing search action: search_users
+[18-Mar-2025 20:36:33 UTC] User search error: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[18-Mar-2025 20:36:40 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[18-Mar-2025 20:36:40 UTC] Successfully loaded autoload.php
+[18-Mar-2025 20:36:40 UTC] Loaded .env file from /var/www/html
+[18-Mar-2025 20:36:40 UTC] Received JSON: {"query":"4nTfFEp5WOjjG","filter":"all","page":1,"limit":10,"token":"1b34bf846d655667c48a9e7ad890a15df0cfa8dc8a61e37c1c101fc8c896a5ab"}
+[18-Mar-2025 20:36:40 UTC] Processing search action: search_users
+[18-Mar-2025 20:36:40 UTC] User search error: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[18-Mar-2025 20:37:55 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[18-Mar-2025 20:37:55 UTC] Successfully loaded autoload.php
+[18-Mar-2025 20:37:55 UTC] Loaded .env file from /var/www/html
+[18-Mar-2025 20:37:55 UTC] Received JSON: {"token":"1b34bf846d655667c48a9e7ad890a15df0cfa8dc8a61e37c1c101fc8c896a5ab"}
+[18-Mar-2025 20:37:55 UTC] Processing profile action: get_profile
+[18-Mar-2025 20:43:06 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[18-Mar-2025 20:43:06 UTC] Successfully loaded autoload.php
+[18-Mar-2025 20:43:06 UTC] Loaded .env file from /var/www/html
+[18-Mar-2025 20:43:06 UTC] Received JSON: {"token":"1b34bf846d655667c48a9e7ad890a15df0cfa8dc8a61e37c1c101fc8c896a5ab"}
+[18-Mar-2025 20:43:06 UTC] Processing profile action: get_profile
+[18-Mar-2025 20:46:32 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[18-Mar-2025 20:46:32 UTC] Successfully loaded autoload.php
+[18-Mar-2025 20:46:32 UTC] Loaded .env file from /var/www/html
+[18-Mar-2025 20:46:32 UTC] Received JSON: {"query":"mathis","filter":"all","page":1,"limit":10,"token":"1b34bf846d655667c48a9e7ad890a15df0cfa8dc8a61e37c1c101fc8c896a5ab"}
+[18-Mar-2025 20:46:32 UTC] Processing search action: search_users
+[18-Mar-2025 20:46:32 UTC] User search error: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[18-Mar-2025 20:47:39 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[18-Mar-2025 20:47:39 UTC] Successfully loaded autoload.php
+[18-Mar-2025 20:47:39 UTC] Loaded .env file from /var/www/html
+[18-Mar-2025 20:47:39 UTC] Received JSON: {"query":"mathis","filter":"all","page":1,"limit":10,"token":"1b34bf846d655667c48a9e7ad890a15df0cfa8dc8a61e37c1c101fc8c896a5ab"}
+[18-Mar-2025 20:47:39 UTC] Processing search action: search_users
+[18-Mar-2025 20:47:39 UTC] User search error: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''10' OFFSET '0'' at line 8
+[18-Mar-2025 20:48:31 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[18-Mar-2025 20:48:31 UTC] Successfully loaded autoload.php
+[18-Mar-2025 20:48:31 UTC] Loaded .env file from /var/www/html
+[18-Mar-2025 20:48:31 UTC] Received JSON: {"query":"mathis","filter":"all","page":1,"limit":10,"token":"1b34bf846d655667c48a9e7ad890a15df0cfa8dc8a61e37c1c101fc8c896a5ab"}
+[18-Mar-2025 20:48:31 UTC] Processing search action: search_users
+[18-Mar-2025 20:48:33 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[18-Mar-2025 20:48:33 UTC] Successfully loaded autoload.php
+[18-Mar-2025 20:48:33 UTC] Loaded .env file from /var/www/html
+[18-Mar-2025 20:48:33 UTC] Received JSON: {"token":"1b34bf846d655667c48a9e7ad890a15df0cfa8dc8a61e37c1c101fc8c896a5ab"}
+[18-Mar-2025 20:48:33 UTC] Processing profile action: get_profile
+[18-Mar-2025 20:48:40 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[18-Mar-2025 20:48:40 UTC] Successfully loaded autoload.php
+[18-Mar-2025 20:48:40 UTC] Loaded .env file from /var/www/html
+[18-Mar-2025 20:48:40 UTC] Received JSON: {"uuid":"4nTfFEp5WOjjG","token":""}
+[18-Mar-2025 20:48:40 UTC] Processing profile action: public_profile
+[18-Mar-2025 20:49:20 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[18-Mar-2025 20:49:20 UTC] Successfully loaded autoload.php
+[18-Mar-2025 20:49:20 UTC] Loaded .env file from /var/www/html
+[18-Mar-2025 20:49:20 UTC] Received JSON: {"uuid":"4nTfFEp5WOjjG","token":""}
+[18-Mar-2025 20:49:20 UTC] Processing profile action: public_profile
+[18-Mar-2025 20:53:12 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[18-Mar-2025 20:53:12 UTC] Successfully loaded autoload.php
+[18-Mar-2025 20:53:12 UTC] Loaded .env file from /var/www/html
+[18-Mar-2025 20:53:12 UTC] Received JSON: {"query":"ma","filter":"all","page":1,"limit":10,"token":"b8c88597cbfe5bb3b85aace0333cd11fcfc5c2548e246e290bb0b2b82a8b1c02"}
+[18-Mar-2025 20:53:12 UTC] Processing search action: search_users
+[18-Mar-2025 20:53:17 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[18-Mar-2025 20:53:17 UTC] Successfully loaded autoload.php
+[18-Mar-2025 20:53:17 UTC] Loaded .env file from /var/www/html
+[18-Mar-2025 20:53:17 UTC] Received JSON: {"token":"b8c88597cbfe5bb3b85aace0333cd11fcfc5c2548e246e290bb0b2b82a8b1c02"}
+[18-Mar-2025 20:53:17 UTC] Processing profile action: get_profile
+[18-Mar-2025 20:53:30 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[18-Mar-2025 20:53:30 UTC] Successfully loaded autoload.php
+[18-Mar-2025 20:53:30 UTC] Loaded .env file from /var/www/html
+[18-Mar-2025 20:53:30 UTC] Received JSON: {"token":"b8c88597cbfe5bb3b85aace0333cd11fcfc5c2548e246e290bb0b2b82a8b1c02"}
+[18-Mar-2025 20:53:30 UTC] Processing profile action: get_profile
+[18-Mar-2025 20:54:12 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[18-Mar-2025 20:54:12 UTC] Successfully loaded autoload.php
+[18-Mar-2025 20:54:12 UTC] Loaded .env file from /var/www/html
+[18-Mar-2025 20:54:12 UTC] Received JSON: {"token":"b8c88597cbfe5bb3b85aace0333cd11fcfc5c2548e246e290bb0b2b82a8b1c02","username":"mathis","tagline":"Learning enthusiast","bio":"nigger"}
+[18-Mar-2025 20:54:12 UTC] Processing profile action: update_profile
+[18-Mar-2025 20:54:24 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[18-Mar-2025 20:54:24 UTC] Successfully loaded autoload.php
+[18-Mar-2025 20:54:24 UTC] Loaded .env file from /var/www/html
+[18-Mar-2025 20:54:24 UTC] Received JSON: {"query":"m","filter":"all","page":1,"limit":10,"token":""}
+[18-Mar-2025 20:54:24 UTC] Processing search action: search_users
+[18-Mar-2025 20:54:26 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[18-Mar-2025 20:54:26 UTC] Successfully loaded autoload.php
+[18-Mar-2025 20:54:26 UTC] Loaded .env file from /var/www/html
+[18-Mar-2025 20:54:26 UTC] Received JSON: {"uuid":"4nTfFEp5WOjjG","token":""}
+[18-Mar-2025 20:54:26 UTC] Processing profile action: public_profile

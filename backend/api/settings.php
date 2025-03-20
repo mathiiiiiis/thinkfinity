@@ -125,6 +125,30 @@ if ($action) {
                 ]);
                 break;
                 
+            case 'get_sessions':
+                $result = getUserSessions($userId);
+                echo json_encode($result);
+                break;
+                
+            case 'terminate_session':
+                if (!isset($data['sessionId'])) {
+                    throw new Exception('Session ID is required');
+                }
+                
+                $result = terminateSession($userId, $data['sessionId']);
+                echo json_encode($result);
+                break;
+                
+            case 'download_data':
+                exportUserData($userId);
+                // Note: exportUserData will exit the script after sending the file
+                break;
+                
+            case 'delete_account':
+                $result = deleteUserAccount($userId);
+                echo json_encode($result);
+                break;
+                
             default:
                 throw new Exception('Invalid action');
         }
@@ -526,4 +550,277 @@ function updateUserSettings($userId, $data) {
         error_log('Settings update error: ' . $e->getMessage() . "\nTrace: " . $e->getTraceAsString());
         return ['success' => false, 'message' => 'Failed to update settings: ' . $e->getMessage()];
     }
+}
+
+// Get active sessions
+function getUserSessions($userId) {
+    $pdo = getDbConnection();
+    
+    try {
+        // Check if the sessions table has the required columns
+        $columnsExist = false;
+        try {
+            $tableInfo = $pdo->query("SHOW COLUMNS FROM sessions LIKE 'device_type'");
+            $columnsExist = ($tableInfo->rowCount() > 0);
+        } catch (PDOException $e) {
+            error_log("Error checking sessions table columns: " . $e->getMessage());
+        }
+        
+        // Add columns if they don't exist
+        if (!$columnsExist) {
+            try {
+                $pdo->exec("
+                    ALTER TABLE sessions 
+                    ADD COLUMN device_type VARCHAR(50) DEFAULT NULL,
+                    ADD COLUMN device_name VARCHAR(100) DEFAULT NULL,
+                    ADD COLUMN ip_address VARCHAR(50) DEFAULT NULL,
+                    ADD COLUMN location VARCHAR(100) DEFAULT NULL
+                ");
+                error_log("Added device tracking columns to sessions table");
+            } catch (PDOException $e) {
+                error_log("Error adding columns to sessions table: " . $e->getMessage());
+                // Continue anyway - we'll just use null values
+            }
+        }
+        
+        // Get all active sessions for the user
+        $stmt = $pdo->prepare("
+            SELECT s.id, s.token, s.created_at, s.expires_at, 
+                   s.device_type, s.device_name, s.ip_address, s.location
+            FROM sessions s
+            WHERE s.user_id = ?
+            ORDER BY s.created_at DESC
+        ");
+        $stmt->execute([$userId]);
+        
+        $sessions = $stmt->fetchAll(PDO::FETCH_ASSOC);
+        
+        // Get current session ID
+        $token = getCurrentToken();
+        $currentSession = null;
+        
+        if ($token) {
+            $stmt = $pdo->prepare("SELECT id FROM sessions WHERE token = ?");
+            $stmt->execute([$token]);
+            $result = $stmt->fetch(PDO::FETCH_ASSOC);
+            
+            if ($result) {
+                $currentSession = $result['id'];
+            }
+        }
+        
+        // If sessions are missing device info, fill it with defaults
+        foreach ($sessions as &$session) {
+            if (empty($session['device_type']) && empty($session['device_name'])) {
+                $session['device_type'] = 'desktop';
+                $session['device_name'] = 'Unknown device';
+            }
+            
+            if (empty($session['location'])) {
+                $session['location'] = 'Unknown location';
+            }
+        }
+        
+        return [
+            'success' => true,
+            'sessions' => $sessions,
+            'currentSessionId' => $currentSession
+        ];
+    } catch (PDOException $e) {
+        error_log('Error fetching sessions: ' . $e->getMessage());
+        return [
+            'success' => false,
+            'message' => 'Failed to retrieve sessions: ' . $e->getMessage()
+        ];
+    }
+}
+
+// Terminate a specific session
+function terminateSession($userId, $sessionId) {
+    $pdo = getDbConnection();
+    
+    try {
+        // Check if the session belongs to the user
+        $stmt = $pdo->prepare("
+            SELECT id FROM sessions 
+            WHERE id = ? AND user_id = ?
+        ");
+        $stmt->execute([$sessionId, $userId]);
+        
+        if ($stmt->rowCount() === 0) {
+            return [
+                'success' => false,
+                'message' => 'Session not found or does not belong to you'
+            ];
+        }
+        
+        // Delete the session
+        $stmt = $pdo->prepare("DELETE FROM sessions WHERE id = ?");
+        $stmt->execute([$sessionId]);
+        
+        return [
+            'success' => true,
+            'message' => 'Session terminated successfully'
+        ];
+    } catch (PDOException $e) {
+        error_log('Error terminating session: ' . $e->getMessage());
+        return [
+            'success' => false,
+            'message' => 'Failed to terminate session: ' . $e->getMessage()
+        ];
+    }
+}
+
+// Export user data
+function exportUserData($userId) {
+    $pdo = getDbConnection();
+    
+    try {
+        // Get user data
+        $userData = [];
+        
+        // Get user basic info
+        $stmt = $pdo->prepare("
+            SELECT id, uuid, username, email, profile_image, created_at, updated_at
+            FROM users
+            WHERE id = ?
+        ");
+        $stmt->execute([$userId]);
+        $userData['user'] = $stmt->fetch(PDO::FETCH_ASSOC);
+        
+        // Get user profile if it exists
+        try {
+            $stmt = $pdo->prepare("
+                SELECT tagline, bio, created_at, updated_at
+                FROM user_profiles
+                WHERE user_id = ?
+            ");
+            $stmt->execute([$userId]);
+            $userData['profile'] = $stmt->fetch(PDO::FETCH_ASSOC);
+        } catch (PDOException $e) {
+            error_log('Error fetching user profile data: ' . $e->getMessage());
+            $userData['profile'] = null;
+        }
+        
+        // Get user settings
+        $stmt = $pdo->prepare("
+            SELECT full_name, phone, country, education, field_of_study, 
+                   theme, font_size, accent_color, created_at, updated_at
+            FROM user_settings
+            WHERE user_id = ?
+        ");
+        $stmt->execute([$userId]);
+        $userData['settings'] = $stmt->fetch(PDO::FETCH_ASSOC);
+        
+        // Get sessions
+        $stmt = $pdo->prepare("
+            SELECT created_at, expires_at, device_type, device_name, ip_address, location
+            FROM sessions
+            WHERE user_id = ?
+        ");
+        $stmt->execute([$userId]);
+        $userData['sessions'] = $stmt->fetchAll(PDO::FETCH_ASSOC);
+        
+        // Convert to JSON
+        $jsonData = json_encode($userData, JSON_PRETTY_PRINT);
+        
+        // Set headers for file download
+        header('Content-Type: application/json');
+        header('Content-Disposition: attachment; filename="user_data_' . $userData['user']['username'] . '.json"');
+        header('Content-Length: ' . strlen($jsonData));
+        
+        // Send file
+        echo $jsonData;
+        exit;
+        
+    } catch (PDOException $e) {
+        error_log('Error exporting user data: ' . $e->getMessage());
+        header('Content-Type: application/json');
+        echo json_encode([
+            'success' => false,
+            'message' => 'Failed to export user data: ' . $e->getMessage()
+        ]);
+        exit;
+    }
+}
+
+// Delete user account
+function deleteUserAccount($userId) {
+    $pdo = getDbConnection();
+    
+    try {
+        // Start a transaction
+        $pdo->beginTransaction();
+        
+        // Delete all sessions
+        $stmt = $pdo->prepare("DELETE FROM sessions WHERE user_id = ?");
+        $stmt->execute([$userId]);
+        
+        // Delete user settings
+        $stmt = $pdo->prepare("DELETE FROM user_settings WHERE user_id = ?");
+        $stmt->execute([$userId]);
+        
+        // Delete user profile if exists
+        try {
+            $stmt = $pdo->prepare("DELETE FROM user_profiles WHERE user_id = ?");
+            $stmt->execute([$userId]);
+        } catch (PDOException $e) {
+            error_log("Error deleting user profile (might not exist): " . $e->getMessage());
+            // Continue with account deletion even if profile deletion fails
+        }
+        
+        // Delete any other user related data in other tables
+        // Add more delete statements for any other tables with user_id foreign keys
+        
+        // Finally delete the user
+        $stmt = $pdo->prepare("DELETE FROM users WHERE id = ?");
+        $stmt->execute([$userId]);
+        
+        // Commit the transaction
+        $pdo->commit();
+        
+        return [
+            'success' => true,
+            'message' => 'Account deleted successfully'
+        ];
+        
+    } catch (PDOException $e) {
+        // Rollback in case of error
+        $pdo->rollBack();
+        
+        error_log('Error deleting user account: ' . $e->getMessage());
+        return [
+            'success' => false,
+            'message' => 'Failed to delete account: ' . $e->getMessage()
+        ];
+    }
+}
+
+// Helper function to get current token
+function getCurrentToken() {
+    // Try to get token from Authorization header
+    $headers = getallheaders();
+    $authHeader = $headers['Authorization'] ?? '';
+    
+    if (strpos($authHeader, 'Bearer ') === 0) {
+        return trim(substr($authHeader, 7));
+    }
+    
+    // Try to get token from request body
+    $jsonInput = file_get_contents('php://input');
+    if (!empty($jsonInput)) {
+        $data = json_decode($jsonInput, true);
+        if (json_last_error() === JSON_ERROR_NONE && isset($data['token'])) {
+            return $data['token'];
+        }
+    }
+    
+    // Try to get token from cookies
+    foreach ($_COOKIE as $name => $value) {
+        if (strpos($name, 'auth_') === 0 || strpos($name, 'token') !== false || $name === 'authToken') {
+            return $value;
+        }
+    }
+    
+    return null;
 }

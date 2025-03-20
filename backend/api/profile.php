@@ -1,5 +1,5 @@
 <?php
-// Backend settings API handling
+// Backend profile API handling
 ob_start();
 
 error_reporting(E_ALL);
@@ -75,14 +75,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $action = $_GET['action'] ?? '';
     error_log("Processing profile action: $action");
     
-    // Verify token for all requests except where noted
-    if (!isset($data['token']) && $action !== 'public_profile') {
-        http_response_code(401);
-        echo json_encode(['success' => false, 'message' => 'Authentication required']);
-        exit;
-    }
-    
+    // Public profile doesn't require token
     if ($action !== 'public_profile') {
+        // Verify token for all requests except public_profile
+        if (!isset($data['token'])) {
+            http_response_code(401);
+            echo json_encode(['success' => false, 'message' => 'Authentication required']);
+            exit;
+        }
+        
         $tokenResult = verifyToken($data['token']);
         
         if (!$tokenResult['success']) {
@@ -117,8 +118,23 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             break;
             
         case 'public_profile':
-            http_response_code(404);
-            echo json_encode(['success' => false, 'message' => 'Public profile endpoint not implemented']);
+            // Get public profile by UUID
+            if (!isset($data['uuid'])) {
+                http_response_code(400);
+                echo json_encode(['success' => false, 'message' => 'User UUID is required']);
+                exit;
+            }
+            
+            $profileData = getPublicProfile($data['uuid']);
+            
+            if ($profileData) {
+                echo json_encode([
+                    'success' => true,
+                    'profile' => $profileData
+                ]);
+            } else {
+                echo json_encode(['success' => false, 'message' => 'User not found']);
+            }
             break;
             
         default:
@@ -229,6 +245,39 @@ function getUserProfile($userId) {
     }
 }
 
+// Get public profile by UUID
+function getPublicProfile($uuid) {
+    $pdo = getDbConnection();
+    
+    try {
+        // Get user and profile information
+        $stmt = $pdo->prepare("
+            SELECT u.username, u.profile_image, u.uuid, up.tagline, up.bio
+            FROM users u
+            LEFT JOIN user_profiles up ON u.id = up.user_id
+            WHERE u.uuid = ?
+        ");
+        $stmt->execute([$uuid]);
+        
+        if ($stmt->rowCount() === 0) {
+            return null;
+        }
+        
+        $data = $stmt->fetch(PDO::FETCH_ASSOC);
+        
+        return [
+            'username' => $data['username'],
+            'uuid' => $data['uuid'],
+            'profileImage' => $data['profile_image'],
+            'tagline' => $data['tagline'] ?? 'Learning enthusiast',
+            'bio' => $data['bio'] ?? 'This user has not added a bio yet.'
+        ];
+    } catch (PDOException $e) {
+        error_log('Public profile fetch error: ' . $e->getMessage());
+        return null;
+    }
+}
+
 // Update user profile
 function updateUserProfile($userId, $data) {
     $pdo = getDbConnection();
@@ -323,6 +372,6 @@ function updateUserProfile($userId, $data) {
         // Rollback transaction on error
         $pdo->rollBack();
         error_log('Profile update error: ' . $e->getMessage());
-            return ['success' => false, 'message' => 'Failed to update profile: ' . $e->getMessage()];
-        }
+        return ['success' => false, 'message' => 'Failed to update profile: ' . $e->getMessage()];
     }
+}

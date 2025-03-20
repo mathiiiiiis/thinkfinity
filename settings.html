@@ -27,6 +27,7 @@
     <script src="assets/js/nav_dropdown.js"></script>
     <script src="backend/auth.js" defer></script>
     <script src="assets/js/settings.js" defer></script>
+    <script src="assets/js/seesions.js"></script>
 </head>
 <body>
     <section class="navbar">
@@ -120,6 +121,7 @@
                         <div class="form-group">
                             <label for="country">Country</label>
                             <select id="country">
+                                <option value="de">Germany</option>
                                 <option value="us">United States</option>
                                 <option value="ca">Canada</option>
                                 <option value="uk">United Kingdom</option>
@@ -155,33 +157,69 @@
             <!-- Security Settings -->
             <div class="settings-panel" id="security-panel">
                 <h2>Security Settings</h2>
-                <form id="securitySettingsForm">
-                    <div class="form-section">
-                        <h3>Change Password</h3>
-                        <div class="form-group">
-                            <label for="currentPassword">Current Password</label>
-                            <input type="password" id="currentPassword">
-                        </div>
-                        <div class="form-group">
-                            <label for="newPassword">New Password</label>
-                            <input type="password" id="newPassword">
-                            <div class="password-strength">
-                                <div class="strength-meter">
-                                    <div class="strength-segment"></div>
-                                    <div class="strength-segment"></div>
-                                    <div class="strength-segment"></div>
-                                    <div class="strength-segment"></div>
-                                </div>
-                                <span class="strength-text">Password strength</span>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="confirmNewPassword">Confirm New Password</label>
-                            <input type="password" id="confirmNewPassword">
-                        </div>
-                        <button type="button" class="action-btn">Update Password</button>
+                
+                <!-- Password Section -->
+                <div class="form-section">
+                    <h3>Change Password</h3>
+                    <div class="form-group">
+                        <label for="currentPassword">Current Password</label>
+                        <input type="password" id="currentPassword">
                     </div>
-                </form>
+                    <div class="form-group">
+                        <label for="newPassword">New Password</label>
+                        <input type="password" id="newPassword">
+                        <div class="password-strength">
+                            <div class="strength-meter">
+                                <div class="strength-segment"></div>
+                                <div class="strength-segment"></div>
+                                <div class="strength-segment"></div>
+                                <div class="strength-segment"></div>
+                            </div>
+                            <span class="strength-text">Password strength</span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirmNewPassword">Confirm New Password</label>
+                        <input type="password" id="confirmNewPassword">
+                    </div>
+                    <button type="button" class="action-btn" id="updatePasswordBtn">Update Password</button>
+                </div>
+                
+                <!-- Active Sessions Section -->
+                <div class="form-section">
+                    <h3>Active Sessions</h3>
+                    <p class="section-description">These are devices that are currently logged into your account.</p>
+                    
+                    <div class="session-list" id="sessionList">
+                        <!-- Sessions will be populated here -->
+                        <div class="loading-sessions">Loading your sessions...</div>
+                    </div>
+                </div>
+                
+                <!-- Account Management Section -->
+                <div class="form-section">
+                    <h3>Account Management</h3>
+                    
+                    <div class="account-actions">
+                        <!-- Download Data Button -->
+                        <div class="account-action">
+                            <div class="action-info">
+                                <h4>Download Your Data</h4>
+                                <p>Get a copy of all your data including profile information, settings, and activity.</p>
+                            </div>
+                            <button type="button" class="outlined-btn" id="downloadDataBtn">Download Data</button>
+                        </div>
+                        
+                        <!-- Delete Account Button -->
+                        <div class="account-action">
+                            <div class="action-info">
+                                <h4>Delete Account</h4>
+                                <p>Permanently delete your account and all associated data. This action cannot be undone.</p>
+                            </div>
+                            <button type="button" class="danger-btn" id="deleteAccountBtn">Delete Account</button>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <!-- Appearance Settings -->

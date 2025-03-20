@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Thinkfinity - User Profile">
+    <meta name="keywords" content="learning, education, thinfinity, profile">
+    <meta name="author" content="Thinkfinity">
+    
+    <title>Thinkfinity - User Profile</title>
+    
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    
+    <link rel="stylesheet" href="/assets/css/index.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/auth.css">
+    <link rel="stylesheet" href="/assets/css/profile.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <script src="/js/vendor/modernizr-3.11.2.min.js"></script>
+    <script src="/assets/js/plugins.js" defer></script>
+    <script src="/assets/js/main.js" defer></script>
+    <script src="/assets/js/nav_dropdown.js"></script>
+    <script src="/backend/auth.js" defer></script>
+    <script src="/assets/js/public-profile.js" defer></script>
+</head>
+<body>
+    <section class="navbar">
+      <div class="navbar-logo">
+        <img src="/assets/pictures/logos/logo_text_225x74.png" alt="Thinfinity Logo">
+      </div>
+      <div class="navbar-links">
+        <li class="navbar-link"><a href="/index.html">Explore</a></li>
+        <li class="navbar-link"><a href="#">Forum</a></li>
+        <li class="navbar-link"><a href="#">Classes</a></li>
+        <li class="navbar-link"><a href="/search.html">Members</a></li>
+      </div>
+      
+      <!-- User profile section - shows when logged in -->
+      <div class="navbar-user" id="userProfileSection">
+        <div class="navbar-dropdown">
+          <div class="profile-info">
+            <h2 class="navbar-dropdown-name" id="userDisplayName">Loading...</h2>
+            <img class="navbar-dropdown-profile" id="userProfilePic" src="/assets/pictures/default-profile.png" alt="User Profile">
+          </div>
+          <div class="dropdown-content">
+            <a href="/profile.html">My Profile</a>
+            <a href="/settings.html">Settings</a>
+            <a href="#" id="logoutBtn">Logout</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Login/Register buttons - shows when logged out -->
+      <div class="auth-buttons" id="authButtonsSection" style="display: none;">
+        <button class="login-btn" id="loginBtn">Login</button>
+        <button class="register-btn" id="registerBtn">Register</button>
+      </div>
+    </section>
+
+    <main class="profile-container">
+        <div class="profile-header">
+            <div class="profile-cover-image"></div>
+            <div class="profile-user-info">
+                <div class="profile-picture-container">
+                    <img id="profileImage" src="/assets/pictures/default-profile.png" alt="Profile Picture" class="user-brief-pic">
+                </div>
+                <div class="profile-details">
+                    <h1 id="profileUsername">Loading...</h1>
+                    <p class="profile-tagline" id="profileTagline">Loading...</p>
+                </div>
+                <div class="profile-actions">
+                    <button class="connect-btn" id="connectBtn">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" class="connect-icon">
+                            <path d="M14 14.252V22H4C4 17.5817 7.58172 14 12 14C12.6906 14 13.3608 14.0875 14 14.252ZM12 13C8.685 13 6 10.315 6 7C6 3.685 8.685 1 12 1C15.315 1 18 3.685 18 7C18 10.315 15.315 13 12 13ZM18 17V14H20V17H23V19H20V22H18V19H15V17H18Z" fill="currentColor"/>
+                        </svg>
+                        Connect
+                    </button>
+                    <button class="message-btn" id="messageBtn">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" class="message-icon">
+                            <path d="M3 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3ZM20 7.23792L12.0359 14.7954L4 7.24992V19H20V7.23792ZM4.51146 5L12.0359 12.1376L19.501 5H4.51146Z" fill="currentColor"/>
+                        </svg>
+                        Message
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="profile-tabs">
+            <button class="tab-btn active" data-tab="about">About</button>
+        </div>
+
+        <div class="profile-content">
+            <!-- About Tab (visible by default) -->
+            <div class="tab-content active" id="about-tab">
+                <h2>About</h2>
+                <div class="about-content">
+                    <div class="bio-section">
+                        <h3>Bio</h3>
+                        <p id="profileBio">Loading bio...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Connection Request Sent Modal -->
+    <div id="connectionModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="connection-success">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="64" height="64" class="success-icon">
+                    <path d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20ZM11.0026 16L6.75999 11.7574L8.17421 10.3431L11.0026 13.1716L16.6595 7.51472L18.0737 8.92893L11.0026 16Z" fill="#4A6FFF"/>
+                </svg>
+                <h3>Connection Request Sent</h3>
+                <p>Your connection request has been sent. You'll be notified when they respond.</p>
+                <button id="closeConnectionModal" class="primary-btn">Got it</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Message Modal -->
+    <div id="messageModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Send Message</h2>
+            <form id="messageForm">
+                <div class="form-group">
+                    <label for="messageSubject">Subject</label>
+                    <input type="text" id="messageSubject" placeholder="Enter message subject">
+                </div>
+                <div class="form-group">
+                    <label for="messageContent">Message</label>
+                    <textarea id="messageContent" rows="5" placeholder="Type your message here..."></textarea>
+                </div>
+                <div class="btn-group">
+                    <button type="button" id="cancelMessage" class="back-btn">Cancel</button>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- User not found template -->
+    <template id="userNotFoundTemplate">
+        <div class="not-found-container">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="64" height="64">
+                <path d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20ZM11 15H13V17H11V15ZM11 7H13V13H11V7Z" fill="#DC3545"/>
+            </svg>
+            <h2>User Not Found</h2>
+            <p>The user you're looking for doesn't exist or may have been removed.</p>
+            <a href="/search.html" class="primary-btn">Find Other Users</a>
+        </div>
+    </template>
+</body>
+</html>

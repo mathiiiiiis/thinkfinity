@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Thinkfinity - Find Members">
+    <meta name="keywords" content="learning, education, thinfinity, members, search">
+    <meta name="author" content="Thinkfinity">
+    
+    <title>Thinkfinity - Find Members</title>
+    
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/auth.css">
+    <link rel="stylesheet" href="assets/css/profile.css">
+    <link rel="stylesheet" href="assets/css/search.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+    <script src="assets/js/plugins.js" defer></script>
+    <script src="assets/js/main.js" defer></script>
+    <script src="assets/js/nav_dropdown.js"></script>
+    <script src="backend/auth.js" defer></script>
+    <script src="assets/js/search.js" defer></script>
+    <script src="assets/js/seesions.js"></script>
+</head>
+<body>
+    <section class="navbar">
+      <div class="navbar-logo">
+        <img src="assets/pictures/logos/logo_text_225x74.png" alt="Thinfinity Logo">
+      </div>
+      <div class="navbar-links">
+        <li class="navbar-link"><a href="index.html">Explore</a></li>
+        <li class="navbar-link"><a href="#">Forum</a></li>
+        <li class="navbar-link"><a href="#">Classes</a></li>
+        <li class="navbar-link active"><a href="search.html">Members</a></li>
+      </div>
+      
+      <!-- User profile section - shows when logged in -->
+      <div class="navbar-user" id="userProfileSection">
+        <div class="navbar-dropdown">
+          <div class="profile-info">
+            <h2 class="navbar-dropdown-name" id="userDisplayName">Loading...</h2>
+            <img class="navbar-dropdown-profile" id="userProfilePic" src="assets/pictures/default-profile.png" alt="User Profile">
+          </div>
+          <div class="dropdown-content">
+            <a href="profile.html">My Profile</a>
+            <a href="settings.html">Settings</a>
+            <a href="#" id="logoutBtn">Logout</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Login/Register buttons - shows when logged out -->
+      <div class="auth-buttons" id="authButtonsSection" style="display: none;">
+        <button class="login-btn" id="loginBtn">Login</button>
+        <button class="register-btn" id="registerBtn">Register</button>
+      </div>
+    </section>
+
+    <main class="search-container">
+        <div class="search-header">
+            <h1>Find Members</h1>
+            <p>Connect with other learners and expand your network</p>
+            
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Search by username or interests..." autofocus>
+                <button id="searchButton">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                        <path d="M18.031 16.6168L22.3137 20.8995L20.8995 22.3137L16.6168 18.031C15.0769 19.263 13.124 20 11 20C6.032 20 2 15.968 2 11C2 6.032 6.032 2 11 2C15.968 2 20 6.032 20 11C20 13.124 19.263 15.0769 18.031 16.6168ZM16.0247 15.8748C17.2475 14.6146 18 12.8956 18 11C18 7.1325 14.8675 4 11 4C7.1325 4 4 7.1325 4 11C4 14.8675 7.1325 18 11 18C12.8956 18 14.6146 17.2475 15.8748 16.0247L16.0247 15.8748Z" fill="#ffffff"/>
+                    </svg>
+                </button>
+            </div>
+            
+            <div class="search-filters">
+                <select id="filterField">
+                    <option value="all">All Fields</option>
+                    <option value="username">Username</option>
+                    <option value="interests">Interests</option>
+                    <option value="courses">Courses</option>
+                </select>
+            </div>
+        </div>
+        
+        <div class="search-results">
+            <div class="results-count">
+                <span id="resultCount">0</span> members found
+            </div>
+            
+            <div class="results-list" id="searchResults">
+                <!-- Search results will be loaded here -->
+                <div class="no-results">
+                    <p>Enter a search term to find members</p>
+                </div>
+            </div>
+            
+            <div class="results-pagination">
+                <button id="prevPage" disabled>&laquo; Previous</button>
+                <span id="paginationInfo">Page 1 of 1</span>
+                <button id="nextPage" disabled>Next &raquo;</button>
+            </div>
+        </div>
+    </main>
+
+    <template id="userCardTemplate">
+        <div class="user-card">
+            <div class="user-card-avatar">
+                <img src="" alt="User Profile" class="user-avatar">
+            </div>
+            <div class="user-card-info">
+                <h3 class="user-name"></h3>
+                <p class="user-tagline"></p>
+                <a href="#" class="view-profile-btn">View Profile</a>
+            </div>
+        </div>
+    </template>
+</body>
+</html>
