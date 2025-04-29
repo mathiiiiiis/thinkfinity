@@ -21,11 +21,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-    <script src="assetsjs/plugins.js" defer></script>
+    <script src="assets/js/plugins.js" defer></script>
     <script src="assets/js/main.js" defer></script>
     <script src="assets/js/nav_dropdown.js"></script>
     <script src="backend/auth.js" defer></script>
-    <script src="assets/js/seesions.js"></script>
+    <script src="assets/js/sessions.js"></script>
 </head>
 <body>
     <section class="navbar">
@@ -35,7 +35,7 @@
       <div class="navbar-links">
         <li class="navbar-link"><a href="index.html">Explore</a></li>
         <li class="navbar-link"><a href="#">Forum</a></li>
-        <li class="navbar-link"><a href="#">Classes</a></li>
+        <li class="navbar-link"><a href="classes.html">Classes</a></li>
       </div>
       
       <!-- User profile section - shows when logged in -->
@@ -135,9 +135,135 @@
       </div>
     </div>
 
-    <!-- Main content section -->
-    <main>
-      <!-- Your website content goes here -->
+    <!-- Main Dashboard Content -->
+    <main class="dashboard-container">
+      <!-- Welcome banner -->
+      <section class="welcome-banner">
+        <div class="welcome-text">
+          <h1>Welcome to <span class="highlight">Thinkfinity</span></h1>
+          <p>A better way to learn, connect, and grow</p>
+          <div class="welcome-actions">
+            <button class="primary-btn" id="exploreClassesBtn">Explore Classes</button>
+            <button class="secondary-btn" id="browseCommunityBtn">Browse Community</button>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Dashboard Sections -->
+      <div class="dashboard-grid">
+        <!-- Your Classes Section -->
+        <section class="dashboard-section your-classes">
+          <div class="section-header">
+            <h2>Your Classes</h2>
+            <a href="classes.html" class="view-all">View All</a>
+          </div>
+          <div class="class-cards" id="yourClassesList">
+            <div class="empty-state" id="noClassesMessage">
+              <p>You haven't joined any classes yet</p>
+              <a href="classes.html" class="action-link">Find Classes to Join</a>
+            </div>
+          </div>
+        </section>
+        
+        <!-- Upcoming Tasks Section -->
+        <section class="dashboard-section upcoming-tasks">
+          <div class="section-header">
+            <h2>Upcoming Tasks</h2>
+            <a href="#" class="view-all">View All</a>
+          </div>
+          <div class="task-list" id="upcomingTasksList">
+            <div class="empty-state" id="noTasksMessage">
+              <p>No upcoming tasks</p>
+            </div>
+          </div>
+        </section>
+        
+        <!-- Recent Activity Section -->
+        <section class="dashboard-section recent-activity">
+          <div class="section-header">
+            <h2>Recent Activity</h2>
+          </div>
+          <div class="activity-list" id="recentActivityList">
+            <div class="empty-state" id="noActivityMessage">
+              <p>No recent activity to show</p>
+            </div>
+          </div>
+        </section>
+        
+        <!-- Community Highlights Section -->
+        <section class="dashboard-section community-highlights">
+          <div class="section-header">
+            <h2>Community Highlights</h2>
+            <a href="#" class="view-all">View Forum</a>
+          </div>
+          <div class="community-posts" id="communityHighlightsList">
+            <div class="empty-state" id="noCommunityPostsMessage">
+              <p>No community posts to show</p>
+            </div>
+          </div>
+        </section>
+      </div>
+      
+      <!-- Featured Course Section 
+      <section class="featured-course">
+        <div class="featured-content">
+          <span class="featured-badge">Featured Course</span>
+          <h2>Introduction to Data Science</h2>
+          <p>Learn the fundamentals of data science, including data analysis, visualization, and machine learning basics.</p>
+          <div class="course-details">
+            <div class="detail-item">
+              <span class="detail-text">Dr. Michael Brooks</span>
+            </div>
+            <div class="detail-item">
+              <span class="detail-text">8 weeks</span>
+            </div>
+            <div class="detail-item">
+              <span class="detail-text">Certificate Available</span>
+            </div>
+          </div>
+          <button class="featured-btn">View Course</button>
+        </div>
+      </section> -->
     </main>
+
+    <footer class="site-footer">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="assets/pictures/logos/logo_text_225x74.png" alt="Thinfinity Logo">
+          <p>Better learning starts here</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-column">
+            <h3>Platform</h3>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Features</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Testimonials</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Resources</h3>
+            <ul>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Guides</a></li>
+              <li><a href="#">Support</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Legal</h3>
+            <ul>
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Cookie Policy</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Thinkfinity. All rights reserved.</p>
+      </div>
+    </footer>
 </body>
 </html>

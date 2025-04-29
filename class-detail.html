@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Thinkfinity Class Detail - View class information, assignments, and chat with classmates">
+    <meta name="keywords" content="learning, education, thinfinity, online learning, class details">
+    <meta name="author" content="Thinkfinity">
+    
+    <title>Class Detail - Thinkfinity</title>
+    
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/auth.css">
+    <link rel="stylesheet" href="assets/css/classes.css">
+    <link rel="stylesheet" href="assets/css/class-detail.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+    <script src="assets/js/plugins.js" defer></script>
+    <script src="assets/js/main.js" defer></script>
+    <script src="assets/js/nav_dropdown.js"></script>
+    <script src="backend/auth.js" defer></script>
+    <script src="assets/js/class-detail-loader.js" defer></script>
+</head>
+<body>
+    <section class="navbar">
+      <div class="navbar-logo">
+        <a href="/"><img src="assets/pictures/logos/logo_text_225x74.png" alt="Thinfinity Logo"></a>
+      </div>
+      <div class="navbar-links">
+        <li class="navbar-link"><a href="index.html">Explore</a></li>
+        <li class="navbar-link"><a href="#">Forum</a></li>
+        <li class="navbar-link"><a href="classes.html" class="active">Classes</a></li>
+      </div>
+      
+      <!-- User profile section - shows when logged in -->
+      <div class="navbar-user" id="userProfileSection">
+        <div class="navbar-dropdown">
+          <div class="profile-info">
+            <h2 class="navbar-dropdown-name" id="userDisplayName">Username</h2>
+            <img class="navbar-dropdown-profile" id="userProfilePic" src="" alt="User Profile">
+          </div>
+          <div class="dropdown-content">
+            <a href="profile.html">My Profile</a>
+            <a href="settings.html">Settings</a>
+            <a href="#" id="logoutBtn">Logout</a>
+          </div>
+        </div>
+      </div>
+
+          <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Login to Thinfinity</h2>
+        <form id="loginForm">
+          <div class="form-group">
+            <label for="loginEmail">Email</label>
+            <input type="email" id="loginEmail" required>
+          </div>
+          <div class="form-group">
+            <label for="loginPassword">Password</label>
+            <input type="password" id="loginPassword" required>
+          </div>
+          <button type="submit" class="submit-btn">Login</button>
+        </form>
+        <p>Don't have an account? <a href="#" id="switchToRegister">Register</a></p>
+      </div>
+    </div>
+
+    <!-- Registration Modal -->
+    <div id="registerModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Create an Account</h2>
+        
+        <!-- Step 1: Basic Info -->
+        <div class="register-step" id="registerStep1">
+          <h3>Step 1: Basic Information</h3>
+          <div class="form-group">
+            <label for="registerUsername">Username</label>
+            <input type="text" id="registerUsername" required>
+          </div>
+          <div class="form-group">
+            <label for="registerEmail">Email</label>
+            <input type="email" id="registerEmail" required>
+          </div>
+          <button class="next-btn" id="step1NextBtn">Continue</button>
+        </div>
+        
+        <!-- Step 2: Password -->
+        <div class="register-step" id="registerStep2" style="display: none;">
+          <h3>Step 2: Create Password</h3>
+          <div class="form-group">
+            <label for="registerPassword">Password</label>
+            <input type="password" id="registerPassword" required>
+          </div>
+          <div class="form-group">
+            <label for="confirmPassword">Confirm Password</label>
+            <input type="password" id="confirmPassword" required>
+          </div>
+          <div class="btn-group">
+            <button class="back-btn" id="step2BackBtn">Back</button>
+            <button class="next-btn" id="step2NextBtn">Continue</button>
+          </div>
+        </div>
+        
+        <!-- Step 3: Profile Picture -->
+        <div class="register-step" id="registerStep3" style="display: none;">
+          <h3>Step 3: Profile Picture</h3>
+          <div class="profile-upload">
+            <div class="profile-preview">
+              <img id="profilePreview" src="assets/pictures/default-profile.png" alt="Profile Preview">
+            </div>
+            <label for="profileUpload" class="upload-btn">Choose Image</label>
+            <input type="file" id="profileUpload" accept="image/*" style="display: none;">
+          </div>
+          <div class="btn-group">
+            <button class="back-btn" id="step3BackBtn">Back</button>
+            <button class="finish-btn" id="registerFinishBtn">Finish</button>
+          </div>
+        </div>
+      </div>
+    </div>
+      
+      <!-- Login/Register buttons - shows when logged out -->
+      <div class="auth-buttons" id="authButtonsSection">
+        <button class="login-btn" id="loginBtn">Login</button>
+        <button class="register-btn" id="registerBtn">Register</button>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <div id="classHeader" class="class-header">
+        <!-- Will be populated by JavaScript -->
+    </div>
+    
+    <div class="class-navigation">
+        <button class="class-nav-btn active" data-tab="stream">Stream</button>
+        <button class="class-nav-btn" data-tab="assignments">Assignments</button>
+        <button class="class-nav-btn" data-tab="members">Members</button>
+        <button class="class-nav-btn" data-tab="chat">Chat</button>
+    </div>
+    
+    <main class="class-detail-container">
+        <!-- Stream Tab -->
+        <div id="streamTab" class="tab-content">
+            <div class="post-composer">
+                <div class="composer-avatar" id="userAvatar"></div>
+                <div class="composer-input">
+                    <input type="text" id="postInput" placeholder="Post a message to the class...">
+                </div>
+                <button id="postBtn" class="post-btn">Post</button>
+            </div>
+            
+            <div id="streamContent" class="stream-content">
+                <!-- Will be populated by JavaScript -->
+                <div class="loading-message">Loading class stream...</div>
+            </div>
+        </div>
+        
+        <!-- Assignments Tab -->
+        <div id="assignmentsTab" class="tab-content hidden">
+            <div id="assignmentsHeader" class="assignments-header">
+                <h2>Assignments</h2>
+                <div id="teacherControls" class="teacher-controls hidden">
+                    <button id="createAssignmentBtn" class="create-assignment-btn">Create Assignment</button>
+                </div>
+            </div>
+            
+            <div id="assignmentsList" class="assignments-list">
+                <!-- Will be populated by JavaScript -->
+                <div class="loading-message">Loading assignments...</div>
+            </div>
+        </div>
+        
+        <!-- Members Tab -->
+        <div id="membersTab" class="tab-content hidden">
+            <div class="members-header">
+                <h2>Class Members</h2>
+                <div id="inviteControls" class="invite-controls hidden">
+                    <button id="inviteBtn" class="invite-btn">Invite Members</button>
+                </div>
+            </div>
+            
+            <div id="membersList" class="members-list">
+                <!-- Will be populated by JavaScript -->
+                <div class="loading-message">Loading members...</div>
+            </div>
+        </div>
+        
+        <!-- Chat Tab -->
+        <div id="chatTab" class="tab-content hidden">
+            <div class="chat-container">
+                <div class="chat-sidebar">
+                    <div class="chat-channels">
+                        <h3>Channels</h3>
+                        <ul id="channelsList">
+                            <li class="active" data-channel="everyone">Everyone</li>
+                            <!-- Other channels will be populated dynamically -->
+                        </ul>
+                    </div>
+                    <div class="direct-messages">
+                        <h3>Direct Messages</h3>
+                        <ul id="directMessagesList">
+                            <!-- Will be populated by JavaScript -->
+                            <li class="loading-item">Loading...</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="chat-main">
+                    <div id="chatHeader" class="chat-header">
+                        <h3>Everyone</h3>
+                    </div>
+                    
+                    <div id="chatMessages" class="chat-messages">
+                        <!-- Will be populated by JavaScript -->
+                        <div class="loading-message">Loading messages...</div>
+                    </div>
+                    
+                    <div class="chat-input-container">
+                        <input type="text" id="chatInput" class="chat-input" placeholder="Type a message...">
+                        <button id="sendBtn" class="send-btn">Send</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <!-- Assignment Details Modal -->
+    <div id="assignmentModal" class="modal">
+        <div class="modal-content assignment-modal">
+            <span class="close">&times;</span>
+            <div id="assignmentModalContent">
+                <!-- Will be populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+    
+    <!-- Create Assignment Modal -->
+    <div id="createAssignmentModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Create New Assignment</h2>
+            
+            <form id="createAssignmentForm">
+                <div class="form-group">
+                    <label for="assignmentTitle">Title</label>
+                    <input type="text" id="assignmentTitle" placeholder="e.g. Midterm Project" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="assignmentDescription">Description</label>
+                    <textarea id="assignmentDescription" placeholder="Instructions and details for the assignment"></textarea>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group half">
+                        <label for="assignmentDueDate">Due Date</label>
+                        <input type="datetime-local" id="assignmentDueDate" required>
+                    </div>
+                    
+                    <div class="form-group half">
+                        <label for="assignmentPoints">Points</label>
+                        <input type="number" id="assignmentPoints" min="1" max="100" value="100" required>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="assignmentStatus">Status</label>
+                    <div class="radio-group">
+                        <label>
+                            <input type="radio" name="assignmentStatus" value="published" checked>
+                            Published (Visible to students)
+                        </label>
+                        <label>
+                            <input type="radio" name="assignmentStatus" value="draft">
+                            Draft (Only visible to you)
+                        </label>
+                    </div>
+                </div>
+                
+                <button type="submit" class="submit-btn">Create Assignment</button>
+            </form>
+        </div>
+    </div>
+    
+    <!-- Invite Members Modal -->
+    <div id="inviteModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Invite Members</h2>
+            <p>Share this class code with your students:</p>
+            
+            <div class="class-code-display">
+                <div id="classCodeText" class="class-code-text"></div>
+                <button id="copyCodeBtn" class="copy-btn">Copy</button>
+            </div>
+            
+            <p>Or send email invitations:</p>
+            
+            <div class="form-group">
+                <label for="inviteEmails">Email Addresses</label>
+                <textarea id="inviteEmails" placeholder="Enter email addresses separated by commas"></textarea>
+            </div>
+            
+            <button id="sendInvitesBtn" class="submit-btn">Send Invites</button>
+        </div>
+    </div>
+</body>
+</html>

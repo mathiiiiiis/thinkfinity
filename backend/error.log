@@ -98,3 +98,1997 @@
 [18-Mar-2025 20:54:26 UTC] Loaded .env file from /var/www/html
 [18-Mar-2025 20:54:26 UTC] Received JSON: {"uuid":"4nTfFEp5WOjjG","token":""}
 [18-Mar-2025 20:54:26 UTC] Processing profile action: public_profile
+[20-Mar-2025 13:23:28 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[20-Mar-2025 13:23:28 UTC] Successfully loaded autoload.php
+[20-Mar-2025 13:23:28 UTC] Loaded .env file from /var/www/html
+[20-Mar-2025 13:23:28 UTC] Processing classes action: get_user_classes
+[20-Mar-2025 13:23:28 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[20-Mar-2025 13:23:28 UTC] Successfully loaded autoload.php
+[20-Mar-2025 13:23:28 UTC] Loaded .env file from /var/www/html
+[20-Mar-2025 13:23:28 UTC] Processing classes action: get_user_classes
+[20-Mar-2025 13:23:28 UTC] Created classes table
+[20-Mar-2025 13:23:28 UTC] Created class_members table
+[20-Mar-2025 13:23:28 UTC] Created class_assignments table
+[20-Mar-2025 13:23:28 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[20-Mar-2025 13:23:28 UTC] Successfully loaded autoload.php
+[20-Mar-2025 13:23:29 UTC] Loaded .env file from /var/www/html
+[20-Mar-2025 13:23:29 UTC] Processing classes action: get_teaching_classes
+[20-Mar-2025 13:23:29 UTC] Created assignment_submissions table
+[20-Mar-2025 13:23:29 UTC] Created class_messages table
+[20-Mar-2025 13:23:29 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[20-Mar-2025 13:23:29 UTC] Successfully loaded autoload.php
+[20-Mar-2025 13:23:29 UTC] Loaded .env file from /var/www/html
+[20-Mar-2025 13:23:29 UTC] Processing classes action: get_explore_classes
+[20-Mar-2025 13:24:01 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[20-Mar-2025 13:24:01 UTC] Successfully loaded autoload.php
+[20-Mar-2025 13:24:01 UTC] Loaded .env file from /var/www/html
+[20-Mar-2025 13:24:01 UTC] Processing classes action: create_class
+[20-Mar-2025 13:24:01 UTC] Received JSON: {"name":"test","description":"","category":"math","level":"beginner","visibility":"private","color":"#4A6FFF","coverImage":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAF3CAYAAAB5dDWiAAEAAElEQV...
+[20-Mar-2025 13:24:01 UTC] Error creating class: SQLSTATE[22001]: String data, right truncated: 1406 Data too long for column 'cover_image' at row 1
+[20-Mar-2025 13:24:06 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[20-Mar-2025 13:24:06 UTC] Successfully loaded autoload.php
+[20-Mar-2025 13:24:06 UTC] Loaded .env file from /var/www/html
+[20-Mar-2025 13:24:06 UTC] Processing classes action: create_class
+[20-Mar-2025 13:24:06 UTC] Received JSON: {"name":"test","description":"","category":"math","level":"beginner","visibility":"private","color":"#4A6FFF","coverImage":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAF3CAYAAAB5dDWiAAEAAElEQV...
+[20-Mar-2025 13:24:06 UTC] Error creating class: SQLSTATE[22001]: String data, right truncated: 1406 Data too long for column 'cover_image' at row 1
+[20-Mar-2025 13:25:18 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[20-Mar-2025 13:25:18 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[20-Mar-2025 13:25:18 UTC] Successfully loaded autoload.php
+[20-Mar-2025 13:25:18 UTC] Successfully loaded autoload.php
+[20-Mar-2025 13:25:18 UTC] Loaded .env file from /var/www/html
+[20-Mar-2025 13:25:18 UTC] Processing classes action: get_user_classes
+[20-Mar-2025 13:25:18 UTC] Loaded .env file from /var/www/html
+[20-Mar-2025 13:25:18 UTC] Processing classes action: get_user_classes
+[20-Mar-2025 13:25:18 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[20-Mar-2025 13:25:18 UTC] Successfully loaded autoload.php
+[20-Mar-2025 13:25:18 UTC] Loaded .env file from /var/www/html
+[20-Mar-2025 13:25:18 UTC] Processing classes action: get_teaching_classes
+[20-Mar-2025 13:25:18 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[20-Mar-2025 13:25:19 UTC] Successfully loaded autoload.php
+[20-Mar-2025 13:25:19 UTC] Loaded .env file from /var/www/html
+[20-Mar-2025 13:25:19 UTC] Processing classes action: get_explore_classes
+[20-Mar-2025 13:25:30 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[20-Mar-2025 13:25:30 UTC] Successfully loaded autoload.php
+[20-Mar-2025 13:25:30 UTC] Loaded .env file from /var/www/html
+[20-Mar-2025 13:25:30 UTC] Processing classes action: create_class
+[20-Mar-2025 13:25:30 UTC] Received JSON: {"name":"test","description":"","category":"math","level":"beginner","visibility":"private","color":"#4A6FFF","coverImage":null}
+[20-Mar-2025 13:29:37 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[20-Mar-2025 13:29:37 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[20-Mar-2025 13:29:37 UTC] Successfully loaded autoload.php
+[20-Mar-2025 13:29:37 UTC] Successfully loaded autoload.php
+[20-Mar-2025 13:29:37 UTC] Loaded .env file from /var/www/html
+[20-Mar-2025 13:29:37 UTC] Processing classes action: get_user_classes
+[20-Mar-2025 13:29:37 UTC] Loaded .env file from /var/www/html
+[20-Mar-2025 13:29:37 UTC] Processing classes action: get_user_classes
+[20-Mar-2025 13:29:38 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[20-Mar-2025 13:29:38 UTC] Successfully loaded autoload.php
+[20-Mar-2025 13:29:38 UTC] Loaded .env file from /var/www/html
+[20-Mar-2025 13:29:38 UTC] Processing classes action: get_teaching_classes
+[20-Mar-2025 13:29:38 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[20-Mar-2025 13:29:38 UTC] Successfully loaded autoload.php
+[20-Mar-2025 13:29:38 UTC] Loaded .env file from /var/www/html
+[20-Mar-2025 13:29:38 UTC] Processing classes action: get_explore_classes
+[20-Mar-2025 13:29:43 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[20-Mar-2025 13:29:43 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[20-Mar-2025 13:29:43 UTC] Successfully loaded autoload.php
+[20-Mar-2025 13:29:43 UTC] Successfully loaded autoload.php
+[20-Mar-2025 13:29:43 UTC] Loaded .env file from /var/www/html
+[20-Mar-2025 13:29:43 UTC] Processing classes action: get_user_classes
+[20-Mar-2025 13:29:43 UTC] Loaded .env file from /var/www/html
+[20-Mar-2025 13:29:43 UTC] Processing classes action: get_user_classes
+[20-Mar-2025 13:29:43 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[20-Mar-2025 13:29:43 UTC] Successfully loaded autoload.php
+[20-Mar-2025 13:29:43 UTC] Loaded .env file from /var/www/html
+[20-Mar-2025 13:29:43 UTC] Processing classes action: get_teaching_classes
+[20-Mar-2025 13:29:44 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[20-Mar-2025 13:29:44 UTC] Successfully loaded autoload.php
+[20-Mar-2025 13:29:44 UTC] Loaded .env file from /var/www/html
+[20-Mar-2025 13:29:44 UTC] Processing classes action: get_explore_classes
+[20-Mar-2025 13:30:40 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[20-Mar-2025 13:30:40 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[20-Mar-2025 13:30:41 UTC] Successfully loaded autoload.php
+[20-Mar-2025 13:30:41 UTC] Successfully loaded autoload.php
+[20-Mar-2025 13:30:41 UTC] Loaded .env file from /var/www/html
+[20-Mar-2025 13:30:41 UTC] Processing classes action: get_user_classes
+[20-Mar-2025 13:30:41 UTC] Loaded .env file from /var/www/html
+[20-Mar-2025 13:30:41 UTC] Processing classes action: get_user_classes
+[20-Mar-2025 13:30:41 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[20-Mar-2025 13:30:41 UTC] Successfully loaded autoload.php
+[20-Mar-2025 13:30:41 UTC] Loaded .env file from /var/www/html
+[20-Mar-2025 13:30:41 UTC] Processing classes action: get_teaching_classes
+[20-Mar-2025 13:30:41 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[20-Mar-2025 13:30:41 UTC] Successfully loaded autoload.php
+[20-Mar-2025 13:30:41 UTC] Loaded .env file from /var/www/html
+[20-Mar-2025 13:30:41 UTC] Processing classes action: get_explore_classes
+[20-Mar-2025 13:31:14 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[20-Mar-2025 13:31:14 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[20-Mar-2025 13:31:14 UTC] Successfully loaded autoload.php
+[20-Mar-2025 13:31:14 UTC] Successfully loaded autoload.php
+[20-Mar-2025 13:31:14 UTC] Loaded .env file from /var/www/html
+[20-Mar-2025 13:31:14 UTC] Processing classes action: get_user_classes
+[20-Mar-2025 13:31:14 UTC] Loaded .env file from /var/www/html
+[20-Mar-2025 13:31:14 UTC] Processing classes action: get_user_classes
+[20-Mar-2025 13:31:14 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[20-Mar-2025 13:31:14 UTC] Successfully loaded autoload.php
+[20-Mar-2025 13:31:14 UTC] Loaded .env file from /var/www/html
+[20-Mar-2025 13:31:14 UTC] Processing classes action: get_teaching_classes
+[20-Mar-2025 13:31:14 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[20-Mar-2025 13:31:14 UTC] Successfully loaded autoload.php
+[20-Mar-2025 13:31:14 UTC] Loaded .env file from /var/www/html
+[20-Mar-2025 13:31:14 UTC] Processing classes action: get_explore_classes
+[20-Mar-2025 13:35:56 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[20-Mar-2025 13:35:56 UTC] Successfully loaded autoload.php
+[20-Mar-2025 13:35:56 UTC] Loaded .env file from /var/www/html
+[20-Mar-2025 13:35:56 UTC] Processing classes action: get_class_details
+[20-Mar-2025 13:35:56 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[20-Mar-2025 13:35:56 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[20-Mar-2025 13:35:56 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[20-Mar-2025 13:35:56 UTC] Successfully loaded autoload.php
+[20-Mar-2025 13:35:56 UTC] Successfully loaded autoload.php
+[20-Mar-2025 13:35:56 UTC] Successfully loaded autoload.php
+[20-Mar-2025 13:35:57 UTC] Loaded .env file from /var/www/html
+[20-Mar-2025 13:35:57 UTC] Loaded .env file from /var/www/html
+[20-Mar-2025 13:35:57 UTC] Loaded .env file from /var/www/html
+[20-Mar-2025 13:35:57 UTC] Processing classes action: get_assignments
+[20-Mar-2025 13:35:57 UTC] Processing classes action: get_class_members
+[20-Mar-2025 13:35:57 UTC] Processing classes action: get_chat_messages
+[20-Mar-2025 13:37:26 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[20-Mar-2025 13:37:26 UTC] Successfully loaded autoload.php
+[20-Mar-2025 13:37:27 UTC] Loaded .env file from /var/www/html
+[20-Mar-2025 13:37:27 UTC] Processing classes action: get_class_details
+[20-Mar-2025 13:37:27 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[20-Mar-2025 13:37:27 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[20-Mar-2025 13:37:27 UTC] Successfully loaded autoload.php
+[20-Mar-2025 13:37:27 UTC] Successfully loaded autoload.php
+[20-Mar-2025 13:37:27 UTC] Loaded .env file from /var/www/html
+[20-Mar-2025 13:37:27 UTC] Loaded .env file from /var/www/html
+[20-Mar-2025 13:37:27 UTC] Processing classes action: get_assignments
+[20-Mar-2025 13:37:27 UTC] Processing classes action: get_chat_messages
+[20-Mar-2025 13:37:57 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[20-Mar-2025 13:37:57 UTC] Successfully loaded autoload.php
+[20-Mar-2025 13:37:57 UTC] Loaded .env file from /var/www/html
+[20-Mar-2025 13:37:57 UTC] Processing classes action: post_message
+[20-Mar-2025 13:37:57 UTC] Received JSON: {"classId":1,"message":"hello","messageType":"chat"}
+[20-Mar-2025 13:37:57 UTC] Error posting class message: SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '' for column 'is_private' at row 1
+[20-Mar-2025 13:38:05 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[20-Mar-2025 13:38:05 UTC] Successfully loaded autoload.php
+[20-Mar-2025 13:38:05 UTC] Loaded .env file from /var/www/html
+[20-Mar-2025 13:38:05 UTC] Processing classes action: get_chat_messages
+[20-Mar-2025 13:39:30 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[20-Mar-2025 13:39:30 UTC] Successfully loaded autoload.php
+[20-Mar-2025 13:39:30 UTC] Loaded .env file from /var/www/html
+[20-Mar-2025 13:39:30 UTC] Processing classes action: get_class_details
+[20-Mar-2025 13:39:30 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[20-Mar-2025 13:39:30 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[20-Mar-2025 13:39:30 UTC] Successfully loaded autoload.php
+[20-Mar-2025 13:39:30 UTC] Successfully loaded autoload.php
+[20-Mar-2025 13:39:30 UTC] Loaded .env file from /var/www/html
+[20-Mar-2025 13:39:30 UTC] Loaded .env file from /var/www/html
+[20-Mar-2025 13:39:30 UTC] Processing classes action: get_assignments
+[20-Mar-2025 13:39:30 UTC] Processing classes action: get_chat_messages
+[20-Mar-2025 13:40:10 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[20-Mar-2025 13:40:11 UTC] Successfully loaded autoload.php
+[20-Mar-2025 13:40:11 UTC] Loaded .env file from /var/www/html
+[20-Mar-2025 13:40:11 UTC] Processing classes action: get_class_details
+[20-Mar-2025 13:40:11 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[20-Mar-2025 13:40:11 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[20-Mar-2025 13:40:11 UTC] Successfully loaded autoload.php
+[20-Mar-2025 13:40:11 UTC] Successfully loaded autoload.php
+[20-Mar-2025 13:40:11 UTC] Loaded .env file from /var/www/html
+[20-Mar-2025 13:40:11 UTC] Processing classes action: get_assignments
+[20-Mar-2025 13:40:11 UTC] Loaded .env file from /var/www/html
+[20-Mar-2025 13:40:11 UTC] Processing classes action: get_chat_messages
+[20-Mar-2025 13:41:50 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[20-Mar-2025 13:41:50 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[20-Mar-2025 13:41:50 UTC] Successfully loaded autoload.php
+[20-Mar-2025 13:41:50 UTC] Successfully loaded autoload.php
+[20-Mar-2025 13:41:50 UTC] Loaded .env file from /var/www/html
+[20-Mar-2025 13:41:50 UTC] Processing classes action: get_user_classes
+[20-Mar-2025 13:41:50 UTC] Loaded .env file from /var/www/html
+[20-Mar-2025 13:41:50 UTC] Processing classes action: get_user_classes
+[20-Mar-2025 13:41:50 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[20-Mar-2025 13:41:50 UTC] Successfully loaded autoload.php
+[20-Mar-2025 13:41:50 UTC] Loaded .env file from /var/www/html
+[20-Mar-2025 13:41:50 UTC] Processing classes action: get_teaching_classes
+[20-Mar-2025 13:41:50 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[20-Mar-2025 13:41:50 UTC] Successfully loaded autoload.php
+[20-Mar-2025 13:41:51 UTC] Loaded .env file from /var/www/html
+[20-Mar-2025 13:41:51 UTC] Processing classes action: get_explore_classes
+[20-Mar-2025 13:41:56 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[20-Mar-2025 13:41:56 UTC] Successfully loaded autoload.php
+[20-Mar-2025 13:41:56 UTC] Loaded .env file from /var/www/html
+[20-Mar-2025 13:41:56 UTC] Processing classes action: get_class_details
+[20-Mar-2025 13:41:56 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[20-Mar-2025 13:41:56 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[20-Mar-2025 13:41:56 UTC] Successfully loaded autoload.php
+[20-Mar-2025 13:41:56 UTC] Successfully loaded autoload.php
+[20-Mar-2025 13:41:57 UTC] Loaded .env file from /var/www/html
+[20-Mar-2025 13:41:57 UTC] Processing classes action: get_assignments
+[20-Mar-2025 13:41:57 UTC] Loaded .env file from /var/www/html
+[20-Mar-2025 13:41:57 UTC] Processing classes action: get_chat_messages
+[20-Mar-2025 13:42:31 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[20-Mar-2025 13:42:31 UTC] Successfully loaded autoload.php
+[20-Mar-2025 13:42:31 UTC] Loaded .env file from /var/www/html
+[20-Mar-2025 13:42:31 UTC] Processing classes action: create_class
+[20-Mar-2025 13:42:31 UTC] Received JSON: {"name":"math class","description":"","category":"math","level":"intermediate","visibility":"public","color":"#FFD600","coverImage":null}
+[20-Mar-2025 13:42:32 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[20-Mar-2025 13:42:32 UTC] Successfully loaded autoload.php
+[20-Mar-2025 13:42:32 UTC] Loaded .env file from /var/www/html
+[20-Mar-2025 13:42:32 UTC] Processing classes action: get_class_details
+[20-Mar-2025 13:42:32 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[20-Mar-2025 13:42:32 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[20-Mar-2025 13:42:32 UTC] Successfully loaded autoload.php
+[20-Mar-2025 13:42:32 UTC] Successfully loaded autoload.php
+[20-Mar-2025 13:42:32 UTC] Loaded .env file from /var/www/html
+[20-Mar-2025 13:42:32 UTC] Loaded .env file from /var/www/html
+[20-Mar-2025 13:42:32 UTC] Processing classes action: get_assignments
+[20-Mar-2025 13:42:32 UTC] Processing classes action: get_chat_messages
+[20-Mar-2025 13:48:07 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[20-Mar-2025 13:48:07 UTC] Successfully loaded autoload.php
+[20-Mar-2025 13:48:07 UTC] Loaded .env file from /var/www/html
+[20-Mar-2025 13:48:07 UTC] Processing classes action: get_class_details
+[20-Mar-2025 13:48:07 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[20-Mar-2025 13:48:07 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[20-Mar-2025 13:48:07 UTC] Successfully loaded autoload.php
+[20-Mar-2025 13:48:07 UTC] Successfully loaded autoload.php
+[20-Mar-2025 13:48:07 UTC] Loaded .env file from /var/www/html
+[20-Mar-2025 13:48:07 UTC] Processing classes action: get_chat_messages
+[20-Mar-2025 13:48:07 UTC] Loaded .env file from /var/www/html
+[20-Mar-2025 13:48:07 UTC] Processing classes action: get_assignments
+[20-Mar-2025 13:48:09 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[20-Mar-2025 13:48:09 UTC] Successfully loaded autoload.php
+[20-Mar-2025 13:48:09 UTC] Loaded .env file from /var/www/html
+[20-Mar-2025 13:48:09 UTC] Processing classes action: get_class_details
+[20-Mar-2025 13:48:09 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[20-Mar-2025 13:48:09 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[20-Mar-2025 13:48:09 UTC] Successfully loaded autoload.php
+[20-Mar-2025 13:48:09 UTC] Successfully loaded autoload.php
+[20-Mar-2025 13:48:09 UTC] Loaded .env file from /var/www/html
+[20-Mar-2025 13:48:09 UTC] Processing classes action: get_assignments
+[20-Mar-2025 13:48:09 UTC] Loaded .env file from /var/www/html
+[20-Mar-2025 13:48:09 UTC] Processing classes action: get_chat_messages
+[20-Mar-2025 13:48:17 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[20-Mar-2025 13:48:17 UTC] Successfully loaded autoload.php
+[20-Mar-2025 13:48:17 UTC] Loaded .env file from /var/www/html
+[20-Mar-2025 13:48:17 UTC] Processing classes action: post_message
+[20-Mar-2025 13:48:17 UTC] Received JSON: {"classId":2,"message":"hello","messageType":"chat"}
+[20-Mar-2025 13:48:17 UTC] Error posting class message: SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '' for column 'is_private' at row 1
+[20-Mar-2025 13:48:27 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[20-Mar-2025 13:48:27 UTC] Successfully loaded autoload.php
+[20-Mar-2025 13:48:27 UTC] Loaded .env file from /var/www/html
+[20-Mar-2025 13:48:27 UTC] Processing classes action: post_message
+[20-Mar-2025 13:48:27 UTC] Received JSON: {"classId":2,"message":"hello","messageType":"chat"}
+[20-Mar-2025 13:48:27 UTC] Error posting class message: SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '' for column 'is_private' at row 1
+[20-Mar-2025 13:48:53 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[20-Mar-2025 13:48:53 UTC] Successfully loaded autoload.php
+[20-Mar-2025 13:48:53 UTC] Loaded .env file from /var/www/html
+[20-Mar-2025 13:48:53 UTC] Processing classes action: create_assignment
+[20-Mar-2025 13:48:53 UTC] Received JSON: {"classId":2,"title":"CLASTETS","description":"DO IT","dueDate":"2025-03-27T14:48","points":"100","status":"published"}
+[20-Mar-2025 13:48:53 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[20-Mar-2025 13:48:53 UTC] Successfully loaded autoload.php
+[20-Mar-2025 13:48:53 UTC] Loaded .env file from /var/www/html
+[20-Mar-2025 13:48:53 UTC] Processing classes action: get_assignments
+[20-Mar-2025 13:48:57 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[20-Mar-2025 13:48:57 UTC] Successfully loaded autoload.php
+[20-Mar-2025 13:48:57 UTC] Loaded .env file from /var/www/html
+[20-Mar-2025 13:48:57 UTC] Processing classes action: get_assignment_details
+[20-Mar-2025 13:51:50 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[20-Mar-2025 13:51:50 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[20-Mar-2025 13:51:50 UTC] Successfully loaded autoload.php
+[20-Mar-2025 13:51:50 UTC] Successfully loaded autoload.php
+[20-Mar-2025 13:51:50 UTC] Loaded .env file from /var/www/html
+[20-Mar-2025 13:51:50 UTC] Processing classes action: get_user_classes
+[20-Mar-2025 13:51:50 UTC] Loaded .env file from /var/www/html
+[20-Mar-2025 13:51:50 UTC] Processing classes action: get_user_classes
+[20-Mar-2025 13:51:50 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[20-Mar-2025 13:51:50 UTC] Successfully loaded autoload.php
+[20-Mar-2025 13:51:50 UTC] Loaded .env file from /var/www/html
+[20-Mar-2025 13:51:50 UTC] Processing classes action: get_teaching_classes
+[20-Mar-2025 13:51:50 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[20-Mar-2025 13:51:50 UTC] Successfully loaded autoload.php
+[20-Mar-2025 13:51:50 UTC] Loaded .env file from /var/www/html
+[20-Mar-2025 13:51:50 UTC] Processing classes action: get_explore_classes
+[20-Mar-2025 13:51:54 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[20-Mar-2025 13:51:54 UTC] Successfully loaded autoload.php
+[20-Mar-2025 13:51:54 UTC] Loaded .env file from /var/www/html
+[20-Mar-2025 13:51:54 UTC] Processing classes action: join_class
+[20-Mar-2025 13:51:54 UTC] Received JSON: {"classCode":"CEF7XW"}
+[20-Mar-2025 13:51:54 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[20-Mar-2025 13:51:54 UTC] Successfully loaded autoload.php
+[20-Mar-2025 13:51:54 UTC] Loaded .env file from /var/www/html
+[20-Mar-2025 13:51:54 UTC] Processing classes action: get_class_details
+[20-Mar-2025 13:51:54 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[20-Mar-2025 13:51:54 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[20-Mar-2025 13:51:54 UTC] Successfully loaded autoload.php
+[20-Mar-2025 13:51:54 UTC] Successfully loaded autoload.php
+[20-Mar-2025 13:51:54 UTC] Loaded .env file from /var/www/html
+[20-Mar-2025 13:51:54 UTC] Processing classes action: get_assignments
+[20-Mar-2025 13:51:54 UTC] Loaded .env file from /var/www/html
+[20-Mar-2025 13:51:54 UTC] Processing classes action: get_chat_messages
+[20-Mar-2025 13:52:02 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[20-Mar-2025 13:52:02 UTC] Successfully loaded autoload.php
+[20-Mar-2025 13:52:02 UTC] Loaded .env file from /var/www/html
+[20-Mar-2025 13:52:02 UTC] Processing classes action: post_message
+[20-Mar-2025 13:52:02 UTC] Received JSON: {"classId":2,"message":"hello","messageType":"chat"}
+[20-Mar-2025 13:52:02 UTC] Error posting class message: SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '' for column 'is_private' at row 1
+[20-Mar-2025 13:52:09 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[20-Mar-2025 13:52:09 UTC] Successfully loaded autoload.php
+[20-Mar-2025 13:52:09 UTC] Loaded .env file from /var/www/html
+[20-Mar-2025 13:52:09 UTC] Processing classes action: get_assignment_details
+[20-Mar-2025 13:52:25 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[20-Mar-2025 13:52:25 UTC] Successfully loaded autoload.php
+[20-Mar-2025 13:52:25 UTC] Loaded .env file from /var/www/html
+[20-Mar-2025 13:52:25 UTC] Processing classes action: submit_assignment
+[20-Mar-2025 13:52:25 UTC] Received JSON: {"assignmentId":"1","content":"This is my Assignment"}
+[20-Mar-2025 13:52:25 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[20-Mar-2025 13:52:25 UTC] Successfully loaded autoload.php
+[20-Mar-2025 13:52:25 UTC] Loaded .env file from /var/www/html
+[20-Mar-2025 13:52:25 UTC] Processing classes action: get_assignments
+[20-Mar-2025 13:52:45 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[20-Mar-2025 13:52:45 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[20-Mar-2025 13:52:45 UTC] Successfully loaded autoload.php
+[20-Mar-2025 13:52:45 UTC] Successfully loaded autoload.php
+[20-Mar-2025 13:52:46 UTC] Loaded .env file from /var/www/html
+[20-Mar-2025 13:52:46 UTC] Processing classes action: get_user_classes
+[20-Mar-2025 13:52:46 UTC] Loaded .env file from /var/www/html
+[20-Mar-2025 13:52:46 UTC] Processing classes action: get_user_classes
+[20-Mar-2025 13:52:46 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[20-Mar-2025 13:52:46 UTC] Successfully loaded autoload.php
+[20-Mar-2025 13:52:46 UTC] Loaded .env file from /var/www/html
+[20-Mar-2025 13:52:46 UTC] Processing classes action: get_teaching_classes
+[20-Mar-2025 13:52:46 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[20-Mar-2025 13:52:46 UTC] Successfully loaded autoload.php
+[20-Mar-2025 13:52:46 UTC] Loaded .env file from /var/www/html
+[20-Mar-2025 13:52:46 UTC] Processing classes action: get_explore_classes
+[20-Mar-2025 13:52:48 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[20-Mar-2025 13:52:48 UTC] Successfully loaded autoload.php
+[20-Mar-2025 13:52:48 UTC] Loaded .env file from /var/www/html
+[20-Mar-2025 13:52:48 UTC] Processing classes action: get_class_details
+[20-Mar-2025 13:52:48 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[20-Mar-2025 13:52:48 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[20-Mar-2025 13:52:48 UTC] Successfully loaded autoload.php
+[20-Mar-2025 13:52:48 UTC] Successfully loaded autoload.php
+[20-Mar-2025 13:52:48 UTC] Loaded .env file from /var/www/html
+[20-Mar-2025 13:52:48 UTC] Loaded .env file from /var/www/html
+[20-Mar-2025 13:52:48 UTC] Processing classes action: get_assignments
+[20-Mar-2025 13:52:48 UTC] Processing classes action: get_chat_messages
+[20-Mar-2025 13:52:53 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[20-Mar-2025 13:52:53 UTC] Successfully loaded autoload.php
+[20-Mar-2025 13:52:53 UTC] Loaded .env file from /var/www/html
+[20-Mar-2025 13:52:53 UTC] Processing classes action: get_class_details
+[20-Mar-2025 13:52:53 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[20-Mar-2025 13:52:53 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[20-Mar-2025 13:52:53 UTC] Successfully loaded autoload.php
+[20-Mar-2025 13:52:53 UTC] Successfully loaded autoload.php
+[20-Mar-2025 13:52:53 UTC] Loaded .env file from /var/www/html
+[20-Mar-2025 13:52:53 UTC] Processing classes action: get_assignments
+[20-Mar-2025 13:52:53 UTC] Loaded .env file from /var/www/html
+[20-Mar-2025 13:52:53 UTC] Processing classes action: get_chat_messages
+[20-Mar-2025 13:52:59 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[20-Mar-2025 13:52:59 UTC] Successfully loaded autoload.php
+[20-Mar-2025 13:52:59 UTC] Loaded .env file from /var/www/html
+[20-Mar-2025 13:52:59 UTC] Processing classes action: get_assignment_details
+[20-Mar-2025 13:58:39 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[20-Mar-2025 13:58:40 UTC] Successfully loaded autoload.php
+[20-Mar-2025 13:58:40 UTC] Loaded .env file from /var/www/html
+[20-Mar-2025 13:58:40 UTC] Processing classes action: get_class_details
+[20-Mar-2025 13:58:40 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[20-Mar-2025 13:58:40 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[20-Mar-2025 13:58:40 UTC] Successfully loaded autoload.php
+[20-Mar-2025 13:58:40 UTC] Successfully loaded autoload.php
+[20-Mar-2025 13:58:40 UTC] Loaded .env file from /var/www/html
+[20-Mar-2025 13:58:40 UTC] Processing classes action: get_chat_messages
+[20-Mar-2025 13:58:40 UTC] Loaded .env file from /var/www/html
+[20-Mar-2025 13:58:40 UTC] Processing classes action: get_assignments
+[20-Mar-2025 13:58:42 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[20-Mar-2025 13:58:42 UTC] Successfully loaded autoload.php
+[20-Mar-2025 13:58:42 UTC] Loaded .env file from /var/www/html
+[20-Mar-2025 13:58:42 UTC] Processing classes action: get_assignment_details
+[21-Mar-2025 15:17:19 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:17:19 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:17:19 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:17:19 UTC] Processing classes action: get_user_classes
+[21-Mar-2025 15:17:19 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:17:19 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:17:19 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:17:19 UTC] Processing classes action: get_upcoming_tasks
+[21-Mar-2025 15:17:19 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:17:19 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:17:19 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:17:19 UTC] Processing classes action: get_recent_activity
+[21-Mar-2025 15:17:32 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:17:32 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:17:32 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:17:32 UTC] Processing classes action: update_task_status
+[21-Mar-2025 15:17:32 UTC] Received JSON: {"taskId":"1","completed":true}
+[21-Mar-2025 15:21:37 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:21:37 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:21:37 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:21:37 UTC] Processing classes action: get_user_classes
+[21-Mar-2025 15:21:37 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:21:37 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:21:37 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:21:37 UTC] Processing classes action: get_teaching_classes
+[21-Mar-2025 15:21:37 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:21:37 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:21:37 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:21:37 UTC] Processing classes action: get_explore_classes
+[21-Mar-2025 15:22:42 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:22:42 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:22:42 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:22:42 UTC] Processing classes action: get_user_classes
+[21-Mar-2025 15:22:42 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:22:42 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:22:42 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:22:42 UTC] Processing classes action: get_teaching_classes
+[21-Mar-2025 15:22:42 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:22:42 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:22:42 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:22:42 UTC] Processing classes action: get_explore_classes
+[21-Mar-2025 15:23:27 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:23:27 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:23:27 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:23:27 UTC] Processing classes action: create_class
+[21-Mar-2025 15:23:27 UTC] Received JSON: {"name":"Rance","description":"","category":"lang","level":"beginner","visibility":"public","color":"#4A6FFF","coverImage":null}
+[21-Mar-2025 15:27:28 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:27:28 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:27:28 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:27:28 UTC] Processing classes action: get_class_details
+[21-Mar-2025 15:27:28 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:27:28 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:27:28 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:27:28 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:27:28 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:27:29 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:27:29 UTC] Processing classes action: get_assignments
+[21-Mar-2025 15:27:29 UTC] Processing classes action: get_chat_messages
+[21-Mar-2025 15:27:41 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:27:42 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:27:42 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:27:42 UTC] Processing classes action: post_message
+[21-Mar-2025 15:27:42 UTC] Received JSON: {"classId":3,"message":"hello","messageType":"chat"}
+[21-Mar-2025 15:27:42 UTC] Error posting class message: SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '' for column 'is_private' at row 1
+[21-Mar-2025 15:29:07 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:29:07 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:29:07 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:29:07 UTC] Processing classes action: get_class_details
+[21-Mar-2025 15:29:07 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:29:07 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:29:07 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:29:07 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:29:07 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:29:07 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:29:07 UTC] Processing classes action: get_assignments
+[21-Mar-2025 15:29:07 UTC] Processing classes action: get_chat_messages
+[21-Mar-2025 15:29:15 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:29:15 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:29:15 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:29:15 UTC] Processing classes action: get_class_details
+[21-Mar-2025 15:29:15 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:29:15 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:29:15 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:29:15 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:29:15 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:29:15 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:29:15 UTC] Processing classes action: get_chat_messages
+[21-Mar-2025 15:29:15 UTC] Processing classes action: get_assignments
+[21-Mar-2025 15:30:11 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:30:11 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:30:11 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:30:11 UTC] Processing classes action: get_class_details
+[21-Mar-2025 15:30:11 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:30:11 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:30:11 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:30:11 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:30:11 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:30:11 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:30:11 UTC] Processing classes action: get_assignments
+[21-Mar-2025 15:30:11 UTC] Processing classes action: get_chat_messages
+[21-Mar-2025 15:34:47 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:34:47 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:34:47 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:34:47 UTC] Processing classes action: get_class_details
+[21-Mar-2025 15:34:47 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:34:47 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:34:47 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:34:47 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:34:47 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:34:47 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:34:47 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:34:47 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:34:47 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:34:47 UTC] Processing classes action: get_assignments
+[21-Mar-2025 15:34:47 UTC] Processing classes action: get_stream_messages
+[21-Mar-2025 15:34:47 UTC] Processing classes action: get_chat_messages
+[21-Mar-2025 15:36:35 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:36:35 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:36:35 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:36:35 UTC] Processing classes action: get_class_details
+[21-Mar-2025 15:36:35 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:36:35 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:36:35 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:36:35 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:36:35 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:36:35 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:36:35 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:36:35 UTC] Processing classes action: get_stream_messages
+[21-Mar-2025 15:36:35 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:36:35 UTC] Processing classes action: get_assignments
+[21-Mar-2025 15:36:35 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:36:35 UTC] Processing classes action: get_chat_messages
+[21-Mar-2025 15:36:43 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:36:43 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:36:43 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:36:43 UTC] Processing classes action: get_stream_messages
+[21-Mar-2025 15:37:05 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:37:05 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:37:05 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:37:05 UTC] Processing classes action: get_class_details
+[21-Mar-2025 15:37:05 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:37:05 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:37:05 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:37:06 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:37:06 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:37:06 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:37:06 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:37:06 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:37:06 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:37:06 UTC] Processing classes action: get_stream_messages
+[21-Mar-2025 15:37:06 UTC] Processing classes action: get_chat_messages
+[21-Mar-2025 15:37:06 UTC] Processing classes action: get_assignments
+[21-Mar-2025 15:41:11 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:41:11 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:41:11 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:41:11 UTC] Processing classes action: get_class_details
+[21-Mar-2025 15:41:11 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:41:11 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:41:11 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:41:11 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:41:11 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:41:11 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:41:11 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:41:11 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:41:11 UTC] Processing classes action: get_stream_messages
+[21-Mar-2025 15:41:11 UTC] Processing classes action: get_assignments
+[21-Mar-2025 15:41:11 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:41:11 UTC] Processing classes action: get_chat_messages
+[21-Mar-2025 15:41:13 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:41:13 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:41:13 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:41:13 UTC] Processing classes action: get_class_details
+[21-Mar-2025 15:41:13 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:41:13 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:41:13 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:41:13 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:41:13 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:41:13 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:41:13 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:41:13 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:41:13 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:41:13 UTC] Processing classes action: get_stream_messages
+[21-Mar-2025 15:41:13 UTC] Processing classes action: get_assignments
+[21-Mar-2025 15:41:13 UTC] Processing classes action: get_chat_messages
+[21-Mar-2025 15:41:33 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:41:33 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:41:33 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:41:33 UTC] Processing classes action: get_user_classes
+[21-Mar-2025 15:41:33 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:41:33 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:41:33 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:41:33 UTC] Processing classes action: get_upcoming_tasks
+[21-Mar-2025 15:41:33 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:41:33 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:41:33 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:41:33 UTC] Processing classes action: get_recent_activity
+[21-Mar-2025 15:41:36 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:41:37 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:41:37 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:41:37 UTC] Processing classes action: get_user_classes
+[21-Mar-2025 15:41:37 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:41:37 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:41:37 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:41:37 UTC] Processing classes action: get_teaching_classes
+[21-Mar-2025 15:41:37 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:41:37 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:41:37 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:41:37 UTC] Processing classes action: get_explore_classes
+[21-Mar-2025 15:41:40 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:41:40 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:41:40 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:41:40 UTC] Processing classes action: get_class_details
+[21-Mar-2025 15:41:41 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:41:41 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:41:41 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:41:41 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:41:41 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:41:41 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:41:41 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:41:41 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:41:41 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:41:41 UTC] Processing classes action: get_assignments
+[21-Mar-2025 15:41:41 UTC] Processing classes action: get_stream_messages
+[21-Mar-2025 15:41:41 UTC] Processing classes action: get_chat_messages
+[21-Mar-2025 15:42:32 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:42:33 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:42:33 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:42:33 UTC] Processing classes action: get_class_details
+[21-Mar-2025 15:42:33 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:42:33 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:42:33 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:42:33 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:42:33 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:42:33 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:42:33 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:42:33 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:42:33 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:42:33 UTC] Processing classes action: get_chat_messages
+[21-Mar-2025 15:42:33 UTC] Processing classes action: get_stream_messages
+[21-Mar-2025 15:42:33 UTC] Processing classes action: get_assignments
+[21-Mar-2025 15:43:32 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:43:32 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:43:32 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:43:32 UTC] Processing classes action: get_user_classes
+[21-Mar-2025 15:43:32 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:43:33 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:43:33 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:43:33 UTC] Processing classes action: get_upcoming_tasks
+[21-Mar-2025 15:43:33 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:43:33 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:43:33 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:43:33 UTC] Processing classes action: get_recent_activity
+[21-Mar-2025 15:43:51 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:43:51 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:43:51 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:43:51 UTC] Processing classes action: update_task_status
+[21-Mar-2025 15:43:51 UTC] Received JSON: {"taskId":"1","completed":false}
+[21-Mar-2025 15:43:55 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:43:55 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:43:55 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:43:55 UTC] Processing classes action: get_class_details
+[21-Mar-2025 15:43:55 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:43:55 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:43:55 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:43:55 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:43:55 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:43:55 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:43:55 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:43:55 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:43:55 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:43:55 UTC] Processing classes action: get_stream_messages
+[21-Mar-2025 15:43:55 UTC] Processing classes action: get_assignments
+[21-Mar-2025 15:43:55 UTC] Processing classes action: get_chat_messages
+[21-Mar-2025 15:44:00 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:44:00 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:44:00 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:44:00 UTC] Received JSON: {"token":"ea61aadb9fcdf06958e349efcb62948b9613787625159a13a98c5f373fe92741"}
+[21-Mar-2025 15:44:00 UTC] Processing profile action: get_profile
+[21-Mar-2025 15:44:01 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:44:01 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:44:01 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:44:01 UTC] Verifying token: ea61aadb9f...
+[21-Mar-2025 15:44:01 UTC] Connecting to database: mysql, thinfinity, thinfinity_user
+[21-Mar-2025 15:44:01 UTC] Successfully connected to database: thinfinity
+[21-Mar-2025 15:44:01 UTC] Token verified successfully for user: mathis.
+[21-Mar-2025 15:44:01 UTC] Connecting to database: mysql, thinfinity, thinfinity_user
+[21-Mar-2025 15:44:01 UTC] Successfully connected to database: thinfinity
+[21-Mar-2025 15:45:17 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:45:17 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:45:17 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:45:17 UTC] Verifying token: ea61aadb9f...
+[21-Mar-2025 15:45:17 UTC] Connecting to database: mysql, thinfinity, thinfinity_user
+[21-Mar-2025 15:45:17 UTC] Successfully connected to database: thinfinity
+[21-Mar-2025 15:45:17 UTC] Token verified successfully for user: mathis.
+[21-Mar-2025 15:45:17 UTC] Connecting to database: mysql, thinfinity, thinfinity_user
+[21-Mar-2025 15:45:17 UTC] Successfully connected to database: thinfinity
+[21-Mar-2025 15:45:19 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:45:19 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:45:19 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:45:19 UTC] Verifying token: ea61aadb9f...
+[21-Mar-2025 15:45:19 UTC] Connecting to database: mysql, thinfinity, thinfinity_user
+[21-Mar-2025 15:45:19 UTC] Successfully connected to database: thinfinity
+[21-Mar-2025 15:45:19 UTC] Token verified successfully for user: mathis.
+[21-Mar-2025 15:45:19 UTC] Connecting to database: mysql, thinfinity, thinfinity_user
+[21-Mar-2025 15:45:19 UTC] Successfully connected to database: thinfinity
+[21-Mar-2025 15:45:19 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:45:20 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:45:20 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:45:20 UTC] Verifying token: ea61aadb9f...
+[21-Mar-2025 15:45:20 UTC] Connecting to database: mysql, thinfinity, thinfinity_user
+[21-Mar-2025 15:45:20 UTC] Successfully connected to database: thinfinity
+[21-Mar-2025 15:45:20 UTC] Token verified successfully for user: mathis.
+[21-Mar-2025 15:45:20 UTC] Connecting to database: mysql, thinfinity, thinfinity_user
+[21-Mar-2025 15:45:20 UTC] Successfully connected to database: thinfinity
+[21-Mar-2025 15:45:20 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:45:20 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:45:20 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:45:20 UTC] Verifying token: ea61aadb9f...
+[21-Mar-2025 15:45:20 UTC] Connecting to database: mysql, thinfinity, thinfinity_user
+[21-Mar-2025 15:45:20 UTC] Successfully connected to database: thinfinity
+[21-Mar-2025 15:45:20 UTC] Token verified successfully for user: mathis.
+[21-Mar-2025 15:45:20 UTC] Connecting to database: mysql, thinfinity, thinfinity_user
+[21-Mar-2025 15:45:20 UTC] Successfully connected to database: thinfinity
+[21-Mar-2025 15:45:20 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:45:20 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:45:21 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:45:21 UTC] Verifying token: ea61aadb9f...
+[21-Mar-2025 15:45:21 UTC] Connecting to database: mysql, thinfinity, thinfinity_user
+[21-Mar-2025 15:45:21 UTC] Successfully connected to database: thinfinity
+[21-Mar-2025 15:45:21 UTC] Token verified successfully for user: mathis.
+[21-Mar-2025 15:45:21 UTC] Connecting to database: mysql, thinfinity, thinfinity_user
+[21-Mar-2025 15:45:21 UTC] Successfully connected to database: thinfinity
+[21-Mar-2025 15:45:35 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:45:35 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:45:35 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:45:35 UTC] Verifying token: ea61aadb9f...
+[21-Mar-2025 15:45:35 UTC] Connecting to database: mysql, thinfinity, thinfinity_user
+[21-Mar-2025 15:45:35 UTC] Successfully connected to database: thinfinity
+[21-Mar-2025 15:45:35 UTC] Token verified successfully for user: mathis.
+[21-Mar-2025 15:45:35 UTC] Connecting to database: mysql, thinfinity, thinfinity_user
+[21-Mar-2025 15:45:35 UTC] Successfully connected to database: thinfinity
+[21-Mar-2025 15:45:38 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:45:38 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:45:38 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:45:38 UTC] Verifying token: ea61aadb9f...
+[21-Mar-2025 15:45:38 UTC] Connecting to database: mysql, thinfinity, thinfinity_user
+[21-Mar-2025 15:45:38 UTC] Successfully connected to database: thinfinity
+[21-Mar-2025 15:45:38 UTC] Token verified successfully for user: mathis.
+[21-Mar-2025 15:45:38 UTC] Connecting to database: mysql, thinfinity, thinfinity_user
+[21-Mar-2025 15:45:38 UTC] Successfully connected to database: thinfinity
+[21-Mar-2025 15:45:48 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:45:48 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:45:48 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:45:48 UTC] Verifying token: ea61aadb9f...
+[21-Mar-2025 15:45:48 UTC] Connecting to database: mysql, thinfinity, thinfinity_user
+[21-Mar-2025 15:45:48 UTC] Successfully connected to database: thinfinity
+[21-Mar-2025 15:45:48 UTC] Token verified successfully for user: mathis.
+[21-Mar-2025 15:45:48 UTC] Connecting to database: mysql, thinfinity, thinfinity_user
+[21-Mar-2025 15:45:48 UTC] Successfully connected to database: thinfinity
+[21-Mar-2025 15:45:48 UTC] Starting updateUserSettings for userId: 2
+[21-Mar-2025 15:45:48 UTC] Data received: {"theme":"dark","fontSize":"100","accentColor":"#F97316"}
+[21-Mar-2025 15:45:48 UTC] user_settings table exists
+[21-Mar-2025 15:45:48 UTC] Settings data received: {"theme":"dark","fontSize":"100","accentColor":"#F97316"}
+[21-Mar-2025 15:45:48 UTC] Existing settings found for user 2, updating
+[21-Mar-2025 15:45:48 UTC] Updating setting theme to value dark
+[21-Mar-2025 15:45:48 UTC] Updating setting fontSize to value 100
+[21-Mar-2025 15:45:48 UTC] Updating setting accentColor to value #F97316
+[21-Mar-2025 15:45:48 UTC] Settings update query: UPDATE user_settings SET theme = ?, font_size = ?, accent_color = ? WHERE user_id = ?
+[21-Mar-2025 15:45:48 UTC] Settings updated for user 2
+[21-Mar-2025 15:45:48 UTC] Transaction committed successfully
+[21-Mar-2025 15:45:53 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:45:53 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:45:53 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:45:53 UTC] Verifying token: ea61aadb9f...
+[21-Mar-2025 15:45:53 UTC] Connecting to database: mysql, thinfinity, thinfinity_user
+[21-Mar-2025 15:45:53 UTC] Successfully connected to database: thinfinity
+[21-Mar-2025 15:45:53 UTC] Token verified successfully for user: mathis.
+[21-Mar-2025 15:45:53 UTC] Connecting to database: mysql, thinfinity, thinfinity_user
+[21-Mar-2025 15:45:53 UTC] Successfully connected to database: thinfinity
+[21-Mar-2025 15:45:53 UTC] Starting updateUserSettings for userId: 2
+[21-Mar-2025 15:45:53 UTC] Data received: {"theme":"light","fontSize":"100","accentColor":"#F97316"}
+[21-Mar-2025 15:45:53 UTC] user_settings table exists
+[21-Mar-2025 15:45:53 UTC] Settings data received: {"theme":"light","fontSize":"100","accentColor":"#F97316"}
+[21-Mar-2025 15:45:53 UTC] Existing settings found for user 2, updating
+[21-Mar-2025 15:45:53 UTC] Updating setting theme to value light
+[21-Mar-2025 15:45:53 UTC] Updating setting fontSize to value 100
+[21-Mar-2025 15:45:53 UTC] Updating setting accentColor to value #F97316
+[21-Mar-2025 15:45:53 UTC] Settings update query: UPDATE user_settings SET theme = ?, font_size = ?, accent_color = ? WHERE user_id = ?
+[21-Mar-2025 15:45:53 UTC] Settings updated for user 2
+[21-Mar-2025 15:45:54 UTC] Transaction committed successfully
+[21-Mar-2025 15:45:59 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:45:59 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:45:59 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:45:59 UTC] Processing classes action: get_user_classes
+[21-Mar-2025 15:45:59 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:45:59 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:45:59 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:45:59 UTC] Processing classes action: get_upcoming_tasks
+[21-Mar-2025 15:45:59 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:45:59 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:45:59 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:45:59 UTC] Processing classes action: get_recent_activity
+[21-Mar-2025 15:46:04 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:46:04 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:46:04 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:46:05 UTC] Processing classes action: get_user_classes
+[21-Mar-2025 15:46:05 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:46:05 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:46:05 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:46:05 UTC] Processing classes action: get_teaching_classes
+[21-Mar-2025 15:46:05 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:46:05 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:46:05 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:46:05 UTC] Processing classes action: get_explore_classes
+[21-Mar-2025 15:46:08 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:46:08 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:46:08 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:46:08 UTC] Processing classes action: get_class_details
+[21-Mar-2025 15:46:08 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:46:08 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:46:08 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:46:08 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:46:08 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:46:09 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:46:09 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:46:09 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:46:09 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:46:09 UTC] Processing classes action: get_assignments
+[21-Mar-2025 15:46:09 UTC] Processing classes action: get_stream_messages
+[21-Mar-2025 15:46:09 UTC] Processing classes action: get_chat_messages
+[21-Mar-2025 15:46:15 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:46:15 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:46:15 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:46:15 UTC] Processing classes action: get_class_details
+[21-Mar-2025 15:46:16 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:46:16 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:46:16 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:46:16 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:46:16 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:46:16 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:46:16 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:46:16 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:46:16 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:46:16 UTC] Processing classes action: get_stream_messages
+[21-Mar-2025 15:46:16 UTC] Processing classes action: get_chat_messages
+[21-Mar-2025 15:46:16 UTC] Processing classes action: get_assignments
+[21-Mar-2025 15:46:36 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:46:36 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:46:36 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:46:36 UTC] Processing classes action: join_class
+[21-Mar-2025 15:46:36 UTC] Received JSON: {"classCode":"ASCQ6A"}
+[21-Mar-2025 15:46:37 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:46:37 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:46:37 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:46:37 UTC] Processing classes action: get_class_details
+[21-Mar-2025 15:46:37 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:46:37 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:46:37 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:46:37 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:46:37 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:46:37 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:46:37 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:46:37 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:46:37 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:46:37 UTC] Processing classes action: get_assignments
+[21-Mar-2025 15:46:37 UTC] Processing classes action: get_chat_messages
+[21-Mar-2025 15:46:37 UTC] Processing classes action: get_stream_messages
+[21-Mar-2025 15:46:55 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:46:55 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:46:55 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:46:55 UTC] Processing classes action: join_class
+[21-Mar-2025 15:46:55 UTC] Received JSON: {"classCode":"JUTF8S"}
+[21-Mar-2025 15:46:55 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:46:55 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:46:56 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:46:56 UTC] Processing classes action: get_class_details
+[21-Mar-2025 15:46:56 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:46:56 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:46:56 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:46:56 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:46:56 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:46:56 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:46:56 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:46:56 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:46:56 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:46:56 UTC] Processing classes action: get_stream_messages
+[21-Mar-2025 15:46:56 UTC] Processing classes action: get_chat_messages
+[21-Mar-2025 15:46:56 UTC] Processing classes action: get_assignments
+[21-Mar-2025 15:47:01 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:47:01 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:47:01 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:47:01 UTC] Processing classes action: get_user_classes
+[21-Mar-2025 15:47:01 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:47:01 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:47:01 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:47:01 UTC] Processing classes action: get_teaching_classes
+[21-Mar-2025 15:47:01 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:47:01 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:47:01 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:47:01 UTC] Processing classes action: get_explore_classes
+[21-Mar-2025 15:48:18 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:48:18 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:48:18 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:48:18 UTC] Processing classes action: get_user_classes
+[21-Mar-2025 15:48:18 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:48:18 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:48:18 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:48:18 UTC] Processing classes action: get_teaching_classes
+[21-Mar-2025 15:48:18 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:48:18 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:48:18 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:48:18 UTC] Processing classes action: get_explore_classes
+[21-Mar-2025 15:48:23 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:48:23 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:48:23 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:48:23 UTC] Processing classes action: get_class_details
+[21-Mar-2025 15:48:23 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:48:23 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:48:23 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:48:23 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:48:23 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:48:23 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:48:23 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:48:23 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:48:23 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:48:23 UTC] Processing classes action: get_assignments
+[21-Mar-2025 15:48:23 UTC] Processing classes action: get_chat_messages
+[21-Mar-2025 15:48:23 UTC] Processing classes action: get_stream_messages
+[21-Mar-2025 15:48:34 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:48:34 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:48:34 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:48:34 UTC] Processing classes action: post_message
+[21-Mar-2025 15:48:34 UTC] Received JSON: {"classId":3,"message":"hello","messageType":"chat"}
+[21-Mar-2025 15:48:34 UTC] Error posting class message: SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '' for column 'is_private' at row 1
+[21-Mar-2025 15:49:06 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:49:06 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:49:06 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:49:06 UTC] Processing classes action: create_assignment
+[21-Mar-2025 15:49:06 UTC] Received JSON: {"classId":3,"title":"test","description":"","dueDate":"2025-03-21T16:48","points":"100","status":"published"}
+[21-Mar-2025 15:49:06 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:49:06 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:49:06 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:49:06 UTC] Processing classes action: get_assignments
+[21-Mar-2025 15:49:09 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:49:09 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:49:09 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:49:09 UTC] Processing classes action: get_class_details
+[21-Mar-2025 15:49:09 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:49:09 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:49:09 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:49:09 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:49:09 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:49:09 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:49:09 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:49:09 UTC] Processing classes action: get_stream_messages
+[21-Mar-2025 15:49:09 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:49:09 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:49:09 UTC] Processing classes action: get_assignments
+[21-Mar-2025 15:49:09 UTC] Processing classes action: get_chat_messages
+[21-Mar-2025 15:49:16 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:49:16 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:49:16 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:49:16 UTC] Processing classes action: get_assignment_details
+[21-Mar-2025 15:50:32 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:50:32 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:50:32 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:50:32 UTC] Verifying token: e885c7e10d...
+[21-Mar-2025 15:50:32 UTC] Connecting to database: mysql, thinfinity, thinfinity_user
+[21-Mar-2025 15:50:32 UTC] Successfully connected to database: thinfinity
+[21-Mar-2025 15:50:32 UTC] Token verified successfully for user: mathis
+[21-Mar-2025 15:50:32 UTC] Connecting to database: mysql, thinfinity, thinfinity_user
+[21-Mar-2025 15:50:32 UTC] Successfully connected to database: thinfinity
+[21-Mar-2025 15:51:40 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:51:40 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:51:40 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:51:40 UTC] Processing classes action: get_user_classes
+[21-Mar-2025 15:51:40 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:51:40 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:51:40 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:51:40 UTC] Processing classes action: get_upcoming_tasks
+[21-Mar-2025 15:51:40 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:51:40 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:51:40 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:51:40 UTC] Processing classes action: get_recent_activity
+[21-Mar-2025 15:52:07 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:52:07 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:52:07 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:52:07 UTC] Processing classes action: get_class_details
+[21-Mar-2025 15:52:07 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:52:07 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:52:07 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:52:07 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:52:07 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:52:07 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:52:07 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:52:07 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:52:07 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:52:07 UTC] Processing classes action: get_stream_messages
+[21-Mar-2025 15:52:07 UTC] Processing classes action: get_assignments
+[21-Mar-2025 15:52:07 UTC] Processing classes action: get_chat_messages
+[21-Mar-2025 15:52:10 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:52:10 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:52:10 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:52:10 UTC] Processing classes action: get_assignment_details
+[21-Mar-2025 15:52:23 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:52:23 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:52:23 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:52:23 UTC] Processing classes action: submit_assignment
+[21-Mar-2025 15:52:23 UTC] Received JSON: {"assignmentId":"2","content":"here teacher","attachmentUrl":null}
+[21-Mar-2025 15:52:23 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:52:23 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:52:23 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:52:23 UTC] Processing classes action: get_assignments
+[21-Mar-2025 15:52:27 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:52:27 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:52:27 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:52:27 UTC] Processing classes action: get_class_details
+[21-Mar-2025 15:52:27 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:52:27 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:52:27 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:52:27 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:52:27 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:52:27 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:52:27 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:52:27 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:52:27 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:52:27 UTC] Processing classes action: get_assignments
+[21-Mar-2025 15:52:27 UTC] Processing classes action: get_stream_messages
+[21-Mar-2025 15:52:27 UTC] Processing classes action: get_chat_messages
+[21-Mar-2025 15:53:07 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:53:07 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:53:07 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:53:07 UTC] Processing classes action: get_class_details
+[21-Mar-2025 15:53:07 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:53:07 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:53:07 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:53:07 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:53:07 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:53:07 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:53:08 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:53:08 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:53:08 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:53:08 UTC] Processing classes action: get_chat_messages
+[21-Mar-2025 15:53:08 UTC] Processing classes action: get_stream_messages
+[21-Mar-2025 15:53:08 UTC] Processing classes action: get_assignments
+[21-Mar-2025 15:53:09 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:53:09 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:53:09 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:53:09 UTC] Processing classes action: get_user_classes
+[21-Mar-2025 15:53:09 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:53:09 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:53:09 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:53:09 UTC] Processing classes action: get_upcoming_tasks
+[21-Mar-2025 15:53:09 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:53:09 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:53:09 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:53:09 UTC] Processing classes action: get_recent_activity
+[21-Mar-2025 15:53:16 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:53:16 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:53:16 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:53:16 UTC] Processing classes action: get_user_classes
+[21-Mar-2025 15:53:16 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:53:16 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:53:16 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:53:16 UTC] Processing classes action: get_teaching_classes
+[21-Mar-2025 15:53:16 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:53:16 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:53:16 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:53:16 UTC] Processing classes action: get_explore_classes
+[21-Mar-2025 15:53:22 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:53:22 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:53:22 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:53:22 UTC] Processing classes action: get_user_classes
+[21-Mar-2025 15:53:22 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:53:22 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:53:22 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:53:22 UTC] Processing classes action: get_upcoming_tasks
+[21-Mar-2025 15:53:22 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:53:22 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:53:22 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:53:22 UTC] Processing classes action: get_recent_activity
+[21-Mar-2025 15:53:40 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:53:40 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:53:40 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:53:40 UTC] Processing classes action: get_user_classes
+[21-Mar-2025 15:53:40 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:53:40 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:53:40 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:53:40 UTC] Processing classes action: get_upcoming_tasks
+[21-Mar-2025 15:53:40 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:53:40 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:53:40 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:53:40 UTC] Processing classes action: get_recent_activity
+[21-Mar-2025 15:53:48 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:53:48 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:53:48 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:53:48 UTC] Processing classes action: get_user_classes
+[21-Mar-2025 15:53:48 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:53:48 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:53:48 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:53:48 UTC] Processing classes action: get_teaching_classes
+[21-Mar-2025 15:53:48 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:53:48 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:53:48 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:53:48 UTC] Processing classes action: get_explore_classes
+[21-Mar-2025 15:53:50 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:53:50 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:53:50 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:53:50 UTC] Processing classes action: get_class_details
+[21-Mar-2025 15:53:50 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:53:50 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:53:50 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:53:51 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:53:51 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:53:51 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:53:51 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:53:51 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:53:51 UTC] Processing classes action: get_stream_messages
+[21-Mar-2025 15:53:51 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:53:51 UTC] Processing classes action: get_chat_messages
+[21-Mar-2025 15:53:51 UTC] Processing classes action: get_assignments
+[21-Mar-2025 15:53:52 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[21-Mar-2025 15:53:52 UTC] Successfully loaded autoload.php
+[21-Mar-2025 15:53:52 UTC] Loaded .env file from /var/www/html
+[21-Mar-2025 15:53:52 UTC] Processing classes action: get_assignment_details
+[05-Apr-2025 17:28:49 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[05-Apr-2025 17:28:49 UTC] Successfully loaded autoload.php
+[05-Apr-2025 17:28:49 UTC] Loaded .env file from /var/www/html
+[05-Apr-2025 17:28:50 UTC] Processing classes action: get_user_classes
+[05-Apr-2025 17:28:50 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[05-Apr-2025 17:28:50 UTC] Successfully loaded autoload.php
+[05-Apr-2025 17:28:50 UTC] Loaded .env file from /var/www/html
+[05-Apr-2025 17:28:50 UTC] Processing classes action: get_upcoming_tasks
+[05-Apr-2025 17:28:50 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[05-Apr-2025 17:28:50 UTC] Successfully loaded autoload.php
+[05-Apr-2025 17:28:50 UTC] Loaded .env file from /var/www/html
+[05-Apr-2025 17:28:50 UTC] Processing classes action: get_recent_activity
+[05-Apr-2025 17:29:04 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[05-Apr-2025 17:29:04 UTC] Successfully loaded autoload.php
+[05-Apr-2025 17:29:04 UTC] Loaded .env file from /var/www/html
+[05-Apr-2025 17:29:04 UTC] Processing classes action: get_user_classes
+[05-Apr-2025 17:29:04 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[05-Apr-2025 17:29:04 UTC] Successfully loaded autoload.php
+[05-Apr-2025 17:29:04 UTC] Loaded .env file from /var/www/html
+[05-Apr-2025 17:29:04 UTC] Processing classes action: get_teaching_classes
+[05-Apr-2025 17:29:04 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[05-Apr-2025 17:29:04 UTC] Successfully loaded autoload.php
+[05-Apr-2025 17:29:04 UTC] Loaded .env file from /var/www/html
+[05-Apr-2025 17:29:04 UTC] Processing classes action: get_explore_classes
+[05-Apr-2025 17:29:19 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[05-Apr-2025 17:29:19 UTC] Successfully loaded autoload.php
+[05-Apr-2025 17:29:19 UTC] Loaded .env file from /var/www/html
+[05-Apr-2025 17:29:19 UTC] Verifying token: 0362eab265...
+[05-Apr-2025 17:29:19 UTC] Connecting to database: mysql, thinfinity, thinfinity_user
+[05-Apr-2025 17:29:19 UTC] Successfully connected to database: thinfinity
+[05-Apr-2025 17:29:19 UTC] Token verified successfully for user: mathis
+[05-Apr-2025 17:29:19 UTC] Connecting to database: mysql, thinfinity, thinfinity_user
+[05-Apr-2025 17:29:19 UTC] Successfully connected to database: thinfinity
+[05-Apr-2025 17:29:26 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[05-Apr-2025 17:29:26 UTC] Successfully loaded autoload.php
+[05-Apr-2025 17:29:26 UTC] Loaded .env file from /var/www/html
+[05-Apr-2025 17:29:26 UTC] Verifying token: 0362eab265...
+[05-Apr-2025 17:29:26 UTC] Connecting to database: mysql, thinfinity, thinfinity_user
+[05-Apr-2025 17:29:26 UTC] Successfully connected to database: thinfinity
+[05-Apr-2025 17:29:26 UTC] Token verified successfully for user: mathis
+[05-Apr-2025 17:29:26 UTC] Connecting to database: mysql, thinfinity, thinfinity_user
+[05-Apr-2025 17:29:26 UTC] Successfully connected to database: thinfinity
+[05-Apr-2025 17:29:26 UTC] Starting updateUserSettings for userId: 1
+[05-Apr-2025 17:29:26 UTC] Data received: {"theme":"dark","fontSize":"100","accentColor":"#F97316"}
+[05-Apr-2025 17:29:26 UTC] user_settings table exists
+[05-Apr-2025 17:29:26 UTC] Settings data received: {"theme":"dark","fontSize":"100","accentColor":"#F97316"}
+[05-Apr-2025 17:29:26 UTC] Existing settings found for user 1, updating
+[05-Apr-2025 17:29:26 UTC] Updating setting theme to value dark
+[05-Apr-2025 17:29:26 UTC] Updating setting fontSize to value 100
+[05-Apr-2025 17:29:26 UTC] Updating setting accentColor to value #F97316
+[05-Apr-2025 17:29:26 UTC] Settings update query: UPDATE user_settings SET theme = ?, font_size = ?, accent_color = ? WHERE user_id = ?
+[05-Apr-2025 17:29:26 UTC] Settings updated for user 1
+[05-Apr-2025 17:29:26 UTC] Transaction committed successfully
+[29-Apr-2025 18:57:09 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[29-Apr-2025 18:57:09 UTC] Successfully loaded autoload.php
+[29-Apr-2025 18:57:09 UTC] Loaded .env file from /var/www/html
+[29-Apr-2025 18:57:09 UTC] Verifying token: 624d3ce2b5...
+[29-Apr-2025 18:57:09 UTC] Connecting to database: mysql, thinfinity, thinfinity_user
+[29-Apr-2025 18:57:09 UTC] Successfully connected to database: thinfinity
+[29-Apr-2025 18:57:09 UTC] Token verified successfully for user: mathis
+[29-Apr-2025 18:57:09 UTC] Connecting to database: mysql, thinfinity, thinfinity_user
+[29-Apr-2025 18:57:09 UTC] Successfully connected to database: thinfinity
+[29-Apr-2025 18:59:02 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[29-Apr-2025 18:59:02 UTC] Successfully loaded autoload.php
+[29-Apr-2025 18:59:03 UTC] Loaded .env file from /var/www/html
+[29-Apr-2025 18:59:03 UTC] Verifying token: 624d3ce2b5...
+[29-Apr-2025 18:59:03 UTC] Connecting to database: mysql, thinfinity, thinfinity_user
+[29-Apr-2025 18:59:03 UTC] Successfully connected to database: thinfinity
+[29-Apr-2025 18:59:03 UTC] Token verified successfully for user: mathis
+[29-Apr-2025 18:59:03 UTC] Connecting to database: mysql, thinfinity, thinfinity_user
+[29-Apr-2025 18:59:03 UTC] Successfully connected to database: thinfinity
+[29-Apr-2025 19:00:28 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[29-Apr-2025 19:00:28 UTC] Successfully loaded autoload.php
+[29-Apr-2025 19:00:29 UTC] Loaded .env file from /var/www/html
+[29-Apr-2025 19:00:29 UTC] Verifying token: 624d3ce2b5...
+[29-Apr-2025 19:00:29 UTC] Connecting to database: mysql, thinfinity, thinfinity_user
+[29-Apr-2025 19:00:29 UTC] Successfully connected to database: thinfinity
+[29-Apr-2025 19:00:29 UTC] Token verified successfully for user: mathis
+[29-Apr-2025 19:00:29 UTC] Connecting to database: mysql, thinfinity, thinfinity_user
+[29-Apr-2025 19:00:29 UTC] Successfully connected to database: thinfinity
+[29-Apr-2025 19:00:59 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[29-Apr-2025 19:00:59 UTC] Successfully loaded autoload.php
+[29-Apr-2025 19:00:59 UTC] Loaded .env file from /var/www/html
+[29-Apr-2025 19:00:59 UTC] Verifying token: 624d3ce2b5...
+[29-Apr-2025 19:00:59 UTC] Connecting to database: mysql, thinfinity, thinfinity_user
+[29-Apr-2025 19:00:59 UTC] Successfully connected to database: thinfinity
+[29-Apr-2025 19:00:59 UTC] Token verified successfully for user: mathis
+[29-Apr-2025 19:00:59 UTC] Connecting to database: mysql, thinfinity, thinfinity_user
+[29-Apr-2025 19:00:59 UTC] Successfully connected to database: thinfinity
+[29-Apr-2025 19:01:06 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[29-Apr-2025 19:01:06 UTC] Successfully loaded autoload.php
+[29-Apr-2025 19:01:06 UTC] Loaded .env file from /var/www/html
+[29-Apr-2025 19:01:06 UTC] Verifying token: 624d3ce2b5...
+[29-Apr-2025 19:01:06 UTC] Connecting to database: mysql, thinfinity, thinfinity_user
+[29-Apr-2025 19:01:06 UTC] Successfully connected to database: thinfinity
+[29-Apr-2025 19:01:06 UTC] Token verified successfully for user: mathis
+[29-Apr-2025 19:01:06 UTC] Connecting to database: mysql, thinfinity, thinfinity_user
+[29-Apr-2025 19:01:06 UTC] Successfully connected to database: thinfinity
+[29-Apr-2025 19:02:05 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[29-Apr-2025 19:02:05 UTC] Successfully loaded autoload.php
+[29-Apr-2025 19:02:05 UTC] Loaded .env file from /var/www/html
+[29-Apr-2025 19:02:05 UTC] Verifying token: 624d3ce2b5...
+[29-Apr-2025 19:02:05 UTC] Connecting to database: mysql, thinfinity, thinfinity_user
+[29-Apr-2025 19:02:05 UTC] Successfully connected to database: thinfinity
+[29-Apr-2025 19:02:05 UTC] Token verified successfully for user: mathis
+[29-Apr-2025 19:02:05 UTC] Connecting to database: mysql, thinfinity, thinfinity_user
+[29-Apr-2025 19:02:05 UTC] Successfully connected to database: thinfinity
+[29-Apr-2025 19:02:05 UTC] Starting updateUserSettings for userId: 1
+[29-Apr-2025 19:02:05 UTC] Data received: {"fullName":"Mathis Laarmanns","username":"mathis","email":"mathislaarmanns@gmail.com","phone":"+4916090290889","country":"de","education":"abitur","field":"Electronical Engineering"}
+[29-Apr-2025 19:02:05 UTC] Adding username to update fields: mathis
+[29-Apr-2025 19:02:05 UTC] Adding email to update fields: mathislaarmanns@gmail.com
+[29-Apr-2025 19:02:05 UTC] User update query: UPDATE users SET username = ?, email = ? WHERE id = ?
+[29-Apr-2025 19:02:05 UTC] User table updated successfully
+[29-Apr-2025 19:02:05 UTC] user_settings table exists
+[29-Apr-2025 19:02:05 UTC] Settings data received: {"fullName":"Mathis Laarmanns","username":"mathis","email":"mathislaarmanns@gmail.com","phone":"+4916090290889","country":"de","education":"abitur","field":"Electronical Engineering"}
+[29-Apr-2025 19:02:05 UTC] Existing settings found for user 1, updating
+[29-Apr-2025 19:02:05 UTC] Updating setting fullName to value Mathis Laarmanns
+[29-Apr-2025 19:02:05 UTC] Updating setting phone to value +4916090290889
+[29-Apr-2025 19:02:05 UTC] Updating setting country to value de
+[29-Apr-2025 19:02:05 UTC] Updating setting education to value abitur
+[29-Apr-2025 19:02:05 UTC] Updating setting field to value Electronical Engineering
+[29-Apr-2025 19:02:05 UTC] Settings update query: UPDATE user_settings SET full_name = ?, phone = ?, country = ?, education = ?, field_of_study = ? WHERE user_id = ?
+[29-Apr-2025 19:02:05 UTC] Settings updated for user 1
+[29-Apr-2025 19:02:05 UTC] Transaction committed successfully
+[29-Apr-2025 19:02:12 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[29-Apr-2025 19:02:12 UTC] Successfully loaded autoload.php
+[29-Apr-2025 19:02:12 UTC] Loaded .env file from /var/www/html
+[29-Apr-2025 19:02:12 UTC] Verifying token: 624d3ce2b5...
+[29-Apr-2025 19:02:12 UTC] Connecting to database: mysql, thinfinity, thinfinity_user
+[29-Apr-2025 19:02:12 UTC] Successfully connected to database: thinfinity
+[29-Apr-2025 19:02:12 UTC] Token verified successfully for user: mathis
+[29-Apr-2025 19:02:12 UTC] Connecting to database: mysql, thinfinity, thinfinity_user
+[29-Apr-2025 19:02:12 UTC] Successfully connected to database: thinfinity
+[29-Apr-2025 19:03:11 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[29-Apr-2025 19:03:11 UTC] Successfully loaded autoload.php
+[29-Apr-2025 19:03:11 UTC] Loaded .env file from /var/www/html
+[29-Apr-2025 19:03:11 UTC] Verifying token: 624d3ce2b5...
+[29-Apr-2025 19:03:11 UTC] Connecting to database: mysql, thinfinity, thinfinity_user
+[29-Apr-2025 19:03:11 UTC] Successfully connected to database: thinfinity
+[29-Apr-2025 19:03:11 UTC] Token verified successfully for user: mathis
+[29-Apr-2025 19:03:11 UTC] Connecting to database: mysql, thinfinity, thinfinity_user
+[29-Apr-2025 19:03:11 UTC] Successfully connected to database: thinfinity
+[29-Apr-2025 19:03:14 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[29-Apr-2025 19:03:14 UTC] Successfully loaded autoload.php
+[29-Apr-2025 19:03:14 UTC] Loaded .env file from /var/www/html
+[29-Apr-2025 19:03:14 UTC] Processing classes action: get_user_classes
+[29-Apr-2025 19:03:15 UTC] Created classes table
+[29-Apr-2025 19:03:15 UTC] Created class_members table
+[29-Apr-2025 19:03:15 UTC] Created class_assignments table
+[29-Apr-2025 19:03:15 UTC] Created assignment_submissions table
+[29-Apr-2025 19:03:15 UTC] Created class_messages table
+[29-Apr-2025 19:03:15 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[29-Apr-2025 19:03:15 UTC] Successfully loaded autoload.php
+[29-Apr-2025 19:03:15 UTC] Loaded .env file from /var/www/html
+[29-Apr-2025 19:03:15 UTC] Processing classes action: get_upcoming_tasks
+[29-Apr-2025 19:03:15 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[29-Apr-2025 19:03:15 UTC] Successfully loaded autoload.php
+[29-Apr-2025 19:03:15 UTC] Loaded .env file from /var/www/html
+[29-Apr-2025 19:03:15 UTC] Processing classes action: get_recent_activity
+[29-Apr-2025 19:03:17 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[29-Apr-2025 19:03:17 UTC] Successfully loaded autoload.php
+[29-Apr-2025 19:03:17 UTC] Loaded .env file from /var/www/html
+[29-Apr-2025 19:03:17 UTC] Processing classes action: get_user_classes
+[29-Apr-2025 19:03:17 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[29-Apr-2025 19:03:17 UTC] Successfully loaded autoload.php
+[29-Apr-2025 19:03:17 UTC] Loaded .env file from /var/www/html
+[29-Apr-2025 19:03:17 UTC] Processing classes action: get_upcoming_tasks
+[29-Apr-2025 19:03:17 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[29-Apr-2025 19:03:17 UTC] Successfully loaded autoload.php
+[29-Apr-2025 19:03:17 UTC] Loaded .env file from /var/www/html
+[29-Apr-2025 19:03:17 UTC] Processing classes action: get_recent_activity
+[29-Apr-2025 19:03:18 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[29-Apr-2025 19:03:18 UTC] Successfully loaded autoload.php
+[29-Apr-2025 19:03:18 UTC] Loaded .env file from /var/www/html
+[29-Apr-2025 19:03:18 UTC] Processing classes action: get_user_classes
+[29-Apr-2025 19:03:18 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[29-Apr-2025 19:03:18 UTC] Successfully loaded autoload.php
+[29-Apr-2025 19:03:18 UTC] Loaded .env file from /var/www/html
+[29-Apr-2025 19:03:18 UTC] Processing classes action: get_teaching_classes
+[29-Apr-2025 19:03:18 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[29-Apr-2025 19:03:18 UTC] Successfully loaded autoload.php
+[29-Apr-2025 19:03:18 UTC] Loaded .env file from /var/www/html
+[29-Apr-2025 19:03:18 UTC] Processing classes action: get_explore_classes
+[29-Apr-2025 19:05:12 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[29-Apr-2025 19:05:12 UTC] Successfully loaded autoload.php
+[29-Apr-2025 19:05:12 UTC] Loaded .env file from /var/www/html
+[29-Apr-2025 19:05:12 UTC] Processing classes action: create_class
+[29-Apr-2025 19:05:12 UTC] Received JSON: {"name":"Kanye West Gang","description":"gooning to LeBron James","category":"arts","level":"advanced","visibility":"public","color":"#4A6FFF","coverImage":null}
+[29-Apr-2025 19:05:12 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[29-Apr-2025 19:05:12 UTC] Successfully loaded autoload.php
+[29-Apr-2025 19:05:12 UTC] Loaded .env file from /var/www/html
+[29-Apr-2025 19:05:12 UTC] Processing classes action: get_class_details
+[29-Apr-2025 19:05:12 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[29-Apr-2025 19:05:12 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[29-Apr-2025 19:05:13 UTC] Successfully loaded autoload.php
+[29-Apr-2025 19:05:13 UTC] Successfully loaded autoload.php
+[29-Apr-2025 19:05:13 UTC] Loaded .env file from /var/www/html
+[29-Apr-2025 19:05:13 UTC] Loaded .env file from /var/www/html
+[29-Apr-2025 19:05:13 UTC] Processing classes action: get_assignments
+[29-Apr-2025 19:05:13 UTC] Processing classes action: get_stream_messages
+[29-Apr-2025 19:05:13 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[29-Apr-2025 19:05:13 UTC] Successfully loaded autoload.php
+[29-Apr-2025 19:05:13 UTC] Loaded .env file from /var/www/html
+[29-Apr-2025 19:05:13 UTC] Processing classes action: get_chat_messages
+[29-Apr-2025 19:06:28 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[29-Apr-2025 19:06:28 UTC] Successfully loaded autoload.php
+[29-Apr-2025 19:06:28 UTC] Loaded .env file from /var/www/html
+[29-Apr-2025 19:06:28 UTC] Processing classes action: post_message
+[29-Apr-2025 19:06:28 UTC] Received JSON: {"classId":1,"message":"hello","messageType":"chat"}
+[29-Apr-2025 19:06:28 UTC] Error posting class message: SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '' for column 'is_private' at row 1
+[29-Apr-2025 19:06:49 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[29-Apr-2025 19:06:49 UTC] Successfully loaded autoload.php
+[29-Apr-2025 19:06:49 UTC] Loaded .env file from /var/www/html
+[29-Apr-2025 19:06:49 UTC] Processing classes action: get_user_classes
+[29-Apr-2025 19:06:49 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[29-Apr-2025 19:06:49 UTC] Successfully loaded autoload.php
+[29-Apr-2025 19:06:49 UTC] Loaded .env file from /var/www/html
+[29-Apr-2025 19:06:49 UTC] Processing classes action: get_upcoming_tasks
+[29-Apr-2025 19:06:49 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[29-Apr-2025 19:06:49 UTC] Successfully loaded autoload.php
+[29-Apr-2025 19:06:49 UTC] Loaded .env file from /var/www/html
+[29-Apr-2025 19:06:49 UTC] Processing classes action: get_recent_activity
+[29-Apr-2025 19:08:33 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[29-Apr-2025 19:08:33 UTC] Successfully loaded autoload.php
+[29-Apr-2025 19:08:33 UTC] Loaded .env file from /var/www/html
+[29-Apr-2025 19:08:33 UTC] Received JSON: {"token":"113c72bcd3470d76e07701f40e5826d20410e844d79045b99b9cc241aed43f55"}
+[29-Apr-2025 19:08:33 UTC] Processing profile action: get_profile
+[29-Apr-2025 19:08:44 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[29-Apr-2025 19:08:44 UTC] Successfully loaded autoload.php
+[29-Apr-2025 19:08:44 UTC] Loaded .env file from /var/www/html
+[29-Apr-2025 19:08:44 UTC] Received JSON: {"token":"113c72bcd3470d76e07701f40e5826d20410e844d79045b99b9cc241aed43f55","profileImage":"http://minio:9000/user-profiles/profile_UQJDzKDoU77Pl_1745953724.png"}
+[29-Apr-2025 19:08:44 UTC] Processing profile action: update_profile
+[29-Apr-2025 19:08:58 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[29-Apr-2025 19:08:59 UTC] Successfully loaded autoload.php
+[29-Apr-2025 19:08:59 UTC] Loaded .env file from /var/www/html
+[29-Apr-2025 19:08:59 UTC] Processing classes action: get_user_classes
+[29-Apr-2025 19:08:59 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[29-Apr-2025 19:08:59 UTC] Successfully loaded autoload.php
+[29-Apr-2025 19:08:59 UTC] Loaded .env file from /var/www/html
+[29-Apr-2025 19:08:59 UTC] Processing classes action: get_upcoming_tasks
+[29-Apr-2025 19:08:59 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[29-Apr-2025 19:08:59 UTC] Successfully loaded autoload.php
+[29-Apr-2025 19:08:59 UTC] Loaded .env file from /var/www/html
+[29-Apr-2025 19:08:59 UTC] Processing classes action: get_recent_activity
+[29-Apr-2025 19:09:01 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[29-Apr-2025 19:09:01 UTC] Successfully loaded autoload.php
+[29-Apr-2025 19:09:01 UTC] Loaded .env file from /var/www/html
+[29-Apr-2025 19:09:01 UTC] Processing classes action: get_user_classes
+[29-Apr-2025 19:09:01 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[29-Apr-2025 19:09:01 UTC] Successfully loaded autoload.php
+[29-Apr-2025 19:09:01 UTC] Loaded .env file from /var/www/html
+[29-Apr-2025 19:09:01 UTC] Processing classes action: get_teaching_classes
+[29-Apr-2025 19:09:01 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[29-Apr-2025 19:09:01 UTC] Successfully loaded autoload.php
+[29-Apr-2025 19:09:01 UTC] Loaded .env file from /var/www/html
+[29-Apr-2025 19:09:01 UTC] Processing classes action: get_explore_classes
+[29-Apr-2025 19:09:13 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[29-Apr-2025 19:09:13 UTC] Successfully loaded autoload.php
+[29-Apr-2025 19:09:13 UTC] Loaded .env file from /var/www/html
+[29-Apr-2025 19:09:13 UTC] Processing classes action: get_explore_classes
+[29-Apr-2025 19:09:15 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[29-Apr-2025 19:09:15 UTC] Successfully loaded autoload.php
+[29-Apr-2025 19:09:15 UTC] Loaded .env file from /var/www/html
+[29-Apr-2025 19:09:15 UTC] Processing classes action: get_explore_classes
+[29-Apr-2025 19:09:17 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[29-Apr-2025 19:09:17 UTC] Successfully loaded autoload.php
+[29-Apr-2025 19:09:17 UTC] Loaded .env file from /var/www/html
+[29-Apr-2025 19:09:17 UTC] Processing classes action: get_explore_classes
+[29-Apr-2025 19:09:20 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[29-Apr-2025 19:09:20 UTC] Successfully loaded autoload.php
+[29-Apr-2025 19:09:20 UTC] Loaded .env file from /var/www/html
+[29-Apr-2025 19:09:20 UTC] Processing classes action: get_explore_classes
+[29-Apr-2025 19:09:22 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[29-Apr-2025 19:09:22 UTC] Successfully loaded autoload.php
+[29-Apr-2025 19:09:22 UTC] Loaded .env file from /var/www/html
+[29-Apr-2025 19:09:22 UTC] Processing classes action: get_explore_classes
+[29-Apr-2025 19:09:23 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[29-Apr-2025 19:09:23 UTC] Successfully loaded autoload.php
+[29-Apr-2025 19:09:23 UTC] Loaded .env file from /var/www/html
+[29-Apr-2025 19:09:23 UTC] Processing classes action: get_explore_classes
+[29-Apr-2025 19:09:25 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[29-Apr-2025 19:09:25 UTC] Successfully loaded autoload.php
+[29-Apr-2025 19:09:25 UTC] Loaded .env file from /var/www/html
+[29-Apr-2025 19:09:25 UTC] Processing classes action: get_class_details
+[29-Apr-2025 19:09:25 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[29-Apr-2025 19:09:25 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[29-Apr-2025 19:09:25 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[29-Apr-2025 19:09:25 UTC] Successfully loaded autoload.php
+[29-Apr-2025 19:09:25 UTC] Successfully loaded autoload.php
+[29-Apr-2025 19:09:25 UTC] Successfully loaded autoload.php
+[29-Apr-2025 19:09:25 UTC] Loaded .env file from /var/www/html
+[29-Apr-2025 19:09:25 UTC] Loaded .env file from /var/www/html
+[29-Apr-2025 19:09:25 UTC] Loaded .env file from /var/www/html
+[29-Apr-2025 19:09:25 UTC] Processing classes action: get_assignments
+[29-Apr-2025 19:09:25 UTC] Processing classes action: get_chat_messages
+[29-Apr-2025 19:09:25 UTC] Processing classes action: get_stream_messages
+[29-Apr-2025 19:09:45 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[29-Apr-2025 19:09:45 UTC] Successfully loaded autoload.php
+[29-Apr-2025 19:09:46 UTC] Loaded .env file from /var/www/html
+[29-Apr-2025 19:09:46 UTC] Processing classes action: get_class_details
+[29-Apr-2025 19:09:46 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[29-Apr-2025 19:09:46 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[29-Apr-2025 19:09:46 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[29-Apr-2025 19:09:46 UTC] Successfully loaded autoload.php
+[29-Apr-2025 19:09:46 UTC] Successfully loaded autoload.php
+[29-Apr-2025 19:09:46 UTC] Successfully loaded autoload.php
+[29-Apr-2025 19:09:46 UTC] Loaded .env file from /var/www/html
+[29-Apr-2025 19:09:46 UTC] Loaded .env file from /var/www/html
+[29-Apr-2025 19:09:46 UTC] Loaded .env file from /var/www/html
+[29-Apr-2025 19:09:46 UTC] Processing classes action: get_stream_messages
+[29-Apr-2025 19:09:46 UTC] Processing classes action: get_chat_messages
+[29-Apr-2025 19:09:46 UTC] Processing classes action: get_assignments
+[29-Apr-2025 19:09:53 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[29-Apr-2025 19:09:53 UTC] Successfully loaded autoload.php
+[29-Apr-2025 19:09:53 UTC] Loaded .env file from /var/www/html
+[29-Apr-2025 19:09:53 UTC] Processing classes action: post_message
+[29-Apr-2025 19:09:53 UTC] Received JSON: {"classId":1,"message":"dsff","messageType":"chat"}
+[29-Apr-2025 19:09:56 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[29-Apr-2025 19:09:56 UTC] Successfully loaded autoload.php
+[29-Apr-2025 19:09:56 UTC] Loaded .env file from /var/www/html
+[29-Apr-2025 19:09:57 UTC] Processing classes action: get_teaching_classes
+[29-Apr-2025 19:09:57 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[29-Apr-2025 19:09:57 UTC] Successfully loaded autoload.php
+[29-Apr-2025 19:09:57 UTC] Loaded .env file from /var/www/html
+[29-Apr-2025 19:09:57 UTC] Processing classes action: get_explore_classes
+[29-Apr-2025 19:10:13 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[29-Apr-2025 19:10:13 UTC] Successfully loaded autoload.php
+[29-Apr-2025 19:10:13 UTC] Loaded .env file from /var/www/html
+[29-Apr-2025 19:10:13 UTC] Processing classes action: join_class
+[29-Apr-2025 19:10:13 UTC] Received JSON: {"classCode":"8NPCP2"}
+[29-Apr-2025 19:10:13 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[29-Apr-2025 19:10:13 UTC] Successfully loaded autoload.php
+[29-Apr-2025 19:10:13 UTC] Loaded .env file from /var/www/html
+[29-Apr-2025 19:10:13 UTC] Processing classes action: get_class_details
+[29-Apr-2025 19:10:13 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[29-Apr-2025 19:10:13 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[29-Apr-2025 19:10:13 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[29-Apr-2025 19:10:13 UTC] Successfully loaded autoload.php
+[29-Apr-2025 19:10:13 UTC] Successfully loaded autoload.php
+[29-Apr-2025 19:10:13 UTC] Successfully loaded autoload.php
+[29-Apr-2025 19:10:14 UTC] Loaded .env file from /var/www/html
+[29-Apr-2025 19:10:14 UTC] Loaded .env file from /var/www/html
+[29-Apr-2025 19:10:14 UTC] Loaded .env file from /var/www/html
+[29-Apr-2025 19:10:14 UTC] Processing classes action: get_assignments
+[29-Apr-2025 19:10:14 UTC] Processing classes action: get_chat_messages
+[29-Apr-2025 19:10:14 UTC] Processing classes action: get_stream_messages
+[29-Apr-2025 19:10:19 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[29-Apr-2025 19:10:19 UTC] Successfully loaded autoload.php
+[29-Apr-2025 19:10:19 UTC] Loaded .env file from /var/www/html
+[29-Apr-2025 19:10:19 UTC] Processing classes action: post_message
+[29-Apr-2025 19:10:19 UTC] Received JSON: {"classId":1,"message":"ycccscsy","messageType":"chat"}
+[29-Apr-2025 19:10:19 UTC] Error posting class message: SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '' for column 'is_private' at row 1
+[29-Apr-2025 19:11:49 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[29-Apr-2025 19:11:49 UTC] Successfully loaded autoload.php
+[29-Apr-2025 19:11:49 UTC] Loaded .env file from /var/www/html
+[29-Apr-2025 19:11:49 UTC] Received JSON: {"query":"math","filter":"all","page":1,"limit":10,"token":"113c72bcd3470d76e07701f40e5826d20410e844d79045b99b9cc241aed43f55"}
+[29-Apr-2025 19:11:49 UTC] Processing search action: search_users
+[29-Apr-2025 19:11:51 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[29-Apr-2025 19:11:51 UTC] Successfully loaded autoload.php
+[29-Apr-2025 19:11:51 UTC] Loaded .env file from /var/www/html
+[29-Apr-2025 19:11:51 UTC] Received JSON: {"uuid":"r9NKK93Ld97If","token":"113c72bcd3470d76e07701f40e5826d20410e844d79045b99b9cc241aed43f55"}
+[29-Apr-2025 19:11:51 UTC] Processing profile action: public_profile
+[29-Apr-2025 19:12:13 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[29-Apr-2025 19:12:13 UTC] Successfully loaded autoload.php
+[29-Apr-2025 19:12:13 UTC] Loaded .env file from /var/www/html
+[29-Apr-2025 19:12:13 UTC] Received JSON: {"query":"xvxvv","filter":"all","page":1,"limit":10,"token":"113c72bcd3470d76e07701f40e5826d20410e844d79045b99b9cc241aed43f55"}
+[29-Apr-2025 19:12:13 UTC] Processing search action: search_users
+[29-Apr-2025 19:12:18 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[29-Apr-2025 19:12:18 UTC] Successfully loaded autoload.php
+[29-Apr-2025 19:12:18 UTC] Loaded .env file from /var/www/html
+[29-Apr-2025 19:12:18 UTC] Received JSON: {"query":"almond","filter":"all","page":1,"limit":10,"token":"113c72bcd3470d76e07701f40e5826d20410e844d79045b99b9cc241aed43f55"}
+[29-Apr-2025 19:12:18 UTC] Processing search action: search_users
+[29-Apr-2025 19:12:20 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[29-Apr-2025 19:12:20 UTC] Successfully loaded autoload.php
+[29-Apr-2025 19:12:20 UTC] Loaded .env file from /var/www/html
+[29-Apr-2025 19:12:20 UTC] Received JSON: {"token":"113c72bcd3470d76e07701f40e5826d20410e844d79045b99b9cc241aed43f55"}
+[29-Apr-2025 19:12:20 UTC] Processing profile action: get_profile
+[29-Apr-2025 19:12:26 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[29-Apr-2025 19:12:26 UTC] Successfully loaded autoload.php
+[29-Apr-2025 19:12:26 UTC] Loaded .env file from /var/www/html
+[29-Apr-2025 19:12:26 UTC] Received JSON: {"query":"mathis","filter":"all","page":1,"limit":10,"token":"113c72bcd3470d76e07701f40e5826d20410e844d79045b99b9cc241aed43f55"}
+[29-Apr-2025 19:12:26 UTC] Processing search action: search_users
+[29-Apr-2025 19:12:28 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[29-Apr-2025 19:12:28 UTC] Successfully loaded autoload.php
+[29-Apr-2025 19:12:28 UTC] Loaded .env file from /var/www/html
+[29-Apr-2025 19:12:28 UTC] Received JSON: {"uuid":"r9NKK93Ld97If","token":"113c72bcd3470d76e07701f40e5826d20410e844d79045b99b9cc241aed43f55"}
+[29-Apr-2025 19:12:28 UTC] Processing profile action: public_profile
+[29-Apr-2025 19:12:56 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[29-Apr-2025 19:12:56 UTC] Successfully loaded autoload.php
+[29-Apr-2025 19:12:56 UTC] Loaded .env file from /var/www/html
+[29-Apr-2025 19:12:56 UTC] Verifying token: a9cec50e29...
+[29-Apr-2025 19:12:56 UTC] Connecting to database: mysql, thinfinity, thinfinity_user
+[29-Apr-2025 19:12:56 UTC] Successfully connected to database: thinfinity
+[29-Apr-2025 19:12:56 UTC] Token verified successfully for user: mathis
+[29-Apr-2025 19:12:56 UTC] Connecting to database: mysql, thinfinity, thinfinity_user
+[29-Apr-2025 19:12:56 UTC] Successfully connected to database: thinfinity
+[29-Apr-2025 19:14:08 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[29-Apr-2025 19:14:08 UTC] Successfully loaded autoload.php
+[29-Apr-2025 19:14:08 UTC] Loaded .env file from /var/www/html
+[29-Apr-2025 19:14:08 UTC] Verifying token: a9cec50e29...
+[29-Apr-2025 19:14:08 UTC] Connecting to database: mysql, thinfinity, thinfinity_user
+[29-Apr-2025 19:14:08 UTC] Successfully connected to database: thinfinity
+[29-Apr-2025 19:14:08 UTC] Token verified successfully for user: mathis
+[29-Apr-2025 19:14:08 UTC] Connecting to database: mysql, thinfinity, thinfinity_user
+[29-Apr-2025 19:14:08 UTC] Successfully connected to database: thinfinity
+[29-Apr-2025 19:15:11 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[29-Apr-2025 19:15:11 UTC] Successfully loaded autoload.php
+[29-Apr-2025 19:15:11 UTC] Loaded .env file from /var/www/html
+[29-Apr-2025 19:15:11 UTC] Verifying token: a9cec50e29...
+[29-Apr-2025 19:15:11 UTC] Connecting to database: mysql, thinfinity, thinfinity_user
+[29-Apr-2025 19:15:11 UTC] Successfully connected to database: thinfinity
+[29-Apr-2025 19:15:11 UTC] Token verified successfully for user: mathis
+[29-Apr-2025 19:15:11 UTC] Connecting to database: mysql, thinfinity, thinfinity_user
+[29-Apr-2025 19:15:11 UTC] Successfully connected to database: thinfinity
+[29-Apr-2025 19:15:22 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[29-Apr-2025 19:15:22 UTC] Successfully loaded autoload.php
+[29-Apr-2025 19:15:22 UTC] Loaded .env file from /var/www/html
+[29-Apr-2025 19:15:22 UTC] Verifying token: a9cec50e29...
+[29-Apr-2025 19:15:22 UTC] Connecting to database: mysql, thinfinity, thinfinity_user
+[29-Apr-2025 19:15:22 UTC] Successfully connected to database: thinfinity
+[29-Apr-2025 19:15:22 UTC] Token verified successfully for user: mathis
+[29-Apr-2025 19:15:22 UTC] Connecting to database: mysql, thinfinity, thinfinity_user
+[29-Apr-2025 19:15:22 UTC] Successfully connected to database: thinfinity
+[29-Apr-2025 19:15:22 UTC] Starting updateUserSettings for userId: 1
+[29-Apr-2025 19:15:22 UTC] Data received: {"theme":"dark","fontSize":"100","accentColor":"#4a6cf7"}
+[29-Apr-2025 19:15:22 UTC] user_settings table exists
+[29-Apr-2025 19:15:22 UTC] Settings data received: {"theme":"dark","fontSize":"100","accentColor":"#4a6cf7"}
+[29-Apr-2025 19:15:22 UTC] Existing settings found for user 1, updating
+[29-Apr-2025 19:15:22 UTC] Updating setting theme to value dark
+[29-Apr-2025 19:15:22 UTC] Updating setting fontSize to value 100
+[29-Apr-2025 19:15:22 UTC] Updating setting accentColor to value #4a6cf7
+[29-Apr-2025 19:15:22 UTC] Settings update query: UPDATE user_settings SET theme = ?, font_size = ?, accent_color = ? WHERE user_id = ?
+[29-Apr-2025 19:15:22 UTC] Settings updated for user 1
+[29-Apr-2025 19:15:22 UTC] Transaction committed successfully
+[29-Apr-2025 19:16:15 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[29-Apr-2025 19:16:15 UTC] Successfully loaded autoload.php
+[29-Apr-2025 19:16:15 UTC] Loaded .env file from /var/www/html
+[29-Apr-2025 19:16:15 UTC] Verifying token: a9cec50e29...
+[29-Apr-2025 19:16:15 UTC] Connecting to database: mysql, thinfinity, thinfinity_user
+[29-Apr-2025 19:16:15 UTC] Successfully connected to database: thinfinity
+[29-Apr-2025 19:16:15 UTC] Token verified successfully for user: mathis
+[29-Apr-2025 19:16:15 UTC] Connecting to database: mysql, thinfinity, thinfinity_user
+[29-Apr-2025 19:16:15 UTC] Successfully connected to database: thinfinity
+[29-Apr-2025 19:16:15 UTC] Starting updateUserSettings for userId: 1
+[29-Apr-2025 19:16:15 UTC] Data received: {"theme":"dark","fontSize":"120","accentColor":"#4a6cf7"}
+[29-Apr-2025 19:16:15 UTC] user_settings table exists
+[29-Apr-2025 19:16:15 UTC] Settings data received: {"theme":"dark","fontSize":"120","accentColor":"#4a6cf7"}
+[29-Apr-2025 19:16:15 UTC] Existing settings found for user 1, updating
+[29-Apr-2025 19:16:15 UTC] Updating setting theme to value dark
+[29-Apr-2025 19:16:15 UTC] Updating setting fontSize to value 120
+[29-Apr-2025 19:16:15 UTC] Updating setting accentColor to value #4a6cf7
+[29-Apr-2025 19:16:15 UTC] Settings update query: UPDATE user_settings SET theme = ?, font_size = ?, accent_color = ? WHERE user_id = ?
+[29-Apr-2025 19:16:15 UTC] Settings updated for user 1
+[29-Apr-2025 19:16:15 UTC] Transaction committed successfully
+[29-Apr-2025 19:16:18 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[29-Apr-2025 19:16:18 UTC] Successfully loaded autoload.php
+[29-Apr-2025 19:16:18 UTC] Loaded .env file from /var/www/html
+[29-Apr-2025 19:16:18 UTC] Verifying token: a9cec50e29...
+[29-Apr-2025 19:16:18 UTC] Connecting to database: mysql, thinfinity, thinfinity_user
+[29-Apr-2025 19:16:18 UTC] Successfully connected to database: thinfinity
+[29-Apr-2025 19:16:18 UTC] Token verified successfully for user: mathis
+[29-Apr-2025 19:16:18 UTC] Connecting to database: mysql, thinfinity, thinfinity_user
+[29-Apr-2025 19:16:18 UTC] Successfully connected to database: thinfinity
+[29-Apr-2025 19:16:18 UTC] Starting updateUserSettings for userId: 1
+[29-Apr-2025 19:16:18 UTC] Data received: {"theme":"dark","fontSize":"111","accentColor":"#4a6cf7"}
+[29-Apr-2025 19:16:18 UTC] user_settings table exists
+[29-Apr-2025 19:16:18 UTC] Settings data received: {"theme":"dark","fontSize":"111","accentColor":"#4a6cf7"}
+[29-Apr-2025 19:16:18 UTC] Existing settings found for user 1, updating
+[29-Apr-2025 19:16:18 UTC] Updating setting theme to value dark
+[29-Apr-2025 19:16:18 UTC] Updating setting fontSize to value 111
+[29-Apr-2025 19:16:18 UTC] Updating setting accentColor to value #4a6cf7
+[29-Apr-2025 19:16:18 UTC] Settings update query: UPDATE user_settings SET theme = ?, font_size = ?, accent_color = ? WHERE user_id = ?
+[29-Apr-2025 19:16:18 UTC] Settings updated for user 1
+[29-Apr-2025 19:16:18 UTC] Transaction committed successfully
+[29-Apr-2025 19:16:23 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[29-Apr-2025 19:16:23 UTC] Successfully loaded autoload.php
+[29-Apr-2025 19:16:23 UTC] Loaded .env file from /var/www/html
+[29-Apr-2025 19:16:23 UTC] Verifying token: a9cec50e29...
+[29-Apr-2025 19:16:23 UTC] Connecting to database: mysql, thinfinity, thinfinity_user
+[29-Apr-2025 19:16:23 UTC] Successfully connected to database: thinfinity
+[29-Apr-2025 19:16:23 UTC] Token verified successfully for user: mathis
+[29-Apr-2025 19:16:23 UTC] Connecting to database: mysql, thinfinity, thinfinity_user
+[29-Apr-2025 19:16:23 UTC] Successfully connected to database: thinfinity
+[29-Apr-2025 19:16:23 UTC] Starting updateUserSettings for userId: 1
+[29-Apr-2025 19:16:23 UTC] Data received: {"theme":"dark","fontSize":"112","accentColor":"#4a6cf7"}
+[29-Apr-2025 19:16:23 UTC] user_settings table exists
+[29-Apr-2025 19:16:23 UTC] Settings data received: {"theme":"dark","fontSize":"112","accentColor":"#4a6cf7"}
+[29-Apr-2025 19:16:23 UTC] Existing settings found for user 1, updating
+[29-Apr-2025 19:16:23 UTC] Updating setting theme to value dark
+[29-Apr-2025 19:16:23 UTC] Updating setting fontSize to value 112
+[29-Apr-2025 19:16:24 UTC] Updating setting accentColor to value #4a6cf7
+[29-Apr-2025 19:16:24 UTC] Settings update query: UPDATE user_settings SET theme = ?, font_size = ?, accent_color = ? WHERE user_id = ?
+[29-Apr-2025 19:16:24 UTC] Settings updated for user 1
+[29-Apr-2025 19:16:24 UTC] Transaction committed successfully
+[29-Apr-2025 19:16:26 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[29-Apr-2025 19:16:26 UTC] Successfully loaded autoload.php
+[29-Apr-2025 19:16:27 UTC] Loaded .env file from /var/www/html
+[29-Apr-2025 19:16:27 UTC] Verifying token: a9cec50e29...
+[29-Apr-2025 19:16:27 UTC] Connecting to database: mysql, thinfinity, thinfinity_user
+[29-Apr-2025 19:16:27 UTC] Successfully connected to database: thinfinity
+[29-Apr-2025 19:16:27 UTC] Token verified successfully for user: mathis
+[29-Apr-2025 19:16:27 UTC] Connecting to database: mysql, thinfinity, thinfinity_user
+[29-Apr-2025 19:16:27 UTC] Successfully connected to database: thinfinity
+[29-Apr-2025 19:16:27 UTC] Starting updateUserSettings for userId: 1
+[29-Apr-2025 19:16:27 UTC] Data received: {"theme":"dark","fontSize":"120","accentColor":"#4a6cf7"}
+[29-Apr-2025 19:16:27 UTC] user_settings table exists
+[29-Apr-2025 19:16:27 UTC] Settings data received: {"theme":"dark","fontSize":"120","accentColor":"#4a6cf7"}
+[29-Apr-2025 19:16:27 UTC] Existing settings found for user 1, updating
+[29-Apr-2025 19:16:27 UTC] Updating setting theme to value dark
+[29-Apr-2025 19:16:27 UTC] Updating setting fontSize to value 120
+[29-Apr-2025 19:16:27 UTC] Updating setting accentColor to value #4a6cf7
+[29-Apr-2025 19:16:27 UTC] Settings update query: UPDATE user_settings SET theme = ?, font_size = ?, accent_color = ? WHERE user_id = ?
+[29-Apr-2025 19:16:27 UTC] Settings updated for user 1
+[29-Apr-2025 19:16:27 UTC] Transaction committed successfully
+[29-Apr-2025 19:16:29 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[29-Apr-2025 19:16:29 UTC] Successfully loaded autoload.php
+[29-Apr-2025 19:16:29 UTC] Loaded .env file from /var/www/html
+[29-Apr-2025 19:16:29 UTC] Verifying token: a9cec50e29...
+[29-Apr-2025 19:16:29 UTC] Connecting to database: mysql, thinfinity, thinfinity_user
+[29-Apr-2025 19:16:29 UTC] Successfully connected to database: thinfinity
+[29-Apr-2025 19:16:29 UTC] Token verified successfully for user: mathis
+[29-Apr-2025 19:16:29 UTC] Connecting to database: mysql, thinfinity, thinfinity_user
+[29-Apr-2025 19:16:29 UTC] Successfully connected to database: thinfinity
+[29-Apr-2025 19:16:29 UTC] Starting updateUserSettings for userId: 1
+[29-Apr-2025 19:16:29 UTC] Data received: {"theme":"dark","fontSize":"120","accentColor":"#F97316"}
+[29-Apr-2025 19:16:29 UTC] user_settings table exists
+[29-Apr-2025 19:16:29 UTC] Settings data received: {"theme":"dark","fontSize":"120","accentColor":"#F97316"}
+[29-Apr-2025 19:16:29 UTC] Existing settings found for user 1, updating
+[29-Apr-2025 19:16:29 UTC] Updating setting theme to value dark
+[29-Apr-2025 19:16:29 UTC] Updating setting fontSize to value 120
+[29-Apr-2025 19:16:29 UTC] Updating setting accentColor to value #F97316
+[29-Apr-2025 19:16:29 UTC] Settings update query: UPDATE user_settings SET theme = ?, font_size = ?, accent_color = ? WHERE user_id = ?
+[29-Apr-2025 19:16:29 UTC] Settings updated for user 1
+[29-Apr-2025 19:16:29 UTC] Transaction committed successfully
+[29-Apr-2025 19:16:31 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[29-Apr-2025 19:16:31 UTC] Successfully loaded autoload.php
+[29-Apr-2025 19:16:31 UTC] Loaded .env file from /var/www/html
+[29-Apr-2025 19:16:31 UTC] Verifying token: a9cec50e29...
+[29-Apr-2025 19:16:31 UTC] Connecting to database: mysql, thinfinity, thinfinity_user
+[29-Apr-2025 19:16:31 UTC] Successfully connected to database: thinfinity
+[29-Apr-2025 19:16:31 UTC] Token verified successfully for user: mathis
+[29-Apr-2025 19:16:31 UTC] Connecting to database: mysql, thinfinity, thinfinity_user
+[29-Apr-2025 19:16:31 UTC] Successfully connected to database: thinfinity
+[29-Apr-2025 19:16:31 UTC] Starting updateUserSettings for userId: 1
+[29-Apr-2025 19:16:31 UTC] Data received: {"theme":"dark","fontSize":"120","accentColor":"#F43F5E"}
+[29-Apr-2025 19:16:31 UTC] user_settings table exists
+[29-Apr-2025 19:16:31 UTC] Settings data received: {"theme":"dark","fontSize":"120","accentColor":"#F43F5E"}
+[29-Apr-2025 19:16:31 UTC] Existing settings found for user 1, updating
+[29-Apr-2025 19:16:31 UTC] Updating setting theme to value dark
+[29-Apr-2025 19:16:31 UTC] Updating setting fontSize to value 120
+[29-Apr-2025 19:16:31 UTC] Updating setting accentColor to value #F43F5E
+[29-Apr-2025 19:16:31 UTC] Settings update query: UPDATE user_settings SET theme = ?, font_size = ?, accent_color = ? WHERE user_id = ?
+[29-Apr-2025 19:16:31 UTC] Settings updated for user 1
+[29-Apr-2025 19:16:31 UTC] Transaction committed successfully
+[29-Apr-2025 19:16:31 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[29-Apr-2025 19:16:32 UTC] Successfully loaded autoload.php
+[29-Apr-2025 19:16:32 UTC] Loaded .env file from /var/www/html
+[29-Apr-2025 19:16:32 UTC] Verifying token: a9cec50e29...
+[29-Apr-2025 19:16:32 UTC] Connecting to database: mysql, thinfinity, thinfinity_user
+[29-Apr-2025 19:16:32 UTC] Successfully connected to database: thinfinity
+[29-Apr-2025 19:16:32 UTC] Token verified successfully for user: mathis
+[29-Apr-2025 19:16:32 UTC] Connecting to database: mysql, thinfinity, thinfinity_user
+[29-Apr-2025 19:16:32 UTC] Successfully connected to database: thinfinity
+[29-Apr-2025 19:16:32 UTC] Starting updateUserSettings for userId: 1
+[29-Apr-2025 19:16:32 UTC] Data received: {"theme":"dark","fontSize":"120","accentColor":"#10B981"}
+[29-Apr-2025 19:16:32 UTC] user_settings table exists
+[29-Apr-2025 19:16:32 UTC] Settings data received: {"theme":"dark","fontSize":"120","accentColor":"#10B981"}
+[29-Apr-2025 19:16:32 UTC] Existing settings found for user 1, updating
+[29-Apr-2025 19:16:32 UTC] Updating setting theme to value dark
+[29-Apr-2025 19:16:32 UTC] Updating setting fontSize to value 120
+[29-Apr-2025 19:16:32 UTC] Updating setting accentColor to value #10B981
+[29-Apr-2025 19:16:32 UTC] Settings update query: UPDATE user_settings SET theme = ?, font_size = ?, accent_color = ? WHERE user_id = ?
+[29-Apr-2025 19:16:32 UTC] Settings updated for user 1
+[29-Apr-2025 19:16:32 UTC] Transaction committed successfully
+[29-Apr-2025 19:16:44 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[29-Apr-2025 19:16:44 UTC] Successfully loaded autoload.php
+[29-Apr-2025 19:16:44 UTC] Loaded .env file from /var/www/html
+[29-Apr-2025 19:16:44 UTC] Verifying token: a9cec50e29...
+[29-Apr-2025 19:16:44 UTC] Connecting to database: mysql, thinfinity, thinfinity_user
+[29-Apr-2025 19:16:44 UTC] Successfully connected to database: thinfinity
+[29-Apr-2025 19:16:44 UTC] Token verified successfully for user: mathis
+[29-Apr-2025 19:16:44 UTC] Connecting to database: mysql, thinfinity, thinfinity_user
+[29-Apr-2025 19:16:44 UTC] Successfully connected to database: thinfinity
+[29-Apr-2025 19:16:44 UTC] Starting updateUserSettings for userId: 1
+[29-Apr-2025 19:16:44 UTC] Data received: {"theme":"dark","fontSize":"80","accentColor":"#10B981"}
+[29-Apr-2025 19:16:44 UTC] user_settings table exists
+[29-Apr-2025 19:16:44 UTC] Settings data received: {"theme":"dark","fontSize":"80","accentColor":"#10B981"}
+[29-Apr-2025 19:16:44 UTC] Existing settings found for user 1, updating
+[29-Apr-2025 19:16:44 UTC] Updating setting theme to value dark
+[29-Apr-2025 19:16:44 UTC] Updating setting fontSize to value 80
+[29-Apr-2025 19:16:44 UTC] Updating setting accentColor to value #10B981
+[29-Apr-2025 19:16:44 UTC] Settings update query: UPDATE user_settings SET theme = ?, font_size = ?, accent_color = ? WHERE user_id = ?
+[29-Apr-2025 19:16:44 UTC] Settings updated for user 1
+[29-Apr-2025 19:16:44 UTC] Transaction committed successfully
+[29-Apr-2025 19:16:45 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[29-Apr-2025 19:16:45 UTC] Successfully loaded autoload.php
+[29-Apr-2025 19:16:45 UTC] Loaded .env file from /var/www/html
+[29-Apr-2025 19:16:45 UTC] Verifying token: a9cec50e29...
+[29-Apr-2025 19:16:45 UTC] Connecting to database: mysql, thinfinity, thinfinity_user
+[29-Apr-2025 19:16:45 UTC] Successfully connected to database: thinfinity
+[29-Apr-2025 19:16:45 UTC] Token verified successfully for user: mathis
+[29-Apr-2025 19:16:45 UTC] Connecting to database: mysql, thinfinity, thinfinity_user
+[29-Apr-2025 19:16:45 UTC] Successfully connected to database: thinfinity
+[29-Apr-2025 19:16:45 UTC] Starting updateUserSettings for userId: 1
+[29-Apr-2025 19:16:45 UTC] Data received: {"theme":"system","fontSize":"80","accentColor":"#10B981"}
+[29-Apr-2025 19:16:45 UTC] user_settings table exists
+[29-Apr-2025 19:16:45 UTC] Settings data received: {"theme":"system","fontSize":"80","accentColor":"#10B981"}
+[29-Apr-2025 19:16:45 UTC] Existing settings found for user 1, updating
+[29-Apr-2025 19:16:45 UTC] Updating setting theme to value system
+[29-Apr-2025 19:16:45 UTC] Updating setting fontSize to value 80
+[29-Apr-2025 19:16:45 UTC] Updating setting accentColor to value #10B981
+[29-Apr-2025 19:16:45 UTC] Settings update query: UPDATE user_settings SET theme = ?, font_size = ?, accent_color = ? WHERE user_id = ?
+[29-Apr-2025 19:16:45 UTC] Settings updated for user 1
+[29-Apr-2025 19:16:45 UTC] Transaction committed successfully
+[29-Apr-2025 19:16:51 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[29-Apr-2025 19:16:51 UTC] Successfully loaded autoload.php
+[29-Apr-2025 19:16:51 UTC] Loaded .env file from /var/www/html
+[29-Apr-2025 19:16:51 UTC] Verifying token: a9cec50e29...
+[29-Apr-2025 19:16:51 UTC] Connecting to database: mysql, thinfinity, thinfinity_user
+[29-Apr-2025 19:16:51 UTC] Successfully connected to database: thinfinity
+[29-Apr-2025 19:16:51 UTC] Token verified successfully for user: mathis
+[29-Apr-2025 19:16:51 UTC] Connecting to database: mysql, thinfinity, thinfinity_user
+[29-Apr-2025 19:16:51 UTC] Successfully connected to database: thinfinity
+[29-Apr-2025 19:16:51 UTC] Starting updateUserSettings for userId: 1
+[29-Apr-2025 19:16:51 UTC] Data received: {"theme":"light","fontSize":"80","accentColor":"#10B981"}
+[29-Apr-2025 19:16:51 UTC] user_settings table exists
+[29-Apr-2025 19:16:51 UTC] Settings data received: {"theme":"light","fontSize":"80","accentColor":"#10B981"}
+[29-Apr-2025 19:16:51 UTC] Existing settings found for user 1, updating
+[29-Apr-2025 19:16:51 UTC] Updating setting theme to value light
+[29-Apr-2025 19:16:51 UTC] Updating setting fontSize to value 80
+[29-Apr-2025 19:16:51 UTC] Updating setting accentColor to value #10B981
+[29-Apr-2025 19:16:51 UTC] Settings update query: UPDATE user_settings SET theme = ?, font_size = ?, accent_color = ? WHERE user_id = ?
+[29-Apr-2025 19:16:51 UTC] Settings updated for user 1
+[29-Apr-2025 19:16:51 UTC] Transaction committed successfully
+[29-Apr-2025 19:16:54 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[29-Apr-2025 19:16:54 UTC] Successfully loaded autoload.php
+[29-Apr-2025 19:16:54 UTC] Loaded .env file from /var/www/html
+[29-Apr-2025 19:16:54 UTC] Verifying token: a9cec50e29...
+[29-Apr-2025 19:16:54 UTC] Connecting to database: mysql, thinfinity, thinfinity_user
+[29-Apr-2025 19:16:54 UTC] Successfully connected to database: thinfinity
+[29-Apr-2025 19:16:54 UTC] Token verified successfully for user: mathis
+[29-Apr-2025 19:16:54 UTC] Connecting to database: mysql, thinfinity, thinfinity_user
+[29-Apr-2025 19:16:54 UTC] Successfully connected to database: thinfinity
+[29-Apr-2025 19:16:54 UTC] Starting updateUserSettings for userId: 1
+[29-Apr-2025 19:16:54 UTC] Data received: {"theme":"light","fontSize":"80","accentColor":"#8B5CF6"}
+[29-Apr-2025 19:16:54 UTC] user_settings table exists
+[29-Apr-2025 19:16:54 UTC] Settings data received: {"theme":"light","fontSize":"80","accentColor":"#8B5CF6"}
+[29-Apr-2025 19:16:54 UTC] Existing settings found for user 1, updating
+[29-Apr-2025 19:16:54 UTC] Updating setting theme to value light
+[29-Apr-2025 19:16:54 UTC] Updating setting fontSize to value 80
+[29-Apr-2025 19:16:54 UTC] Updating setting accentColor to value #8B5CF6
+[29-Apr-2025 19:16:54 UTC] Settings update query: UPDATE user_settings SET theme = ?, font_size = ?, accent_color = ? WHERE user_id = ?
+[29-Apr-2025 19:16:54 UTC] Settings updated for user 1
+[29-Apr-2025 19:16:54 UTC] Transaction committed successfully
+[29-Apr-2025 19:16:55 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[29-Apr-2025 19:16:55 UTC] Successfully loaded autoload.php
+[29-Apr-2025 19:16:55 UTC] Loaded .env file from /var/www/html
+[29-Apr-2025 19:16:55 UTC] Verifying token: a9cec50e29...
+[29-Apr-2025 19:16:55 UTC] Connecting to database: mysql, thinfinity, thinfinity_user
+[29-Apr-2025 19:16:55 UTC] Successfully connected to database: thinfinity
+[29-Apr-2025 19:16:55 UTC] Token verified successfully for user: mathis
+[29-Apr-2025 19:16:55 UTC] Connecting to database: mysql, thinfinity, thinfinity_user
+[29-Apr-2025 19:16:55 UTC] Successfully connected to database: thinfinity
+[29-Apr-2025 19:16:55 UTC] Starting updateUserSettings for userId: 1
+[29-Apr-2025 19:16:55 UTC] Data received: {"theme":"light","fontSize":"80","accentColor":"#4a6cf7"}
+[29-Apr-2025 19:16:55 UTC] user_settings table exists
+[29-Apr-2025 19:16:55 UTC] Settings data received: {"theme":"light","fontSize":"80","accentColor":"#4a6cf7"}
+[29-Apr-2025 19:16:55 UTC] Existing settings found for user 1, updating
+[29-Apr-2025 19:16:55 UTC] Updating setting theme to value light
+[29-Apr-2025 19:16:55 UTC] Updating setting fontSize to value 80
+[29-Apr-2025 19:16:55 UTC] Updating setting accentColor to value #4a6cf7
+[29-Apr-2025 19:16:55 UTC] Settings update query: UPDATE user_settings SET theme = ?, font_size = ?, accent_color = ? WHERE user_id = ?
+[29-Apr-2025 19:16:55 UTC] Settings updated for user 1
+[29-Apr-2025 19:16:55 UTC] Transaction committed successfully
+[29-Apr-2025 19:16:57 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[29-Apr-2025 19:16:57 UTC] Successfully loaded autoload.php
+[29-Apr-2025 19:16:57 UTC] Loaded .env file from /var/www/html
+[29-Apr-2025 19:16:57 UTC] Processing classes action: get_user_classes
+[29-Apr-2025 19:16:57 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[29-Apr-2025 19:16:57 UTC] Successfully loaded autoload.php
+[29-Apr-2025 19:16:57 UTC] Loaded .env file from /var/www/html
+[29-Apr-2025 19:16:57 UTC] Processing classes action: get_upcoming_tasks
+[29-Apr-2025 19:16:57 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[29-Apr-2025 19:16:57 UTC] Successfully loaded autoload.php
+[29-Apr-2025 19:16:57 UTC] Loaded .env file from /var/www/html
+[29-Apr-2025 19:16:57 UTC] Processing classes action: get_recent_activity
+[29-Apr-2025 19:16:59 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[29-Apr-2025 19:16:59 UTC] Successfully loaded autoload.php
+[29-Apr-2025 19:16:59 UTC] Loaded .env file from /var/www/html
+[29-Apr-2025 19:16:59 UTC] Verifying token: a9cec50e29...
+[29-Apr-2025 19:16:59 UTC] Connecting to database: mysql, thinfinity, thinfinity_user
+[29-Apr-2025 19:16:59 UTC] Successfully connected to database: thinfinity
+[29-Apr-2025 19:16:59 UTC] Token verified successfully for user: mathis
+[29-Apr-2025 19:17:00 UTC] Connecting to database: mysql, thinfinity, thinfinity_user
+[29-Apr-2025 19:17:00 UTC] Successfully connected to database: thinfinity
+[29-Apr-2025 19:17:02 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[29-Apr-2025 19:17:02 UTC] Successfully loaded autoload.php
+[29-Apr-2025 19:17:02 UTC] Loaded .env file from /var/www/html
+[29-Apr-2025 19:17:02 UTC] Verifying token: a9cec50e29...
+[29-Apr-2025 19:17:02 UTC] Connecting to database: mysql, thinfinity, thinfinity_user
+[29-Apr-2025 19:17:02 UTC] Successfully connected to database: thinfinity
+[29-Apr-2025 19:17:02 UTC] Token verified successfully for user: mathis
+[29-Apr-2025 19:17:02 UTC] Connecting to database: mysql, thinfinity, thinfinity_user
+[29-Apr-2025 19:17:02 UTC] Successfully connected to database: thinfinity
+[29-Apr-2025 19:17:02 UTC] Starting updateUserSettings for userId: 1
+[29-Apr-2025 19:17:02 UTC] Data received: {"theme":"dark","fontSize":"80","accentColor":"#4a6cf7"}
+[29-Apr-2025 19:17:02 UTC] user_settings table exists
+[29-Apr-2025 19:17:02 UTC] Settings data received: {"theme":"dark","fontSize":"80","accentColor":"#4a6cf7"}
+[29-Apr-2025 19:17:02 UTC] Existing settings found for user 1, updating
+[29-Apr-2025 19:17:02 UTC] Updating setting theme to value dark
+[29-Apr-2025 19:17:02 UTC] Updating setting fontSize to value 80
+[29-Apr-2025 19:17:02 UTC] Updating setting accentColor to value #4a6cf7
+[29-Apr-2025 19:17:02 UTC] Settings update query: UPDATE user_settings SET theme = ?, font_size = ?, accent_color = ? WHERE user_id = ?
+[29-Apr-2025 19:17:02 UTC] Settings updated for user 1
+[29-Apr-2025 19:17:02 UTC] Transaction committed successfully
+[29-Apr-2025 19:17:04 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[29-Apr-2025 19:17:04 UTC] Successfully loaded autoload.php
+[29-Apr-2025 19:17:04 UTC] Loaded .env file from /var/www/html
+[29-Apr-2025 19:17:04 UTC] Processing classes action: get_user_classes
+[29-Apr-2025 19:17:04 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[29-Apr-2025 19:17:04 UTC] Successfully loaded autoload.php
+[29-Apr-2025 19:17:04 UTC] Loaded .env file from /var/www/html
+[29-Apr-2025 19:17:04 UTC] Processing classes action: get_upcoming_tasks
+[29-Apr-2025 19:17:04 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[29-Apr-2025 19:17:04 UTC] Successfully loaded autoload.php
+[29-Apr-2025 19:17:04 UTC] Loaded .env file from /var/www/html
+[29-Apr-2025 19:17:04 UTC] Processing classes action: get_recent_activity
+[29-Apr-2025 19:17:06 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[29-Apr-2025 19:17:06 UTC] Successfully loaded autoload.php
+[29-Apr-2025 19:17:07 UTC] Loaded .env file from /var/www/html
+[29-Apr-2025 19:17:07 UTC] Verifying token: a9cec50e29...
+[29-Apr-2025 19:17:07 UTC] Connecting to database: mysql, thinfinity, thinfinity_user
+[29-Apr-2025 19:17:07 UTC] Successfully connected to database: thinfinity
+[29-Apr-2025 19:17:07 UTC] Token verified successfully for user: mathis
+[29-Apr-2025 19:17:07 UTC] Connecting to database: mysql, thinfinity, thinfinity_user
+[29-Apr-2025 19:17:07 UTC] Successfully connected to database: thinfinity
+[29-Apr-2025 19:17:10 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[29-Apr-2025 19:17:10 UTC] Successfully loaded autoload.php
+[29-Apr-2025 19:17:10 UTC] Loaded .env file from /var/www/html
+[29-Apr-2025 19:17:10 UTC] Verifying token: a9cec50e29...
+[29-Apr-2025 19:17:10 UTC] Connecting to database: mysql, thinfinity, thinfinity_user
+[29-Apr-2025 19:17:10 UTC] Successfully connected to database: thinfinity
+[29-Apr-2025 19:17:10 UTC] Token verified successfully for user: mathis
+[29-Apr-2025 19:17:10 UTC] Connecting to database: mysql, thinfinity, thinfinity_user
+[29-Apr-2025 19:17:10 UTC] Successfully connected to database: thinfinity
+[29-Apr-2025 19:17:10 UTC] Starting updateUserSettings for userId: 1
+[29-Apr-2025 19:17:10 UTC] Data received: {"theme":"light","fontSize":"80","accentColor":"#4a6cf7"}
+[29-Apr-2025 19:17:10 UTC] user_settings table exists
+[29-Apr-2025 19:17:10 UTC] Settings data received: {"theme":"light","fontSize":"80","accentColor":"#4a6cf7"}
+[29-Apr-2025 19:17:10 UTC] Existing settings found for user 1, updating
+[29-Apr-2025 19:17:10 UTC] Updating setting theme to value light
+[29-Apr-2025 19:17:10 UTC] Updating setting fontSize to value 80
+[29-Apr-2025 19:17:10 UTC] Updating setting accentColor to value #4a6cf7
+[29-Apr-2025 19:17:10 UTC] Settings update query: UPDATE user_settings SET theme = ?, font_size = ?, accent_color = ? WHERE user_id = ?
+[29-Apr-2025 19:17:10 UTC] Settings updated for user 1
+[29-Apr-2025 19:17:10 UTC] Transaction committed successfully
+[29-Apr-2025 19:17:47 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[29-Apr-2025 19:17:47 UTC] Successfully loaded autoload.php
+[29-Apr-2025 19:17:47 UTC] Loaded .env file from /var/www/html
+[29-Apr-2025 19:17:47 UTC] Processing classes action: get_class_details
+[29-Apr-2025 19:17:47 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[29-Apr-2025 19:17:47 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[29-Apr-2025 19:17:47 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[29-Apr-2025 19:17:47 UTC] Successfully loaded autoload.php
+[29-Apr-2025 19:17:48 UTC] Successfully loaded autoload.php
+[29-Apr-2025 19:17:48 UTC] Successfully loaded autoload.php
+[29-Apr-2025 19:17:48 UTC] Loaded .env file from /var/www/html
+[29-Apr-2025 19:17:48 UTC] Loaded .env file from /var/www/html
+[29-Apr-2025 19:17:48 UTC] Loaded .env file from /var/www/html
+[29-Apr-2025 19:17:48 UTC] Processing classes action: get_chat_messages
+[29-Apr-2025 19:17:48 UTC] Processing classes action: get_stream_messages
+[29-Apr-2025 19:17:48 UTC] Processing classes action: get_assignments
+[29-Apr-2025 19:18:41 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[29-Apr-2025 19:18:41 UTC] Successfully loaded autoload.php
+[29-Apr-2025 19:18:41 UTC] Loaded .env file from /var/www/html
+[29-Apr-2025 19:18:41 UTC] Processing classes action: create_assignment
+[29-Apr-2025 19:18:41 UTC] Received JSON: {"classId":1,"title":"goone zu kanye west","description":"title","dueDate":"2025-04-30T22:00","points":"100","status":"published"}
+[29-Apr-2025 19:18:41 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[29-Apr-2025 19:18:41 UTC] Successfully loaded autoload.php
+[29-Apr-2025 19:18:41 UTC] Loaded .env file from /var/www/html
+[29-Apr-2025 19:18:41 UTC] Processing classes action: get_assignments
+[29-Apr-2025 19:19:44 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[29-Apr-2025 19:19:44 UTC] Successfully loaded autoload.php
+[29-Apr-2025 19:19:44 UTC] Loaded .env file from /var/www/html
+[29-Apr-2025 19:19:44 UTC] Processing classes action: get_assignment_details
+[29-Apr-2025 19:19:55 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[29-Apr-2025 19:19:55 UTC] Successfully loaded autoload.php
+[29-Apr-2025 19:19:55 UTC] Loaded .env file from /var/www/html
+[29-Apr-2025 19:19:56 UTC] Processing classes action: get_assignment_details
+[29-Apr-2025 19:19:57 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[29-Apr-2025 19:19:57 UTC] Successfully loaded autoload.php
+[29-Apr-2025 19:19:57 UTC] Loaded .env file from /var/www/html
+[29-Apr-2025 19:19:57 UTC] Processing classes action: get_assignment_details
+[29-Apr-2025 19:20:28 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[29-Apr-2025 19:20:28 UTC] Successfully loaded autoload.php
+[29-Apr-2025 19:20:28 UTC] Loaded .env file from /var/www/html
+[29-Apr-2025 19:20:28 UTC] Processing classes action: get_assignment_details
+[29-Apr-2025 19:21:00 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[29-Apr-2025 19:21:00 UTC] Successfully loaded autoload.php
+[29-Apr-2025 19:21:00 UTC] Loaded .env file from /var/www/html
+[29-Apr-2025 19:21:00 UTC] Processing classes action: get_chat_messages
+[29-Apr-2025 19:21:18 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[29-Apr-2025 19:21:18 UTC] Successfully loaded autoload.php
+[29-Apr-2025 19:21:18 UTC] Loaded .env file from /var/www/html
+[29-Apr-2025 19:21:18 UTC] Processing classes action: get_user_classes
+[29-Apr-2025 19:21:18 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[29-Apr-2025 19:21:18 UTC] Successfully loaded autoload.php
+[29-Apr-2025 19:21:18 UTC] Loaded .env file from /var/www/html
+[29-Apr-2025 19:21:18 UTC] Processing classes action: get_upcoming_tasks
+[29-Apr-2025 19:21:18 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[29-Apr-2025 19:21:18 UTC] Successfully loaded autoload.php
+[29-Apr-2025 19:21:18 UTC] Loaded .env file from /var/www/html
+[29-Apr-2025 19:21:18 UTC] Processing classes action: get_recent_activity
+[29-Apr-2025 19:21:30 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[29-Apr-2025 19:21:30 UTC] Successfully loaded autoload.php
+[29-Apr-2025 19:21:30 UTC] Loaded .env file from /var/www/html
+[29-Apr-2025 19:21:30 UTC] Processing classes action: update_task_status
+[29-Apr-2025 19:21:30 UTC] Received JSON: {"taskId":"1","completed":true}
+[29-Apr-2025 19:21:47 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[29-Apr-2025 19:21:47 UTC] Successfully loaded autoload.php
+[29-Apr-2025 19:21:48 UTC] Loaded .env file from /var/www/html
+[29-Apr-2025 19:21:48 UTC] Processing classes action: get_class_details
+[29-Apr-2025 19:21:48 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[29-Apr-2025 19:21:48 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[29-Apr-2025 19:21:48 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[29-Apr-2025 19:21:48 UTC] Successfully loaded autoload.php
+[29-Apr-2025 19:21:48 UTC] Successfully loaded autoload.php
+[29-Apr-2025 19:21:48 UTC] Successfully loaded autoload.php
+[29-Apr-2025 19:21:48 UTC] Loaded .env file from /var/www/html
+[29-Apr-2025 19:21:48 UTC] Loaded .env file from /var/www/html
+[29-Apr-2025 19:21:48 UTC] Loaded .env file from /var/www/html
+[29-Apr-2025 19:21:48 UTC] Processing classes action: get_assignments
+[29-Apr-2025 19:21:48 UTC] Processing classes action: get_chat_messages
+[29-Apr-2025 19:21:48 UTC] Processing classes action: get_stream_messages
+[29-Apr-2025 19:21:49 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[29-Apr-2025 19:21:49 UTC] Successfully loaded autoload.php
+[29-Apr-2025 19:21:49 UTC] Loaded .env file from /var/www/html
+[29-Apr-2025 19:21:49 UTC] Processing classes action: get_assignment_details
+[29-Apr-2025 19:22:06 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[29-Apr-2025 19:22:06 UTC] Successfully loaded autoload.php
+[29-Apr-2025 19:22:06 UTC] Loaded .env file from /var/www/html
+[29-Apr-2025 19:22:06 UTC] Processing classes action: submit_assignment
+[29-Apr-2025 19:22:06 UTC] Received JSON: {"assignmentId":"1","content":"abgeschlossen","attachmentUrl":null}
+[29-Apr-2025 19:22:07 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[29-Apr-2025 19:22:07 UTC] Successfully loaded autoload.php
+[29-Apr-2025 19:22:07 UTC] Loaded .env file from /var/www/html
+[29-Apr-2025 19:22:07 UTC] Processing classes action: get_assignments
+[29-Apr-2025 19:22:18 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[29-Apr-2025 19:22:18 UTC] Successfully loaded autoload.php
+[29-Apr-2025 19:22:18 UTC] Loaded .env file from /var/www/html
+[29-Apr-2025 19:22:18 UTC] Processing classes action: get_class_details
+[29-Apr-2025 19:22:18 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[29-Apr-2025 19:22:18 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[29-Apr-2025 19:22:18 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[29-Apr-2025 19:22:18 UTC] Successfully loaded autoload.php
+[29-Apr-2025 19:22:18 UTC] Successfully loaded autoload.php
+[29-Apr-2025 19:22:18 UTC] Successfully loaded autoload.php
+[29-Apr-2025 19:22:18 UTC] Loaded .env file from /var/www/html
+[29-Apr-2025 19:22:18 UTC] Loaded .env file from /var/www/html
+[29-Apr-2025 19:22:18 UTC] Loaded .env file from /var/www/html
+[29-Apr-2025 19:22:18 UTC] Processing classes action: get_assignments
+[29-Apr-2025 19:22:18 UTC] Processing classes action: get_stream_messages
+[29-Apr-2025 19:22:18 UTC] Processing classes action: get_chat_messages
+[29-Apr-2025 19:22:20 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[29-Apr-2025 19:22:20 UTC] Successfully loaded autoload.php
+[29-Apr-2025 19:22:20 UTC] Loaded .env file from /var/www/html
+[29-Apr-2025 19:22:20 UTC] Processing classes action: get_assignment_details
+[29-Apr-2025 19:24:03 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[29-Apr-2025 19:24:03 UTC] Successfully loaded autoload.php
+[29-Apr-2025 19:24:03 UTC] Loaded .env file from /var/www/html
+[29-Apr-2025 19:24:03 UTC] Processing classes action: get_explore_classes
+[29-Apr-2025 19:24:05 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[29-Apr-2025 19:24:05 UTC] Successfully loaded autoload.php
+[29-Apr-2025 19:24:05 UTC] Loaded .env file from /var/www/html
+[29-Apr-2025 19:24:05 UTC] Processing classes action: get_explore_classes
+[29-Apr-2025 19:24:05 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[29-Apr-2025 19:24:05 UTC] Successfully loaded autoload.php
+[29-Apr-2025 19:24:05 UTC] Loaded .env file from /var/www/html
+[29-Apr-2025 19:24:05 UTC] Processing classes action: get_explore_classes
+[29-Apr-2025 19:24:05 UTC] Looking for autoload.php at: /var/www/html/vendor/autoload.php
+[29-Apr-2025 19:24:05 UTC] Successfully loaded autoload.php
+[29-Apr-2025 19:24:05 UTC] Loaded .env file from /var/www/html
+[29-Apr-2025 19:24:05 UTC] Processing classes action: get_explore_classes

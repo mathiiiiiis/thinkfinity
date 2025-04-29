@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Thinkfinity Classes - Join or create learning classes">
+    <meta name="keywords" content="learning, education, thinfinity, online learning, classes">
+    <meta name="author" content="Thinkfinity">
+    
+    <title>Classes - Thinkfinity</title>
+    
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/auth.css">
+    <link rel="stylesheet" href="assets/css/classes.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+    <script src="assets/js/plugins.js" defer></script>
+    <script src="assets/js/main.js" defer></script>
+    <script src="assets/js/nav_dropdown.js"></script>
+    <script src="backend/auth.js" defer></script>
+    <script src="assets/js/classes.js" defer></script>
+</head>
+<body>
+    <section class="navbar">
+      <div class="navbar-logo">
+        <img src="assets/pictures/logos/logo_text_225x74.png" alt="Thinfinity Logo">
+      </div>
+      <div class="navbar-links">
+        <li class="navbar-link"><a href="index.html">Explore</a></li>
+        <li class="navbar-link"><a href="#">Forum</a></li>
+        <li class="navbar-link"><a href="classes.html" class="active">Classes</a></li>
+      </div>
+      
+      <!-- User profile section - shows when logged in -->
+      <div class="navbar-user" id="userProfileSection">
+        <div class="navbar-dropdown">
+          <div class="profile-info">
+            <h2 class="navbar-dropdown-name" id="userDisplayName">Username</h2>
+            <img class="navbar-dropdown-profile" id="userProfilePic" src="" alt="User Profile">
+          </div>
+          <div class="dropdown-content">
+            <a href="profile.html">My Profile</a>
+            <a href="settings.html">Settings</a>
+            <a href="#" id="logoutBtn">Logout</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Login/Register buttons - shows when logged out -->
+      <div class="auth-buttons" id="authButtonsSection">
+        <button class="login-btn" id="loginBtn">Login</button>
+        <button class="register-btn" id="registerBtn">Register</button>
+      </div>
+    </section>
+
+        <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Login to Thinfinity</h2>
+        <form id="loginForm">
+          <div class="form-group">
+            <label for="loginEmail">Email</label>
+            <input type="email" id="loginEmail" required>
+          </div>
+          <div class="form-group">
+            <label for="loginPassword">Password</label>
+            <input type="password" id="loginPassword" required>
+          </div>
+          <button type="submit" class="submit-btn">Login</button>
+        </form>
+        <p>Don't have an account? <a href="#" id="switchToRegister">Register</a></p>
+      </div>
+    </div>
+
+    <!-- Registration Modal -->
+    <div id="registerModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Create an Account</h2>
+        
+        <!-- Step 1: Basic Info -->
+        <div class="register-step" id="registerStep1">
+          <h3>Step 1: Basic Information</h3>
+          <div class="form-group">
+            <label for="registerUsername">Username</label>
+            <input type="text" id="registerUsername" required>
+          </div>
+          <div class="form-group">
+            <label for="registerEmail">Email</label>
+            <input type="email" id="registerEmail" required>
+          </div>
+          <button class="next-btn" id="step1NextBtn">Continue</button>
+        </div>
+        
+        <!-- Step 2: Password -->
+        <div class="register-step" id="registerStep2" style="display: none;">
+          <h3>Step 2: Create Password</h3>
+          <div class="form-group">
+            <label for="registerPassword">Password</label>
+            <input type="password" id="registerPassword" required>
+          </div>
+          <div class="form-group">
+            <label for="confirmPassword">Confirm Password</label>
+            <input type="password" id="confirmPassword" required>
+          </div>
+          <div class="btn-group">
+            <button class="back-btn" id="step2BackBtn">Back</button>
+            <button class="next-btn" id="step2NextBtn">Continue</button>
+          </div>
+        </div>
+        
+        <!-- Step 3: Profile Picture -->
+        <div class="register-step" id="registerStep3" style="display: none;">
+          <h3>Step 3: Profile Picture</h3>
+          <div class="profile-upload">
+            <div class="profile-preview">
+              <img id="profilePreview" src="assets/pictures/default-profile.png" alt="Profile Preview">
+            </div>
+            <label for="profileUpload" class="upload-btn">Choose Image</label>
+            <input type="file" id="profileUpload" accept="image/*" style="display: none;">
+          </div>
+          <div class="btn-group">
+            <button class="back-btn" id="step3BackBtn">Back</button>
+            <button class="finish-btn" id="registerFinishBtn">Finish</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <!-- Main Content -->
+    <main class="classes-container">
+        <div class="classes-header">
+            <div class="classes-title">
+                <h1>Your Classes</h1>
+                <p>Join existing classes or create your own to collaborate with others</p>
+            </div>
+            <div class="classes-actions">
+                <button class="join-class-btn" id="joinClassBtn">Join Class</button>
+                <button class="create-class-btn" id="createClassBtn">Create Class</button>
+            </div>
+        </div>
+        
+        <!-- Classes Navigation Tabs -->
+        <div class="classes-tabs">
+            <button class="tab-btn active" data-tab="my-classes">My Classes</button>
+            <button class="tab-btn" data-tab="teaching">Teaching</button>
+            <button class="tab-btn" data-tab="explore">Explore</button>
+            <div class="search-container">
+                <input type="text" id="classSearch" placeholder="Search classes...">
+                <button id="searchBtn">Search</button>
+            </div>
+        </div>
+        
+        <!-- Classes Lists -->
+        <div class="tab-content" id="my-classes-content">
+            <div class="classes-grid" id="myClassesList">
+                <!-- Classes will be loaded dynamically -->
+                <div class="empty-state" id="noMyClassesMessage">
+                    <p>You haven't joined any classes yet</p>
+                    <button class="action-link" id="findClassesToJoin">Find Classes to Join</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="tab-content hidden" id="teaching-content">
+            <div class="classes-grid" id="teachingClassesList">
+                <!-- Teaching classes will be loaded dynamically -->
+                <div class="empty-state" id="noTeachingClassesMessage">
+                    <p>You're not teaching any classes yet</p>
+                    <button class="action-link" id="createFirstClass">Create Your First Class</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="tab-content hidden" id="explore-content">
+            <div class="explore-filters">
+                <div class="filter-group">
+                    <label for="categoryFilter">Category</label>
+                    <select id="categoryFilter">
+                        <option value="all">All Categories</option>
+                        <option value="math">Mathematics</option>
+                        <option value="science">Science</option>
+                        <option value="tech">Technology</option>
+                        <option value="lang">Languages</option>
+                        <option value="arts">Arts</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="levelFilter">Level</label>
+                    <select id="levelFilter">
+                        <option value="all">All Levels</option>
+                        <option value="beginner">Beginner</option>
+                        <option value="intermediate">Intermediate</option>
+                        <option value="advanced">Advanced</option>
+                    </select>
+                </div>
+                
+                <button id="applyFiltersBtn">Apply Filters</button>
+            </div>
+            
+            <div class="classes-grid" id="exploreClassesList">
+                <!-- Public classes will be loaded dynamically -->
+                <div class="loading-message" id="loadingExploreClasses">
+                    <p>Loading classes...</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <!-- Join Class Modal -->
+    <div id="joinClassModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Join a Class</h2>
+            <p>Enter the class code provided by your teacher to join</p>
+            
+            <div class="form-group">
+                <label for="classCode">Class Code</label>
+                <input type="text" id="classCode" placeholder="e.g. ABC123" required>
+                <small>The class code is case-sensitive</small>
+            </div>
+            
+            <button type="button" class="submit-btn" id="joinClassSubmitBtn">Join Class</button>
+        </div>
+    </div>
+    
+    <!-- Create Class Modal -->
+    <div id="createClassModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Create a New Class</h2>
+            
+            <form id="createClassForm">
+                <div class="form-group">
+                    <label for="className">Class Name</label>
+                    <input type="text" id="className" placeholder="e.g. Advanced Web Development" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="classDescription">Description</label>
+                    <textarea id="classDescription" placeholder="Brief description of the class"></textarea>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group half">
+                        <label for="classCategory">Category</label>
+                        <select id="classCategory" required>
+                            <option value="">Select Category</option>
+                            <option value="math">Mathematics</option>
+                            <option value="science">Science</option>
+                            <option value="tech">Technology</option>
+                            <option value="lang">Languages</option>
+                            <option value="arts">Arts</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group half">
+                        <label for="classLevel">Level</label>
+                        <select id="classLevel" required>
+                            <option value="">Select Level</option>
+                            <option value="beginner">Beginner</option>
+                            <option value="intermediate">Intermediate</option>
+                            <option value="advanced">Advanced</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="classVisibility">Class Visibility</label>
+                    <div class="radio-group">
+                        <label>
+                            <input type="radio" name="classVisibility" value="private" checked>
+                            Private (Join by code only)
+                        </label>
+                        <label>
+                            <input type="radio" name="classVisibility" value="public">
+                            Public (Visible in Explore)
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="classCover">Cover Image (Optional)</label>
+                    <div class="cover-upload">
+                        <div class="cover-preview" id="coverPreviewContainer">
+                            <div class="cover-placeholder" id="coverPlaceholder">
+                                No image selected
+                            </div>
+                            <img id="coverPreview" style="display: none;" alt="Cover Preview">
+                        </div>
+                        <label for="coverUpload" class="upload-btn">Choose Image</label>
+                        <input type="file" id="coverUpload" accept="image/*" style="display: none;">
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="classColor">Class Color</label>
+                    <div class="color-options">
+                        <label class="color-option">
+                            <input type="radio" name="classColor" value="#4A6FFF" checked>
+                            <span class="color-circle" style="background-color: #4A6FFF;"></span>
+                        </label>
+                        <label class="color-option">
+                            <input type="radio" name="classColor" value="#FF5252">
+                            <span class="color-circle" style="background-color: #FF5252;"></span>
+                        </label>
+                        <label class="color-option">
+                            <input type="radio" name="classColor" value="#00C853">
+                            <span class="color-circle" style="background-color: #00C853;"></span>
+                        </label>
+                        <label class="color-option">
+                            <input type="radio" name="classColor" value="#FFD600">
+                            <span class="color-circle" style="background-color: #FFD600;"></span>
+                        </label>
+                        <label class="color-option">
+                            <input type="radio" name="classColor" value="#AA00FF">
+                            <span class="color-circle" style="background-color: #AA00FF;"></span>
+                        </label>
+                        <label class="color-option">
+                            <input type="radio" name="classColor" value="#FF6D00">
+                            <span class="color-circle" style="background-color: #FF6D00;"></span>
+                        </label>
+                    </div>
+                </div>
+                
+                <button type="submit" class="submit-btn">Create Class</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
